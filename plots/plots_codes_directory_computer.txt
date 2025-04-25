@@ -1,0 +1,3 @@
+Plot	Width	Height	position_of_R_code
+CV_vs_K.png	800	398	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/probabilities_K/Analisi_fastStructure_ADmixture.R
+admixture_K7.jpeg	3000	900	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/probabilities_K/Analisi_fastStructure_ADmixture.R
