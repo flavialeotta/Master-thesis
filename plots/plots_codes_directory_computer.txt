@@ -1,3 +1,23 @@
 Plot	Width	Height	position_of_R_code
 CV_vs_K.png	800	398	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/probabilities_K/Analisi_fastStructure_ADmixture.R
 admixture_K7.jpeg	3000	900	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/probabilities_K/Analisi_fastStructure_ADmixture.R
+fastqmcf_fastp_comparison.png	1910	2084	NA
+map_phys_pol.png	1238	334	C:/Users/flavi/Desktop/Tirocinio/03 - Marzo/04-03/mappa.R
+map_pol.png	678	326	C:/Users/flavi/Desktop/Tirocinio/03 - Marzo/04-03/mappa.R
+denovo_parameters_3Dplot.png	1290	867		C:/Users/flavi/Desktop/Tirocinio/03 - Marzo/07-03/final_metrics_plotted.R
+meancov_m_M.png	1312	806	C:/Users/flavi/Desktop/Tirocinio/03 - Marzo/07-03/final_metrics_plotted.R	
+denovo_parameters_3Dplot.html	NA	NA		C:/Users/flavi/Desktop/Tirocinio/03 - Marzo/07-03/final_metrics_plotted.R
+log(SNPs)_on_m_M_n.html	NA	NA		C:/Users/flavi/Desktop/Tirocinio/03 - Marzo/07-03/final_metrics_plotted.R
+first_phylogenetic_tree.svg	NA	NA	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
+PCA_no_CTT.html	NA	NA	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
+PCA_with_CTT.html	NA	NA	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
+PCA_eigenvalues.png	750	375	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
+PCA_eigenvalues_no_CTT.png	750	372	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
+meancov_populations.png	701	326	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/lost reads code.R
+lost_reads_barplot.png	650	500	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/lost reads code.R
+lost_reads_lineplot.png	650	500	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/lost reads code.R
+missing_data_filtered.png	650	450	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
+missing_data_boxplot_filtered.png	656	468	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
+fst_heatmap.png	700	450	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
+missing_data.png	650	450	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/22-04/min_mac_2/Analisi_PCA_metodo_Chiara.R
+missing_data_boxplot.png	656	468	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/22-04/min_mac_2/Analisi_PCA_metodo_Chiara.R
