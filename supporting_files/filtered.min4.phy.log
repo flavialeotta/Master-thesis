@@ -1,0 +1,387 @@
+IQ-TREE multicore version 2.4.0 for Linux x86 64-bit built Feb 12 2025
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor, Heiko Schmidt,
+Dominik Schrempf, Michael Woodhams, Ly Trong Nhan, Thomas Wong
+
+Host:    asimina (AVX512, FMA3, 2897 GB RAM)
+Command: iqtree -s filtered.min4.phy -st DNA -m MFP -bb 3000 -nt AUTO -redo
+Seed:    287366 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri May  9 11:52:35 2025
+Kernel:  AVX+FMA - auto-detect threads (160 CPU cores detected)
+
+Reading alignment file filtered.min4.phy ... Phylip format detected
+Alignment most likely contains protein sequences
+WARNING: Your specified sequence type is different from the detected one
+Alignment has 103 sequences with 3855 columns, 3827 distinct patterns
+1363 parsimony-informative, 507 singleton sites, 1984 constant sites
+                     Gap/Ambiguity  Composition  p-value
+Analyzing sequences: done in 0.0101724 secs using 1.194e+04% CPU
+   1  ALP1_clean_fastp      14.37%    passed     81.75%
+   2  ALP2_clean_fastp      20.73%    passed     96.68%
+   3  ALP3_clean_fastp      10.40%    passed     84.43%
+   4  ALP5_clean_fastp      15.30%    passed     89.18%
+   5  ALP6_clean_fastp      29.26%    passed     55.67%
+   6  ALP7_clean_fastp      21.82%    passed     71.80%
+   7  ALP8_clean_fastp      17.12%    passed     98.83%
+   8  ALP9_clean_fastp      15.41%    passed     93.26%
+   9  ALP10_clean_fastp     17.02%    passed     89.44%
+  10  ALP12_clean_fastp     33.51%    passed     55.95%
+  11  ALP14_clean_fastp     10.25%    passed     98.81%
+  12  ALP15_clean_fastp     23.89%    passed     80.86%
+  13  CTT1_clean_fastp      25.76%    passed     98.61%
+  14  CTT2_clean_fastp      25.03%    passed     98.47%
+  15  CTT3_clean_fastp      27.16%    passed     81.18%
+  16  LPASS1_clean_fastp    12.71%    passed     87.40%
+  17  LPASS10_clean_fastp   13.62%    passed     87.44%
+  18  LPASS11_clean_fastp   10.95%    passed     90.48%
+  19  LPASS12_clean_fastp   22.18%    passed     98.77%
+  20  LPASS13_clean_fastp   30.69%    passed      7.76%
+  21  LPASS14_clean_fastp   11.31%    passed     77.06%
+  22  LPASS15_clean_fastp   20.08%    passed     33.31%
+  23  LPASS2_clean_fastp    11.52%    passed     96.45%
+  24  LPASS4_clean_fastp    11.02%    passed     85.35%
+  25  LPASS7_clean_fastp    14.89%    passed     87.67%
+  26  LPASS8_clean_fastp    11.54%    passed     96.48%
+  27  LPASS9_clean_fastp    12.06%    passed     96.31%
+  28  MAU1_clean_fastp       8.61%    passed     94.33%
+  29  MAU10_clean_fastp      7.26%    passed     94.76%
+  30  MAU11_clean_fastp     10.17%    passed     85.29%
+  31  MAU5_clean_fastp      13.02%    passed     79.90%
+  32  MAU7_clean_fastp      12.81%    passed     93.82%
+  33  MAU8_clean_fastp      10.04%    passed     94.25%
+  34  MAU9_clean_fastp       9.26%    passed     90.94%
+  35  PDR1_clean_fastp       6.82%    passed     99.05%
+  36  PDR10_clean_fastp      7.50%    passed     99.40%
+  37  PDR11_clean_fastp      7.78%    passed     96.19%
+  38  PDR12_clean_fastp      7.26%    passed     85.10%
+  39  PDR13_clean_fastp      7.52%    passed     96.17%
+  40  PDR14_clean_fastp     16.39%    passed     70.28%
+  41  PDR15_clean_fastp      8.20%    passed     98.08%
+  42  PDR2_clean_fastp      10.48%    passed     80.47%
+  43  PDR3_clean_fastp       7.68%    passed     83.60%
+  44  PDR4_clean_fastp       7.08%    passed     99.67%
+  45  PDR5_clean_fastp       7.44%    passed     92.21%
+  46  PDR8_clean_fastp       7.50%    passed     99.26%
+  47  PDR9_clean_fastp       6.95%    passed     95.86%
+  48  PPURA1_clean_fastp    10.19%    passed     86.50%
+  49  PPURA10_clean_fastp   10.89%    passed     93.86%
+  50  PPURA11_clean_fastp   11.96%    passed     79.13%
+  51  PPURA13_clean_fastp   10.97%    passed     92.16%
+  52  PPURA15_clean_fastp   10.87%    passed     95.57%
+  53  PPURA2_clean_fastp    10.09%    passed     95.80%
+  54  PPURA3_clean_fastp    11.15%    passed     89.57%
+  55  PPURA4_clean_fastp    11.28%    passed     92.46%
+  56  PPURA5_clean_fastp    11.26%    passed     87.09%
+  57  PPURA7_clean_fastp    11.26%    passed     87.75%
+  58  PPURA8_clean_fastp    12.81%    passed     88.33%
+  59  RT11_clean_fastp      14.03%    passed     89.63%
+  60  RT14_clean_fastp      12.94%    passed     98.88%
+  61  RT15_clean_fastp      14.71%    passed     76.26%
+  62  RT16_clean_fastp      14.66%    passed     90.27%
+  63  RT3_clean_fastp       14.53%    passed     76.48%
+  64  RT6_clean_fastp       14.73%    passed     95.29%
+  65  RT9_clean_fastp       14.27%    passed     71.28%
+  66  SNEV1_clean_fastp     10.87%    passed     99.63%
+  67  SNEV10_clean_fastp    10.61%    passed     81.04%
+  68  SNEV11_clean_fastp    10.43%    passed     92.61%
+  69  SNEV13_clean_fastp    10.71%    passed     84.80%
+  70  SNEV14_clean_fastp     9.57%    passed     68.50%
+  71  SNEV2_clean_fastp     10.61%    passed     66.78%
+  72  SNEV3_clean_fastp      9.83%    passed     94.43%
+  73  SNEV5_clean_fastp     14.73%    passed     76.96%
+  74  SNEV6_clean_fastp     12.17%    passed     97.11%
+  75  SNEV7_clean_fastp     10.43%    passed     83.99%
+  76  SNEV8_clean_fastp     10.95%    passed     99.01%
+  77  SNEV9_clean_fastp     10.12%    passed     95.38%
+  78  SP10I12_clean_fastp   12.74%    passed     74.57%
+  79  SP11I13_clean_fastp   10.92%    passed     94.06%
+  80  SP11I14_clean_fastp    9.94%    passed     97.06%
+  81  SP12I15_clean_fastp   13.70%    passed     72.58%
+  82  SP13I16_clean_fastp   10.69%    passed     88.82%
+  83  SP14I17_clean_fastp   11.44%    passed     95.55%
+  84  SP17I18_clean_fastp   10.69%    passed     69.04%
+  85  SP17I19_clean_fastp   10.04%    passed     87.67%
+  86  SP5I7_clean_fastp     16.81%    passed     89.62%
+  87  SP6I8_clean_fastp     10.82%    passed     97.64%
+  88  SP7I10_clean_fastp    11.36%    passed     84.97%
+  89  SP7I11_clean_fastp    13.64%    passed     57.60%
+  90  SP7I9_clean_fastp     12.14%    passed     88.25%
+  91  STE1_clean_fastp      12.76%    passed     97.42%
+  92  STE10_clean_fastp     13.33%    passed     75.85%
+  93  STE11_clean_fastp     14.03%    passed     79.54%
+  94  STE13_clean_fastp     11.62%    passed     70.21%
+  95  STE14_clean_fastp     12.35%    passed     69.20%
+  96  STE15_clean_fastp     12.01%    passed     71.28%
+  97  STE3_clean_fastp      11.62%    passed     99.36%
+  98  STE4_clean_fastp      13.31%    passed     86.77%
+  99  STE5_clean_fastp      18.21%    passed     96.06%
+ 100  STE6_clean_fastp      13.83%    passed     89.62%
+ 101  STE7_clean_fastp      17.92%    passed     48.82%
+ 102  STE8_clean_fastp      12.48%    passed     91.18%
+ 103  STE9_clean_fastp      13.26%    passed     76.25%
+****  TOTAL                 13.15%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.164 seconds
+Measuring multi-threading efficiency up to 160 CPU cores
+Increase to 10 rounds for branch lengths
+153 trees examined
+Threads: 1 / Time: 160.512 sec / Speedup: 1.000 / Efficiency: 100% / LogL: -61994
+Threads: 2 / Time: 91.937 sec / Speedup: 1.746 / Efficiency: 87% / LogL: -61994
+Threads: 3 / Time: 80.505 sec / Speedup: 1.994 / Efficiency: 66% / LogL: -61994
+Threads: 4 / Time: 57.448 sec / Speedup: 2.794 / Efficiency: 70% / LogL: -61994
+Threads: 5 / Time: 42.981 sec / Speedup: 3.734 / Efficiency: 75% / LogL: -61994
+Threads: 6 / Time: 42.198 sec / Speedup: 3.804 / Efficiency: 63% / LogL: -61994
+Threads: 7 / Time: 42.242 sec / Speedup: 3.800 / Efficiency: 54% / LogL: -61994
+Threads: 8 / Time: 37.466 sec / Speedup: 4.284 / Efficiency: 54% / LogL: -61994
+Threads: 9 / Time: 35.294 sec / Speedup: 4.548 / Efficiency: 51% / LogL: -61994
+Threads: 10 / Time: 32.651 sec / Speedup: 4.916 / Efficiency: 49% / LogL: -61994
+BEST NUMBER OF THREADS: 9
+
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -40242.243
+Optimal log-likelihood: -40241.465
+Rate parameters:  A-C: 0.74506  A-G: 3.21120  A-T: 1.31115  C-G: 0.36011  C-T: 3.36361  G-T: 1.00000
+Base frequencies:  A: 0.206  C: 0.296  G: 0.298  T: 0.200
+Proportion of invariable sites: 0.234
+Gamma shape alpha: 0.502
+Parameters optimization took 1 rounds (0.119 sec)
+Time for fast ML tree search: 1.146 seconds
+
+NOTE: ModelFinder requires 171 MB RAM!
+ModelFinder will test up to 484 DNA models (sample size: 3855 epsilon: 0.100) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         43658.168    211 87738.336    87762.894    89058.589
+  2  GTR+F+I       41536.424    212 83496.848    83521.646    84823.359
+  3  GTR+F+G4      40254.761    212 80933.522    80958.320    82260.033
+  4  GTR+F+I+G4    40238.146    213 80902.291    80927.329    82235.059
+  5  GTR+F+R2      40228.477    213 80882.954    80907.992    82215.722
+  6  GTR+F+R3      40131.872    215 80693.743    80719.267    82039.025
+  7  GTR+F+R4      40126.241    217 80686.482    80712.496    82044.279
+ 14  GTR+F+I+R2    40169.238    214 80766.477    80791.757    82105.502
+ 15  GTR+F+I+R3    40125.728    216 80683.456    80709.224    82034.995
+ 16  GTR+F+I+R4    40124.990    218 80685.981    80712.241    82050.034
+ 28  SYM+R3        40191.472    212 80806.944    80831.742    82133.455
+ 29  SYM+R4        40187.932    214 80803.864    80829.144    82142.889
+ 37  SYM+I+R3      40186.882    213 80799.764    80824.802    82132.532
+ 50  TVM+F+R3      40132.374    214 80692.748    80718.028    82031.773
+ 51  TVM+F+R4      40126.183    216 80684.366    80710.134    82035.905
+ 59  TVM+F+I+R3    40126.144    215 80682.287    80707.811    82027.569
+ 72  TVMe+R3       40191.509    211 80805.018    80829.576    82125.272
+ 73  TVMe+R4       40187.646    213 80801.292    80826.330    82134.060
+ 81  TVMe+I+R3     40186.983    212 80797.967    80822.764    82124.478
+ 94  TIM3+F+R3     40191.001    213 80808.001    80833.040    82140.769
+ 95  TIM3+F+R4     40185.326    215 80800.653    80826.176    82145.935
+103  TIM3+F+I+R3   40185.437    214 80798.873    80824.153    82137.898
+116  TIM3e+R3      40210.568    210 80841.136    80865.456    82155.133
+117  TIM3e+R4      40206.670    212 80837.340    80862.138    82163.851
+125  TIM3e+I+R3    40206.149    211 80834.299    80858.856    82154.552
+138  TIM2+F+R3     40278.892    213 80983.784    81008.822    82316.552
+139  TIM2+F+R4     40273.048    215 80976.097    81001.620    82321.379
+147  TIM2+F+I+R3   40272.917    214 80973.834    80999.114    82312.859
+160  TIM2e+R3      40256.932    210 80933.863    80958.183    82247.860
+161  TIM2e+R4      40252.532    212 80929.064    80953.861    82255.574
+169  TIM2e+I+R3    40252.002    211 80926.004    80950.562    82246.258
+182  TIM+F+R3      40310.082    213 81046.164    81071.202    82378.932
+183  TIM+F+R4      40305.166    215 81040.332    81065.855    82385.614
+191  TIM+F+I+R3    40304.986    214 81037.972    81063.252    82376.997
+204  TIMe+R3       40254.042    210 80928.083    80952.403    82242.080
+205  TIMe+R4       40249.767    212 80923.534    80948.332    82250.045
+213  TIMe+I+R3     40249.288    211 80920.577    80945.135    82240.831
+226  TPM3u+F+R3    40191.637    212 80807.273    80832.071    82133.784
+227  TPM3u+F+R4    40185.738    214 80799.475    80824.755    82138.500
+235  TPM3u+F+I+R3  40186.061    213 80798.121    80823.159    82130.889
+248  TPM3+R3       40210.598    209 80839.196    80863.278    82146.935
+249  TPM3+R4       40206.496    211 80834.993    80859.550    82155.246
+257  TPM3+I+R3     40206.200    210 80832.400    80856.719    82146.396
+270  TPM2u+F+R3    40279.373    212 80982.746    81007.543    82309.257
+271  TPM2u+F+R4    40273.339    214 80974.679    80999.959    82313.704
+279  TPM2u+F+I+R3  40273.397    213 80972.793    80997.831    82305.561
+292  TPM2+R3       40257.247    209 80932.493    80956.575    82240.233
+293  TPM2+R4       40252.650    211 80927.300    80951.858    82247.554
+301  TPM2+I+R3     40252.297    210 80924.593    80948.912    82238.590
+314  K3Pu+F+R3     40310.709    212 81045.418    81070.215    82371.929
+315  K3Pu+F+R4     40305.649    214 81039.298    81064.578    82378.323
+323  K3Pu+F+I+R3   40305.584    213 81037.167    81062.205    82369.935
+336  K3P+R3        40254.279    209 80926.558    80950.640    82234.298
+337  K3P+R4        40249.846    211 80921.692    80946.250    82241.946
+345  K3P+I+R3      40249.520    210 80919.040    80943.360    82233.037
+358  TN+F+R3       40325.577    212 81075.153    81099.950    82401.664
+359  TN+F+R4       40320.406    214 81068.812    81094.093    82407.837
+367  TN+F+I+R3     40320.399    213 81066.798    81091.836    82399.566
+380  TNe+R3        40264.246    209 80946.491    80970.574    82254.231
+381  TNe+R4        40259.732    211 80941.464    80966.022    82261.718
+389  TNe+I+R3      40259.448    210 80938.895    80963.215    82252.892
+402  HKY+F+R3      40326.217    211 81074.434    81098.992    82394.688
+403  HKY+F+R4      40321.007    213 81068.013    81093.052    82400.781
+411  HKY+F+I+R3    40321.004    212 81066.009    81090.806    82392.520
+424  K2P+R3        40264.499    208 80944.997    80968.844    82246.479
+425  K2P+R4        40259.930    210 80939.860    80964.180    82253.857
+433  K2P+I+R3      40259.679    209 80937.358    80961.440    82245.097
+446  F81+F+R3      41841.045    210 84102.089    84126.409    85416.086
+447  F81+F+R4      41837.956    212 84099.913    84124.710    85426.424
+455  F81+F+I+R3    41837.366    211 84096.732    84121.290    85416.985
+468  JC+R3         41739.956    207 83893.911    83917.523    85189.136
+469  JC+R4         41736.758    209 83891.515    83915.598    85199.255
+477  JC+I+R3       41736.182    208 83888.364    83912.210    85189.846
+Akaike Information Criterion:           TVM+F+I+R3
+Corrected Akaike Information Criterion: TVM+F+I+R3
+Bayesian Information Criterion:         TVM+F+I+R3
+Best-fit model: TVM+F+I+R3 chosen according to BIC
+
+All model information printed to filtered.min4.phy.model.gz
+CPU time for ModelFinder: 3067.016 seconds (0h:51m:7s)
+Wall-clock time for ModelFinder: 684.357 seconds (0h:11m:24s)
+Generating 3000 samples for ultrafast bootstrap (seed: 287366)...
+
+NOTE: 82 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -41838.976
+2. Current log-likelihood: -40128.850
+3. Current log-likelihood: -40126.727
+4. Current log-likelihood: -40126.439
+5. Current log-likelihood: -40126.292
+Optimal log-likelihood: -40126.202
+Rate parameters:  A-C: 0.74823  A-G: 3.32257  A-T: 1.29787  C-G: 0.36279  C-T: 3.32257  G-T: 1.00000
+Base frequencies:  A: 0.206  C: 0.296  G: 0.298  T: 0.200
+Proportion of invariable sites: 0.207
+Site proportion and rates:  (0.571,0.332) (0.123,2.279) (0.099,5.372)
+Parameters optimization took 5 rounds (1.008 sec)
+Wrote distance file to... 
+Computing ML distances based on estimated model parameters...
+Calculating distance matrix: done in 0.0219561 secs using 934.8% CPU
+Computing ML distances took 0.022469 sec (of wall-clock time) 0.205778 sec (of CPU time)
+Setting up auxiliary I and S matrices: done in 0.00228581 secs using 563.3% CPU
+Computing RapidNJ tree took 0.330203 sec (of wall-clock time) 0.996755 sec (of CPU time)
+Log-likelihood of RapidNJ tree: -40538.572
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 7.902 second
+Computing log-likelihood of 98 initial trees ... 4.173 seconds
+Current best score: -40126.202
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -40121.724
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -40113.762
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 3: -40109.864
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 5: -40104.847
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 10: -40103.505
+Iteration 10 / LogL: -40103.505 / Time: 0h:11m:48s
+Iteration 20 / LogL: -40140.605 / Time: 0h:11m:54s
+Finish initializing candidate tree set (20)
+Current best tree score: -40103.505 / CPU time: 27.996
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 23: -40102.965
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 27: -40102.663
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 28: -40098.897
+Iteration 30 / LogL: -40113.080 / Time: 0h:12m:1s (0h:2m:4s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 37: -40096.945
+Iteration 40 / LogL: -40100.963 / Time: 0h:12m:7s (0h:1m:47s left)
+Iteration 50 / LogL: -40104.467 / Time: 0h:12m:13s (0h:1m:27s left)
+Log-likelihood cutoff on original alignment: -40236.069
+Iteration 60 / LogL: -40119.229 / Time: 0h:12m:20s (0h:1m:13s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 61: -40095.793
+Iteration 70 / LogL: -40101.602 / Time: 0h:12m:26s (0h:1m:22s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 71: -40094.976
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 79: -40094.208
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 80: -40092.711
+Iteration 80 / LogL: -40092.711 / Time: 0h:12m:33s (0h:1m:27s left)
+Iteration 90 / LogL: -40106.592 / Time: 0h:12m:39s (0h:1m:15s left)
+Iteration 100 / LogL: -40097.439 / Time: 0h:12m:45s (0h:1m:5s left)
+Log-likelihood cutoff on original alignment: -40236.069
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 110 / LogL: -40109.958 / Time: 0h:12m:51s (0h:1m:12s left)
+Iteration 120 / LogL: -40122.849 / Time: 0h:12m:57s (0h:1m:2s left)
+Iteration 130 / LogL: -40101.222 / Time: 0h:13m:3s (0h:0m:53s left)
+Iteration 140 / LogL: -40095.642 / Time: 0h:13m:9s (0h:0m:45s left)
+Iteration 150 / LogL: -40099.582 / Time: 0h:13m:15s (0h:0m:37s left)
+Log-likelihood cutoff on original alignment: -40236.069
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 159: -40090.261
+Iteration 160 / LogL: -40093.509 / Time: 0h:13m:23s (0h:1m:13s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 166: -40090.117
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 167: -40088.785
+Iteration 170 / LogL: -40090.820 / Time: 0h:13m:29s (0h:1m:11s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 171: -40087.403
+Iteration 180 / LogL: -40096.595 / Time: 0h:13m:36s (0h:1m:6s left)
+Iteration 190 / LogL: -40114.588 / Time: 0h:13m:41s (0h:0m:58s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 194: -40087.354
+Iteration 200 / LogL: -40109.210 / Time: 0h:13m:47s (0h:1m:7s left)
+Log-likelihood cutoff on original alignment: -40218.045
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.992
+Iteration 210 / LogL: -40091.106 / Time: 0h:13m:53s (0h:1m:4s left)
+Iteration 220 / LogL: -40095.258 / Time: 0h:13m:59s (0h:0m:56s left)
+Iteration 230 / LogL: -40088.913 / Time: 0h:14m:4s (0h:0m:49s left)
+Iteration 240 / LogL: -40108.434 / Time: 0h:14m:10s (0h:0m:41s left)
+Iteration 250 / LogL: -40096.779 / Time: 0h:14m:16s (0h:0m:34s left)
+Log-likelihood cutoff on original alignment: -40218.045
+Iteration 260 / LogL: -40097.682 / Time: 0h:14m:22s (0h:0m:27s left)
+Iteration 270 / LogL: -40087.401 / Time: 0h:14m:29s (0h:0m:20s left)
+Iteration 280 / LogL: -40105.248 / Time: 0h:14m:34s (0h:0m:13s left)
+Iteration 290 / LogL: -40098.999 / Time: 0h:14m:40s (0h:0m:6s left)
+TREE SEARCH COMPLETED AFTER 295 ITERATIONS / Time: 0h:14m:43s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -40087.354
+Optimal log-likelihood: -40087.349
+Rate parameters:  A-C: 0.75478  A-G: 3.33435  A-T: 1.30370  C-G: 0.36874  C-T: 3.33435  G-T: 1.00000
+Base frequencies:  A: 0.206  C: 0.296  G: 0.298  T: 0.200
+Proportion of invariable sites: 0.192
+Site proportion and rates:  (0.588,0.322) (0.127,2.355) (0.094,5.464)
+Parameters optimization took 1 rounds (0.208 sec)
+BEST SCORE FOUND : -40087.349
+Creating bootstrap support values...
+Split supports printed to NEXUS file filtered.min4.phy.splits.nex
+Total tree length: 2.019
+
+Total number of iterations: 295
+CPU time used for tree search: 1639.206 sec (0h:27m:19s)
+Wall-clock time used for tree search: 196.757 sec (0h:3m:16s)
+Total CPU time used: 4721.715 sec (1h:18m:41s)
+Total wall-clock time used: 884.017 sec (0h:14m:44s)
+
+Computing bootstrap consensus tree...
+Reading input file filtered.min4.phy.splits.nex...
+103 taxa and 789 splits.
+Consensus tree written to filtered.min4.phy.contree
+Reading input trees file filtered.min4.phy.contree
+Log-likelihood of consensus tree: -40101.841
+
+Analysis results written to: 
+  IQ-TREE report:                filtered.min4.phy.iqtree
+  Maximum-likelihood tree:       filtered.min4.phy.treefile
+  Likelihood distances:          filtered.min4.phy.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          filtered.min4.phy.splits.nex
+  Consensus tree:                filtered.min4.phy.contree
+  Screen log file:               filtered.min4.phy.log
+
+Date and Time: Fri May  9 12:07:19 2025

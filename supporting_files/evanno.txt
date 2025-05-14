@@ -1,0 +1,31 @@
+# This document produced by structureHarvester.py v0.7 July 2022 core vB.1 July 2022
+# http://www.structureharvester.com/
+# https://github.com/dentearl/structureHarvester/
+# http://taylor0.biology.ucla.edu/structureHarvester
+# http://users.soe.ucsc.edu/~dearl/software/structureHarvester
+# Written by Dent Earl, dearl (a) soe ucsc edu.
+# CITATION:
+# Earl, Dent A. and vonHoldt, Bridgett M. (2012)
+# STRUCTURE HARVESTER: a website and program for visualizing
+# STRUCTURE output and implementing the Evanno method.
+# Conservation Genetics Resources 4(2) 359-361. DOI: 10.1007/s12686-011-9548-7
+# Stand-alone version: v0.7 July 2022
+# Core version: vB.1 July 2022
+# File generated at 2025-May-14 16:28:22 CEST
+#
+
+##########
+# K	Reps	Mean LnP(K)	Stdev LnP(K)	Ln'(K)	|Ln''(K)|	Delta K
+3	5	-239882.6800	98.3171	NA	NA	NA
+4	5	-232841.5600	1697.5658	7041.120000	524.680000	0.309078
+5	5	-225275.7600	3264.2576	7565.800000	1401.840000	0.429451
+6	5	-216308.1200	3180.2531	8967.640000	1841.580000	0.579067
+7	5	-209182.0600	2662.5468	7126.060000	3816.400000	1.433364
+8	5	-205872.4000	5939.3048	3309.660000	3429.060000	0.577350
+9	5	-199133.6800	1835.4386	6738.720000	4231.280000	2.305324
+10	5	-196626.2400	3057.6660	2507.440000	187.500000	0.061321
+11	5	-194306.3000	2619.8031	2319.940000	20472.980000	7.814702
+12	5	-212459.3400	35974.0025	-18153.040000	41094.420000	1.142337
+13	5	-189517.9600	4443.9146	22941.380000	25678.200000	5.778284
+14	5	-192254.7800	5682.7025	-2736.820000	388318.820000	68.333477
+15	5	-583310.4200	516119.7080	-391055.640000	NA	NA

@@ -1,6 +1,7 @@
 Plot	Width	Height	position_of_R_code
 CV_vs_K.png	800	398	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/probabilities_K/Analisi_fastStructure_ADmixture.R
-admixture_K7.jpeg	3000	900	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/probabilities_K/Analisi_fastStructure_ADmixture.R
+admixture_Kx.jpeg	3000	900	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/probabilities_K/Analisi_fastStructure_ADmixture.R
+faststructure_Kx.jpeg	3000	900	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/24-04/probabilities_K/Analisi_fastStructure_ADmixture.R
 fastqmcf_fastp_comparison.png	1910	2084	NA
 map_phys_pol.png	1238	334	C:/Users/flavi/Desktop/Tirocinio/03 - Marzo/04-03/mappa.R
 map_pol.png	678	326	C:/Users/flavi/Desktop/Tirocinio/03 - Marzo/04-03/mappa.R
@@ -21,3 +22,4 @@ missing_data_boxplot_filtered.png	656	468	C:/Users/flavi/Desktop/Tirocinio/04 - 
 fst_heatmap.png	700	450	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/23-04/filtrati_da_tot/codice.R
 missing_data.png	650	450	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/22-04/min_mac_2/Analisi_PCA_metodo_Chiara.R
 missing_data_boxplot.png	656	468	C:/Users/flavi/Desktop/Tirocinio/04 - Aprile/22-04/min_mac_2/Analisi_PCA_metodo_Chiara.R
+plot_evanno.png	664	664	C:/Users/flavi/Desktop/Tirocinio/05 - Maggio/14-05/evanno_plots.R
