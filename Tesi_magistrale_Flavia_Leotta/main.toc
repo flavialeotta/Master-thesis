@@ -1,0 +1,73 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Population Genetics}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Molecular biology techniques}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Challenges with non-model plants}{3}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Sequencing techniques and costs}{3}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Reduced representation techniques}{3}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Objective of the study}{4}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Main project: \textit {Campanula thyrsoides} subspecies \textit {carniolica} conservation}{4}{subsection.1.3.1}%
+\contentsline {subsubsection}{Dolomiti Bellunesi Park}{4}{subsubsection*.3}%
+\contentsline {subsubsection}{\textit {Campanula thyrsoides} subspecies}{4}{subsubsection*.4}%
+\contentsline {subsection}{\numberline {1.3.2}Secondary project 1: Urban and natural populations of \textit {Anacamptis pyramidalis} and \textit {Anacamptis berica}, Orchidaceae}{4}{subsection.1.3.2}%
+\contentsline {subsubsection}{\textit {Anacamptis pyramidalis}}{5}{subsubsection*.5}%
+\contentsline {subsubsection}{\textit {Anacamptis berica}}{5}{subsubsection*.6}%
+\contentsline {subsection}{\numberline {1.3.3}Secondary project 2: Reconstruction of \textit {Solanum tuberosum} cultivars' farming history}{5}{subsection.1.3.3}%
+\contentsline {subsubsection}{Andean \textit {Solanum} species}{5}{subsubsection*.7}%
+\contentsline {chapter}{\numberline {2}Materials and Methods}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}\textit {Campanula thyrsoides}}{6}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Sampling and conservation}{7}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Wet lab protocol}{9}{subsection.2.1.2}%
+\contentsline {subsubsection}{DNA extraction}{9}{subsubsection*.11}%
+\contentsline {subsubsection}{Digestion}{10}{subsubsection*.13}%
+\contentsline {subsubsection}{Ligation}{11}{subsubsection*.15}%
+\contentsline {subsubsection}{Pooling and amplification}{12}{subsubsection*.17}%
+\contentsline {subsection}{\numberline {2.1.3}DNA sequencing}{12}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}The bioinformatics pipeline}{12}{subsection.2.1.4}%
+\contentsline {subsection}{\numberline {2.1.5}Pre-processing}{12}{subsection.2.1.5}%
+\contentsline {subsubsection}{Demultiplexing and quality checks}{13}{subsubsection*.19}%
+\contentsline {subsubsection}{Trimming using fastq-mcf and fastp}{14}{subsubsection*.20}%
+\contentsline {subsection}{\numberline {2.1.6}Variant calling}{14}{subsection.2.1.6}%
+\contentsline {subsubsection}{Stacks: denovo\_map.pl pipeline}{15}{subsubsection*.21}%
+\contentsline {subsubsection}{Monte Carlo and Taboo Search for hyperparameters' tuning}{16}{subsubsection*.23}%
+\contentsline {subsubsection}{Filtering of SNPs}{18}{subsubsection*.24}%
+\contentsline {subsection}{\numberline {2.1.7}Population genetics analyses}{20}{subsection.2.1.7}%
+\contentsline {subsubsection}{Metrics}{21}{subsubsection*.26}%
+\contentsline {subsubsection}{Isolation by Distance (IBD)}{23}{subsubsection*.27}%
+\contentsline {subsubsection}{Phylogenetic tree}{25}{subsubsection*.29}%
+\contentsline {subsubsection}{STRUCTURE}{27}{subsubsection*.30}%
+\contentsline {section}{\numberline {2.2}\textit {Anacamptis} spp.}{27}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Wet lab protocol}{27}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Dry lab analyses}{27}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}\textit {Solanum tuberosum} cultivars}{28}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Wet lab protocol}{28}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Dry lab analyses}{28}{subsection.2.3.2}%
+\contentsline {subsubsection}{Choice of species of the \textit {Solanum} family}{28}{subsubsection*.31}%
+\contentsline {chapter}{\numberline {3}Results}{29}{chapter.3}%
+\contentsline {section}{\numberline {3.1}\textit {Campanula thyrsoides}}{29}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Pipeline refinement}{29}{subsection.3.1.1}%
+\contentsline {subsubsection}{Quality checks}{29}{subsubsection*.32}%
+\contentsline {subsubsection}{Improvement of trimming by using fastp}{30}{subsubsection*.33}%
+\contentsline {subsection}{\numberline {3.1.2}Variant calling}{30}{subsection.3.1.2}%
+\contentsline {subsubsection}{Stacks: denovo\_map.pl hyper-parameters tuning, results}{30}{subsubsection*.34}%
+\contentsline {subsection}{\numberline {3.1.3}Populations genetics results}{30}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}\textit {Anacamptis} spp.}{30}{section.3.2}%
+\contentsline {section}{\numberline {3.3}\textit {Solanum tuberosum} cultivars}{30}{section.3.3}%
+\contentsline {chapter}{\numberline {4}Discussion}{31}{chapter.4}%
+\contentsline {section}{\numberline {4.1}General observations}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}\textit {Campanula thyrsoides}}{31}{section.4.2}%
+\contentsline {section}{\numberline {4.3}\textit {Anacamptis} spp.}{31}{section.4.3}%
+\contentsline {section}{\numberline {4.4}{\textit {Solanum tuberosum} cultivars}}{31}{section.4.4}%
+\contentsline {chapter}{\numberline {5}Conclusion and future perspectives}{33}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Bibliography}{34}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Additional material}{39}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Protocols}{39}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}SILEX: CTAB-Silica extraction protocol}{39}{subsection.7.1.1}%
+\contentsline {subsection}{\numberline {7.1.2}DNA digestion}{40}{subsection.7.1.2}%
+\contentsline {subsection}{\numberline {7.1.3}Adapters preparation}{41}{subsection.7.1.3}%
+\contentsline {subsection}{\numberline {7.1.4}Adapters ligation}{43}{subsection.7.1.4}%
+\contentsline {subsection}{\numberline {7.1.5}Pooling and amplification}{43}{subsection.7.1.5}%
+\contentsline {section}{\numberline {7.2}Pipelines}{44}{section.7.2}%
+\contentsline {subsubsection}{Additional file: Barcodes}{44}{subsubsection*.36}%
+\contentsline {subsubsection}{Additional step: Renaming}{44}{subsubsection*.38}%
+\contentsline {section}{\numberline {7.3}Software and libraries versions}{45}{section.7.3}%
+\contentsline {chapter}{\numberline {8}Acknowledgment}{47}{chapter.8}%

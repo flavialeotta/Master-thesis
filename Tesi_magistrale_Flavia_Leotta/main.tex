@@ -1,0 +1,968 @@
+% QUANDO SCRIVI LA TESI RICORDA DI CAMBIARE IL COMPILATORE DELLA BIBLIOGRAFIA IN BIBER (PERCHE' IL PROGETTO DI INTERDISCIPLINARY PROJECT USA BIBTEX). SE TI DIMENTICHI COME CAMBIARLO E' IN OPZIONI > CONFIGURA TEX STUDIO >  COMPILA >  STRUMENTO PREDEFINITO PER LA BIBLIOGRAFIA O QUALCOSA DEL GENERE
+
+\documentclass[a4paper, 12pt]{report}
+\usepackage{template}
+\usepackage{fancyvrb}
+\usepackage{hyperref}
+\usepackage{eso-pic}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{transparent} % per trasparenza
+\DefineVerbatimEnvironment{MyVerbatim}{Verbatim}{baselinestretch=0.8}
+\usepackage[backend=biber,style=numeric,sorting=none, url=false,maxnames=5,minnames=1]{biblatex}
+\addbibresource{Tesi.bib}
+\defbibheading{bibliography}{}
+
+\begin{document}
+\sloppy
+\mytitlepage{BIOINFORMATICS FOR COMPUTATIONAL GENOMICS}{Genotyping By Sequencing as a cost-effective alternative for genomic analyses of non-model plants: the case of  \textit{Campanula thyrsoides} subspecies, and others.}{Chiara Paleni, PhD}{Professor Carla Lambertini}{Flavia Leotta}{45866A}{2024/2025} 
+
+% \clearpage
+\newcommand\BackgroundPic{%
+	\put(-0.13\paperwidth,-0.19\paperheight){%
+		\parbox[b][\paperheight]{\paperwidth}{%
+			\vfill
+			\centering
+			\transparent{0.30} % livello di trasparenza da 0 (invisibile) a 1 (opaco)
+			\includegraphics[width=1.3\paperwidth,height=1.3\paperheight,keepaspectratio]{Campanula_thyrsoides_botanic_illustration_bw.png}%
+			\vfill
+}}}
+
+\AddToShipoutPicture*{\BackgroundPic}
+\ClearShipoutPicture
+
+\phantom{}
+\pagestyle{empty}
+\clearpage
+
+
+% Abstract
+\pagenumbering{roman} % Roman page numbering
+\chapter*{Abstract}
+This thesis aim is to show the results of a populations genetics study on endemic alpine flower \textit{Campanula thyrsoides} subspecies \textit{carniolica}, carried over 153 individuals spanning 9 populations of interest and 2 outgroup populations (subspecies \textit{thyrsoides}). For this goal GBS sequencing was used and the SNPs were called using \texttt{Stacks}: \texttt{denovo\_map.pl} pipeline, which provided a matrix of 3896 polymorphic, non rare ($MAF > 0.005$) SNPs. The results showed a good genetic flow between populations with no inbreeding (all $F_{IS} < 0$) while retaining good separation between all populations (pairwise $F_{ST} > 0.10$, $p-value < 0.01$), with the exception of 3 populations of the same geographical area (Veneto and Friuli-Venezia-Giulia in Italy, with pairwise $F_{ST} \leq 0.10$, $p-value < 0.01$). PCA and Maximum-Likelihood tree also showed that it was possible to further distinguish samples in Italian, Slovenian and Austrian groups, highlighting a longitude gradient in their genetic information. Furthermore, a population collected in the Italian region of Lombardia, historically habitat of only the subspecies \textit{thyrsoides}, actually clustered with subspecies \textit{carniolica}, showing an increase in this subspecies' habitat.
+
+% Table of Contents
+\clearpage
+\chapter*{Table of contents}
+\tableofcontents
+\clearpage
+
+% Reapply the page style to ensure consistency
+\pagestyle{fancy}
+\pagenumbering{arabic} % Switch to Arabic numerals for the main content
+
+% Introduction
+\chapter{Introduction}
+\section{Population Genetics}
+Many rare plant species are declining due to biotic and abiotic stress, which action may lead to extinction and loss of biodiversity. To avoid these negative scenarios, strategies include both in situ preservation and ex situ conservation: the first term refers to the conservation of genetic resources in a natural habitat \cite{vijayanGermplasmConservationMulberry2011}, while ex-situ conservation is carried on in research institutes, botanical gardens or, in general, away from the original habitat of the species. Seed banking (drying at c.15\% relative humidity and then storing at 20°C) is the most used, efficient and effective ex situ method  \cite{penceDefiningExceptionalSpecies2022}, but it isn't feasible for a lot of species (i.e. for species which seeds have a very slow rate of germination). To bypass this limitation, living horticulturally maintained collections can be used, but they are especially sensitive to genetic
+erosion, artificial selection and infestation by pathogens \cite{volisQuasiSituBridge2010}. In situ conservation is the best way to conserve the entire genetic diversity of a plant species, thanks to random matings and recombinations which are prone to select advantageous mutations. It offers healthy competition among members of the population and ensures a dynamic habitat which favors evolution \cite{vijayanGermplasmConservationMulberry2011}, with no artificial selection. The importance of in situ preservation is stated by IUCN itself, which stresses the need for a proper maintenance in of diversity in the wild \cite{whitlockConsequencesInsituStrategies2016}. In situ preservation is sometimes impractical due to climate, invasive species and habitat degradation \cite{hobanOptimalSamplingSeeds2014}, but these problems can be overcame thanks to proper management resources: problem is that, differently from ex-situ \cite{iucn/sscGuidelinesUseEx2014}, IUCN didn't provide specific guidance, especially for wild species with low potential utility value (e.g. species not related to crop plants) \cite{whitlockConsequencesInsituStrategies2016}. Nevertheless, this kind of conservation requires areas protected from human activity, research and monitoring activities which are the focus of many National Parks in the world. This study aims to support National Park of Dolomiti Bellunesi (Veneto, Italy) in its goal of preserving a subspecies of an alpine flower, \textit{Campanula thyrsoides} subspecies \textit{carniolica}. Studies of \textit{Campanula thyrsoides} identify the species' distribution on the entirety of the Alps (Italy), the adjacent Jura Mountains (France and Switzerland) and the Dinaric Arc (Balkan peninsula) \cite{aegisdottirIsolatedPopulationsRare2009} \cite{scheepensDifferentiationMorphologyFlowering2011}, but the literature lacks information on the subspecies \textit{carniolica}, whose identifiable habitat is limited to the regions of Veneto and Friuli Venezia Giulia in Italy \cite{fabiocontiAnnotatedChecklistItalian2005}. An endangered species is usually represented by small and isolated populations that have already undergone strong effects of genetic drift and/or inbreeding \cite{volisQuasiSituBridge2010}: \textit{Campanula thyrsoides} is currently not part of the Italian IUCN red list of endangered species \cite{grazianorossiListaRossaFlora2020} since hystorically speaking its populations had been rare but locally abundant \cite{aegisdottirIsolatedPopulationsRare2009}. The subspecies \textit{carniolica} is, instead, present with a "Least Concern" label, but we would argue that not only literature information about it is very limited, but also its small ($<20$ individuals per locality, by personal observations) and isolated populations by which it is mostly composed of, should raise red flags. The necessity of maintaining a high population genetic diversity can be a strong burden for species with small and isolated populations \cite{habelBurdenGeneticDiversity2012}: very rare plant species should rightfully have priority in conservation plans, but \textit{Campanula thyrsoides}, may be more vulnerable to population loss due to local inbreeding caused by lack of connectivity between populations. The goal of the study presented by this article is to assess the status of the small \textit{Campanula thyrsoides} subspecies {carniolica} population of Serva mountain, located in the are of the National Park of Dolomiti Bellunesi. We used SNPs-based genomics tools to catch genetic differentiation between samples and employed them also for the reconstruction of past biogeographical processes. 
+
+\section{Molecular biology techniques}
+\subsection{Challenges with non-model plants}
+\subsection{Sequencing techniques and costs}
+While previous studies on the same species employed microsatellities \cite{aegisdottirIsolatedPopulationsRare2009}, we instead opted for the use of SNP arrays, which cover a much larger portion of the genome compared to microsatellites. 
+\subsection{Reduced representation techniques}
+To tackle the economic difficulty of a whole-genome approach, we employed RAD-seq (Restriction-Site Associated DNA Sequencing), a protocol for genotyping and discovery of single-nucleotide polymorphisms (SNPs) which is commonly used for studies in ecological, evolutionary and conservation genomics of non-model organisms \cite{andrewsHarnessingPowerRADseq2016}. It's very useful for genotyping when a reference genome is not available like in the case of \textit{Campanula thyrsoides}, and allowed us to focus on a, genetically speaking, very informative portion of the genome. Sequencing only that portion (which may vary from a cut every 4,096 bp to every 65,536 bp, depending on the restriction enzyme used \cite{andrewsHarnessingPowerRADseq2016}) limits the cost of a whole genome approach, while maintaining high resolution. In our study we employed PE GBS (Paired end Genotype by Sequencing) which differs from the other protocols of RAD-seq because (a) it uses a single enzyme and (b) performs indirect size selection (usually keeping 200–300 bp long ones): we also decided to use paired-end sequencing because it improves genotyping accuracy towards the end of the GBS fragments  \cite{andrewsHarnessingPowerRADseq2016}.
+
+\section{Objective of the study}
+Find a proper pipeline that can work with GBS data of non-model plants.
+
+\subsection{Main project: \textit{Campanula thyrsoides} subspecies \textit{carniolica} conservation}
+This project was funded by Parco Nazionale delle Dolomiti Bellunesi and carried out in collaboration with Università degli Studi di Pavia. The objective was to monitor the state of a population of \textit{Campanula thyrsoides} subspecies \textit{carniolica} present in the national park, at Serva Mountain location. We questioned wether this population, consisting of very few individuals and isolated from the closest ones (like, for example, the population at Alpago lake), risked extinction because of isolation and inbreeding.
+\subsubsection{Dolomiti Bellunesi Park}
+\subsubsection{\textit{Campanula thyrsoides} subspecies}
+Talk about what is self-incompatibility and the different types (ex: Gametophytic).
+
+\subsection{Secondary project 1: Urban and natural populations of \textit{Anacamptis pyramidalis} and \textit{Anacamptis berica}, Orchidaceae}
+This analysis is part of a more detailed project carried on by PhD candidate Lisa Scramoncin of the University of Ferrara, financed by PNRR. The objective is, again, a population genetics study, this time involving urban and natural samples of \textit{Anacamptis pytamidalis} and its putative subspecies \textit{Anacamptis berica}, of the family Orchidaceae.
+\subsubsection{\textit{Anacamptis pyramidalis}}
+\subsubsection{\textit{Anacamptis berica}}
+
+\subsection{Secondary project 2: Reconstruction of \textit{Solanum tuberosum} cultivars' farming history} 
+This analysis is part of a larger project carried on by University of Pavia (???) in collaboration with museum (???). More information about the techniques used can be found in Giulia Ballarotti bachelor thesis in Natural Sciences. This project isn't focused on populations; instead, its aim is to determine if unknown - or hypothesized - cultivars of \textit{Solanum tuberosum} were closer to commercial species or the more antique, andean, ones.
+\subsubsection{Andean \textit{Solanum} species}
+
+
+\clearpage
+\chapter{Materials and Methods} \label{Materials and Methods}
+\section{\textit{Campanula thyrsoides}}
+\textit{Campanula thyrsoides} is a monocarpic, diploid ($2n = 34$ \cite{aegisdottirIsolatedPopulationsRare2009}), yellow-flowering bell flower occurring in the European Alps \cite{scheepensDifferentiationMorphologyFlowering2011} found on carbonate-bearing soils \cite{aegisdottirIsolatedPopulationsRare2009}. This species is long-lived with a mean flowering age of 10 years (minimum of 3 to a maximum of 16 years) \cite{freiHighGeneticDifferentiation2012}. It divides in two subspecies: \textit{thyrsoides} (the most common \cite{kussSpatialGeneticStructure2011} and strongly adapted \cite{scheepensDifferentiationMorphologyFlowering2011}) and \textit{carniolica} (closer to ancestral species) which are both morphologically (Fig. \ref{fig:fiori}) and geographically distinct \cite{scheepensDifferentiationMorphologyFlowering2011}. The two subspecies differ mainly with respect to inflorescence height and spike density \cite{kussSpatialGeneticStructure2011} but they also show a different time and mode of flowering: subspecies \textit{thyrsoides} flowers from top to bottom in July and August while \textit{carniolica} from bottom to top, in the first half of August, so they partly overlap \cite{scheepensDifferentiationMorphologyFlowering2011}. The mismatch between the two subspecies was observed both in a common environment as well as in the field \cite{scheepensDifferentiationMorphologyFlowering2011}. It is probably caused by the different altitude at which they can be found: subspecies \textit{thyrsoides} is predominantly oresent between 1,600 to 2,200 m a.s.l., while \textit{carniolica} occurs at submontane to montane elevations (400–1,800 m a.s.l.) \cite{scheepensDifferentiationMorphologyFlowering2011}: this, combined with reproductive isolation \cite{coyneSpeciation2004}, is a key driver of speciation. Its pollinators are predominantly bumblebees and other Hymenoptera, and the seeds are dispersed by wind \cite{aegisdottirIsolatedPopulationsRare2009}. Suitable habitats in the Alps are shrinking as a consequence of abandonment or overgrazing \cite{freiHighGeneticDifferentiation2012} which can potentially threat \textit{C. thyrsoides}. In Germany, the subspecies \textit{tyrsoides} is protected at the national, in Austria and Switzerland at regional level \cite{kussSpatialGeneticStructure2011}: no information about conservation of subspecies \textit{carniolica} is available.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{due_specie.png}
+	\caption[Morphological difference between \textit{carniolica} and \textit{thyrsoides}.]{Morphological difference between subspecies \textit{carniolica} and \textit{thyrsoides}. Drawing by Atelier Guido K\"{o}hler, Basel \cite{scheepensDifferentiationMorphologyFlowering2011}.}
+	\label{fig:fiori}
+\end{figure}
+
+While no prior research has been conducted on the genome size of this species, other European diploid species of  \textit{Campanula} with the same number of chromosomes (\textit{C. garganica, C. latifolia, C. medium, C. portenschlagiana, C. poscharskyana} and \textit{C. pyramidalis}) are reported to have a mean nuclear weight of $3.05 pg$ \cite{zonneveldDNAWeightsNucleus2019}. DNA weight can be converted to the number of base pairs, where $1 pg = 978 Mbp$ \cite{dolezelLetterEditor2003} so we could assume \textit{Campanula thyrsoides} having genome size of roughly $2984.5 Mb = 2.98 Gb$.
+
+\subsection{Sampling and conservation}\label{sec:SamplesPreparation}
+Leaves from 153 fully grown individuals (?????) of \textit{Campanula thyrsoides} subsp.  \textit{carniolica} were collected from 9 locations spanning the North of Italy, South of Austria and West of Slovenia, while the outgrup formed by individuals of \textit{Campanula thyrsoides} subspecies \textit{thyrsoides} were sampled from 2 populations in Italy and France (Figure \ref{fig:map}). 
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{cartina_finita.png}
+  \caption{\justifying{\footnotesize \textit{\textbf{Map of sampled populations.} \footnotesize{On the left, the political borders of Italy, France, Slovenia and Austria are displayed. On the right, the physical map at the same coordinates.}}}}
+  \label{fig:map}
+\end{figure}
+In table \ref{tab:tab1} are reported more information about the location, coordinates and number of samples gathered for each population. A minimum of 15 different individuals sampled per population was attempted, but some (i.e. CAN and MAU) weren't big enough. The leaves were stored in bags full of silica to dry, and stored at room temperature (i.e. between 20°C and 25°C) until DNA extraction was performed.
+\begin{table}[h!]
+    \centering
+    \caption{\textit{Populations' sampling information.}}
+    \label{tab:tab1}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{>{\centering\arraybackslash}p{1.5cm} |
+                    >{\centering\arraybackslash}p{3cm} |
+                    >{\centering\arraybackslash}p{3.5cm} |
+                    >{\centering\arraybackslash}p{3cm} |
+                    >{\centering\arraybackslash}p{2cm} |
+                    >{\centering\arraybackslash}p{2.5cm} |
+                    >{\centering\arraybackslash}p{2cm} |
+                    >{\centering\arraybackslash}p{1.5cm} |
+                    >{\centering\arraybackslash}p{1cm}}
+
+        \toprule
+        \textbf{Pop} & \textbf{Locality} & \textbf{Taxon} & \textbf{Region} & \textbf{State} & \textbf{Coordinates} & \textbf{Altitude} & \textbf{Date} & \textbf{N} \\
+        \midrule
+        CAN & Cancano-Valdidendro Lake & \textit{C. thyrsoides} subsp. thyrsoides & Lombardia & Italy & N 46.5444991 E 10.2547278 & 1960 m & 30/08/22 & 13 \\
+        CTT & Col du Télégraph & \textit{C. thyrsoides} subsp. thyrsoides & Auvergne-Rhône-Alpes & France & N 45.0879 E 6.4327 & 2044 m & 30/07/24 & 3 \\
+        ALP & Alpago & \textit{C. thyrsoides} subsp. carniolica & Veneto & Italy & N 46.192300 E 12.4156899 & 1140 m & 28/08/22 & 15\\
+        MAU & Mauria pass & \textit{C. thyrsoides} subsp. carniolica & Veneto & Italy & N 46.4035951 E 12.6109512 & 860 m & 28/08/22 & 11 \\
+        PPURA & Pura pass & \textit{C. thyrsoides} subsp. carniolica & Friuli-Venezia Giulia & Italy & N 46.422130 E 12.752440 & 1320 m & 02/08/22 & 15 \\
+        SNEV & Sella Nevea-Chiusaforte & \textit{C. thyrsoides} subsp. carniolica & Friuli-Venezia Giulia & Italy & N 46.3909564 E 13.469300 & 1115 m & 02/08/22 & 15\\  RT & Gračnica-Rimske Toplice & \textit{C. thyrsoides} subsp. carniolica & Savinja Statistical Region & Slovenia & N 46.1111551 E 15.225581 & 245 m & 01/08/22 & 16\\ 
+        LPASS & Loiblpass & \textit{C. thyrsoides} subsp. carniolica & Carinzia & Austria & N 46.483864 E 14.261965 & 705 m & 02/08/22 & 16\\
+        SP & Serva mountain & \textit{C. thyrsoides} subsp. carniolica & Veneto & Italy & N 46.191773 E 12.243491 & 1590 m & 03/08/22 & 19\\
+        STE & Stenica-Vitanje & \textit{C. thyrsoides} subsp. carniolica & Slovenske Konjice & Slovenia & N 46.366841 E 15.281769 & 420 m & 01/08/22 & 15\\
+        PDR & Pian dei Resinelli & \textit{C. thyrsoides} subsp. carniolica & Lombardia & Italy & N 45.906065 E 9.394220 & 1290 m & 28/07/22 & 15\\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption*{\footnotesize{\textit{Information about populations' sampling, carried out in 2022.}}}
+\end{table}
+\subsection{Wet lab protocol}
+\subsubsection{DNA extraction}
+DNA extraction was performed in ((chiedere dove e quando sonpo state fatte le estrazioni)). A total of 150 samples' DNA across 10 populations was extracted following the SILEX: CTAB-Silica protocol illustrated in \autoref{chap:additionalmaterial}. After the extraction, the presence of DNA in each sample is checked by performing several runs on agarose gel 0.8\%: the percentage chosen reflects our expectation of working, at least on this step, with the samples' whole genome. The general rule states that the shorter the DNA fragments are, the higher the percentage of agarose concentration should be preferred, so, to avoid the samples not running properly, we opted for a low density gel. The electrophoresis set up was 90V for 45 minutes.
+
+A strong evidence of the presence of DNA, signaled by a clear band high enough to signal long fragments, was found in 106 samples out of 150. An example of the criteria for exclusion can be seen in Figure \ref{fig:gel}, which shows an example of 4 samples (in red, RT12, RT13, SP4AI15, SP4B16) that didn't show a strong band on the gel and thus were excluded from the subsequent steps and analysis. We also excluded those samples whose band, at this stage, was too smeared, indicating fragmented DNA. 
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{gel.png}
+  \caption{\justifying{\footnotesize \textit{\textbf{Electrophoresis gel of 18 samples.} \footnotesize{In green, the samples that show a strong band indicating DNA presence, while in red those samples that don't show DNA presence. In black, the ladder used as reference.}}}}
+  \label{fig:gel}
+\end{figure}
+
+\subsubsection{Digestion}
+After the assessment of the presence of DNA, the samples went through digestion which ensures that the DNA is fragmented in pieces of various length, but homogeneous in their distribution. We used a methilation-sensistive endonuclease, ApeK1, that doesn't cut the sites where cytosine is methilated or full of repetitive series of nucleotides, which is usually where DNA is silenced. By ensuring that those fragments aren't part of the sequences included in the study, we focused on highly indicative DNA sequences, while reducing cost. This is not the only advantage of the use of ApeK1: it also cuts DNA in precise restriction sites, leaving so called 'sticky ends' at the extremes of the fragments (Figure \ref{fig:apeK1}). The reads will contain a CWG sequence (where W is either an A or a T), which is useful when building proper adapters for the next steps.
+
+\begin{figure}[h!]
+  \centering
+  \includegraphics[width=1\textwidth]{ApeK1 restriction site.png}
+  \caption{\justifying{\footnotesize \textit{\textbf{ApeK1 restriction site and action (Leotta, F. (2025) BioRender).} \footnotesize{a) ApeK1 restriction site G/CWGC. b) Creation of sticky ends on DNA fragments. c) Several fragments over dsDNA. Created in  https://BioRender.com}}}}
+  \label{fig:apeK1}
+\end{figure}
+
+To digest the same amount of DNA (50 ng) for each sample, the samples were diluted with $ddH_2O$ accordingly to their concentration, until desired volume ($44 \mu L$), to which $2 \mu L$ of ApeK1 and $4 \mu L$ of NEB r3.1 10x buffer are added. More information about the protocols used for digestion and adapters preparation can be found in \autoref{chap:additionalmaterial}.
+
+\textit{Campanula thyrsoides}, though, proved to be hard to digest, and the samples as tested on the agarose gels (between 1 and 1.5\%, run at 85V for 60 minutes) didn't show an homogeneous smear typical of a complete digestion: we decided to experiment with the incubation time. The traditional protocol, already used to digest tomatoes (\textit{Solanum lycopersicum}) in the same laboratory, called for a 2 hours incubation time with reagents at 75°C. After using this protocol on a subset (ALP1 to ALP11) , we tried three different possible solutions:
+\vspace{-1.2em}
+\begin{enumerate}
+\setlength\itemsep{-0.3em}
+    \item first we simply increased the incubation time to 4 hours;
+    \item the second time we used a 4 hours incubation time, added an additional $2 \mu L$ of ApeK1 and $4 \mu L$ of r3.1 10x buffer and left the samples incubate 8 hours overnight;
+    \item the third, and last time, we left the sample to incubate for a total of 12 hours (original 4 hours, plus 8 overnight) at 75°C without adding additional reagents.
+\end{enumerate}
+We noticed that the homogeneity of the smear on agarose gel improved slightly when leaving the gel incubate overnight, but didn't show any remarkable difference with the use of additional reagents.
+
+\subsubsection{Ligation}\label{ligation}
+During ligation, the reads are ligated with adapters that can either be indexed or not, depending on the sequencing method employed. We used indexed adapters, necessary for Illumina TruSeq combinatorial-dual DNA sequencing: in Figure \ref{fig:library} the barcodes (4 to 8 bp long) present only on the forward read are highlighted in blue, the indexes in sky blue and the Truseq adapters are shown in red/orange. Both the barcoded and common adapters are present in the same solution (called stock solution) produced during adapters preparation. More information about the solution and the ligation protocol can be found on Additional Materials, \autoref{chap:additionalmaterial}.
+
+In some protocols the fragments are size-selected, but it is not the case of GBS. Then P7 and P5 adapters are ligated (respectively on the 3' and 5' ends) and the fragments are amplified using PCR to produce the sequencing library (summary in Fig. \ref{fig:library}).
+
+After this step, several samples didn't pass a minimum DNA concentration threshold of $20 \ ng/\mu l$: the whole population of Cancano (CAN) and 34 other individuals had to be discarded. Only 106 samples were sent to GENEWIZ from Azenta Life Sciences (Leipzig, Germany) for sequencing in January 2025: standard Illumina TruSeq combinatorial-dual DNA sequencing was used and sequences' data was received in the same month in \texttt{.fastq} format.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=1\linewidth]{library.png}
+	\caption[Library preparation steps.]{In blue the barcode (labeled as "BC") which univocally identifies each sample: the barcode is only ligated to the forward read and the complete list can be found in Table \ref{tab:barcodes}. In red and orange Truseq adapters (sequencing primers), and in light blue the i5 and i7 Illumina library indexes. In purple and green the P5 and P7 adapters, that facilitate clonal amplification and sequencing reactions. Lastly, in yellow, the restriction sites where ApeK1 cuts the insert, here labeled as "ins".}
+	\label{fig:library}
+\end{figure}
+
+\subsubsection{Pooling and amplification}
+
+\subsection{DNA sequencing}
+
+\subsection{The bioinformatics pipeline}
+
+All the projects mentioned in this thesis followed the same pipeline (Figure \ref{fig:pipeline}), which was built on the objective of the main project, namely the reconstruction of \textit{Campanula thyrsoides} subspecies \textit{carniolica} populations' structure. The secondary projects differ from it by just the choice of starting and/or ending step, as well as some of the parameters used. These discrepancies are thoroughly explained in each project's section.
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.93\textwidth]{pipeline.png}
+	\caption{\justifying{\footnotesize \textit{\textbf{Bioinformatics analysis' pipeline.} \footnotesize{Full pipeline followed in all the projects,  except for a few adjustments in parameters chosen. The function used at each step is shown undereneath it, as well as the software or R library it belongs to, if the name differs.}}}}
+	\label{fig:pipeline}
+\end{figure}
+
+\subsection{Pre-processing}
+Individuals from ALP1 to ALP11 were sequenced in a different batch than the other samples. Considering the time that passed before receiving the second batch of data, samples ALP1 to ALP11 were used as a subset to test some of the tools employed in the pipeline, and underwent pre-processing separately from the second batch (ALP12 onward). 
+
+\subsubsection{Demultiplexing and quality checks}
+Demultiplexing, namely the process of separating the DNA sequences depending on the samples they come from, is based on the barcode attached to it during the ligation step (\autoref{ligation}).  For this step, a custom script was written (\texttt{01\_demultiplex.sh}) which runs the command \texttt{process\_radtags} from software Stacks (version: ) and collects all the unpaired sequences in one folder. It takes as input a compressed file in \texttt{fastq} format which contains all the sequences, the name of the restriction enzyme used (ApeK1) and finally a text file containing sample and barcode couples. This step not only separates the sequences but also removes the barcode from the forward read; the full list of samples accompanied by their barcodes (table \ref{tab:barcodes}) can be found in the Additional Materials chapter. 
+
+\subsubsection{Trimming using fastq-mcf and fastp}
+After separating them, all the sequences were cleaned, a loose term which encompasses several operations:
+\begin{itemize}\setlength\itemsep{-0.7em}
+	\vspace{-1.5em}
+	\item Eliminate the Illumina adapters contamination;
+	\item Trim low quality scores sequences sections. Quality is denoted by Phred-score (q), calculated as \cite{ewingBaseCallingAutomatedSequencer1998}:
+	\vspace{-0.2cm}
+	\begin{equation}
+		q = -10 \cdot log_{10}(p) 
+	\end{equation}
+	where p is the estimated error probability for that base-call. Phred quality scores that are less
+	than 30 are considered unreliable \cite{oraweAccountingUncertaintyDNA2015};
+	\item Trim poly-G tails. These artifacts of repeated, high-confidence Guanine bases appear on two-channel sequencing systems when the signal is too weak to be detected, and is erroneously recognized as a G in the base calling stage;
+	\item Finally, after trimming, discard the sequences that are shorter than 50 base-pairs.
+\end{itemize}
+\vspace{-1.5em}
+Two different softwares were tested on the ALP1-ALP11 subset to determine the most efficient tool; \texttt{fastq-mcf} and \texttt{fastp}. The performance was evaluated in terms of computational time, quality of cleaning and number of reads retained on average. Ultimately, the latter was chosen as the cleaning tool for the second batch of samples too and used in a custom script (\texttt{02\_trim\_fastp.sh}), which automatizes the process by iterating the command through all the samples. \texttt{fastp} also requires a \texttt{fasta} file which contains the Illumina adapters sequences to remove from within the reads: the list included also sequences of adapters containing the barcodes used during the demultiplexing step, as it was noticed that some reverse reads still contained them.
+
+\subsection{Variant calling}\label{variant-calling}
+Variant calling, which aims to identify single-nucleotide polymorphisms (SNPs) in the sample's DNA, is usually performed thanks to the aid of a reference genome. To account for the fact that \textit{Campanula thyrsoides} lacks a reference genome for its nuclear DNA, the pipeline \texttt{denovo\_map.pl} from Stacks was employed: such tool is able to identify loci \textit{de novo} and calls genotypes using a maximum likelihood statistical model \cite{catchenStacksBuildingGenotyping2011}.
+
+\subsubsection{Stacks: denovo\_map.pl pipeline}
+\texttt{denovo\_map.pl} is a modular pipeline that runs six different components of Stacks: in order, it calls \texttt{ustacks}, \texttt{cstacks}, \texttt{sstacks}, \texttt{tsv2bam}, \texttt{gstacks} and lastly \texttt{population} (Figure \ref{fig:pipeline_denovo}). The pipeline takes as input a dataset of demultiplexed and cleaned reads, a population map and the following parameters:
+\begin{description}\setlength\itemsep{-0.7em}
+	\vspace{-0.5cm}
+	\item [m: ] in \texttt{ustacks}, the minimum number of reads to create a stack (default 3, figure \ref{fig:pipeline_denovo}, A to B);
+	\item [M: ] in \texttt{ustacks}, the maximum distance, in nucleotides, allowed between stacks (default 2, figure \ref{fig:pipeline_denovo}, C to D);
+	\item [n: ] in \texttt{cstacks}, the number of mismatches allowed between stacks of different individuals to be merged into one (default is set equal to \textbf{M}, figure \ref{fig:pipeline_denovo}, F).
+\end{description}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\textwidth]{denovo_pipeline.png}
+	\caption{\justifying{\footnotesize \textit{\textbf{Stacks: \texttt{denovo\_map.pl} pipeline.} \footnotesize{Full view of the Stacks: \texttt{denovo\_map.pl} pipeline from Catchen \textit{et al.} (2011) \cite{catchenStacksBuildingGenotyping2011}. It starts with (A) \texttt{ustacks}, which, for each individual, forms 'stacks' of minimum $m$ reads that match exactly, (B) breaks down each stack into k-mers and stores them in a dictionary (C). Then matches secondary reads (D) based on a certain number $M$ of mismatches to increases stack depth. Each locus at each nucleotide position is checked for polymorphisms and a consensus sequence is called (E). (F) \texttt{cstacks} then loads stacks from the parents of a genetic cross into a Catalog to create a set of all possible loci, merging those that have at maximum $n$ mismatches between each other. (G) \texttt{sstacks} matches map cross progeny against the Catalog to determine the haplotypes at each locus in every individual in the cross. \texttt{populations}, at the end, computes genetic populations metrics based on the SNPs called and a population map provided.}}}}
+	\label{fig:pipeline_denovo}
+\end{figure}
+
+The population map is a text file that associates each sample to its population of origin: it is used solely to optimize the number of polymorphic loci found in a certain percentage of the individuals of each population. This allows for a more significant analysis, focusing on those loci were a SNP can better describe the belonging to a certain population.
+
+\subsubsection{Monte Carlo and Taboo Search for hyperparameters' tuning}
+To optimize the parameters for \texttt{denovo\_map.pl}, a variation of the r80 method \cite{parisLostParameterSpace2017} was employed. In this method, the parameters are varied and simply selected depending on which ones maximize the number of polymorphic loci in at least 80\% of the individuals of the study, hence the name. The percentage could be changed depending on how strict the user of the pipeline wants to be (increase in percentage equals a stricter selection), but Paris \textit{et al.} (2017) found that 80\% was the optimal percentage for a good trade-off between quality and quantity of loci found.
+
+The change we introduced was that the performance of the parameters was evaluated not only on the number of polymorphic loci found but also on a minimum of mean coverage obtained over all the samples, and on the number of unique, independent SNPs (counting only one SNP for each locus). 
+
+To perform the search of the optimal parameters, performed on the ALP1-ALP11 subset, we first defined a search space for the parameters we wanted to test. The ranges of tested parameters were set, after an initial quick assessment of the proposed ones in Paris \textit{et al.} (2017), as 3 to 5 for m and 0 to 4 for both M and n.
+
+Two custom scripts were prepared: \texttt{gen\_random\_pop.sh} which randomly generates a set of parameters from the ranges defined in the search space, checks if it was already explored (not present in a \texttt{log\_combinations.txt} file), calls the Stacks: \texttt{denovo\_map.pl} pipeline and then executes the second custom script \texttt{add\_to\_log.sh}. This last script extracts some information from the log file of the pipeline: mean coverage and its standard deviation across samples, the number of total loci, the number of SNPs per locus and adds a FAIL flag to determine if that combination fails some minimum requirements. Each locus is not filtered out by the pipeline only if it's present in at least 80\% of the samples ($r = 0.80$ filter in \texttt{Stacks:} \texttt{populations}), minimizing missing data. Important is to note that for this parameters search, the $r = 0.80$ flag was used as to apply the filter to the whole dataset, although in \texttt{Stacks:} \texttt{populations} it usually skims SNPs based on their proportion in each population. In our case, our subset ALP1-ALP11 is part of the same population, so the two filters overlay, but when conducing this tuning on a bigger dataset, we recommend using a temporary population map which places all samples in the same population, even if they're actually from different ones. 
+
+This parameters search can be seen as an hybrid of Monte Carlo and Taboo searches: the Monte Carlo character of it is the randomly generated combination of parameters, and it is also a Taboo search because it avoids already explored ones.
+
+After $n$ combinations are explored, each combination $i$ is evaluated with a custom-prepared objective function, that assigns the following score ($s$):
+\vspace{-0.15em}
+\begin{equation}
+	s_i = 
+	\frac{
+		\dfrac{\text{tot SNPs}_i}{\text{tot unique loci}_i}
+	}{
+		\displaystyle \max_{n} \left( \dfrac{\text{tot SNPs}_n}{\text{tot unique loci}_n} \right)
+	}
+	+
+	\frac{
+		CV_i
+	}{
+		\displaystyle \max_{n} \left( CV_n \right)
+	}
+	+
+	FAIL_i
+	-
+	\frac{
+		\text{tot unique loci}_i
+	}{
+		\displaystyle \max_{n} \left( \text{tot unique loci}_i \right)
+	}
+\end{equation}
+\vspace{-0.15em}
+\noindent \textbf{Where:}
+\begin{equation}
+	FAIL_i = f(x) =
+	\begin{cases}
+		5, & \text{if } \text{unique loci}_i < 2400 \text{ or } \mu_{\text{coverage}_i} < 10 \\
+		0, & \text{otherwise}
+	\end{cases}
+\end{equation}
+\vspace{-0.15em}
+The best set of parameters has the minimum score $s$ out of all the explored ones. This equation ensures:
+\vspace{-0.1em}
+\begin{itemize}\setlength\itemsep{-0.7em}
+	\item a \textbf{penalty} for each locus that contains more than one SNP (first term), which would mean that they're in linkage. This quantity is normalized over all the explored combinations to not skew the scores;
+	\item a \textbf{penalty} for average coverages with a big standard deviation across samples (second term), normalized over all the explored combinations as well. To ensure that an higher average coverage wouldn't be penalized by a predictably big, in absolute values, standard deviation, we didn't penalize the standard deviation itself, but instead the coefficient of variation ($CV$). $CV$ for a combination $i$ is computed as:
+	\vspace{-0.15em}
+	\begin{equation}
+		CV_i = \frac{\sigma_{\text{coverage}_i}}{\mu_{\text{coverage}_i}}
+	\end{equation}
+	\item a \textbf{penalty} which also meant an instant \textbf{fail} thanks to the sum of 5 points to the score, to those combinations which didn't reach a minimum of average 10x coverage and/or didn't find at least 2400 loci. This third term of the equation ensures that no values lower than these are accepted, because they wouldn't be enough for a strong statistical analysis, since SNPs are filtered on the next steps and are only bound to decrease. These values can be changed on a case-by-case basis: the average coverage could be set higher for a stricter selection (we wouldn't recommend a lower value) while the minimum number of loci found should be raised with the number of samples provided;
+	\item finally, a \textbf{reward} to those that found a lot of loci (fourth term), normalized over all the combinations.
+\end{itemize}
+\vspace{-0.8em}
+This edit in the r80 method ensures a stricter evaluation of parameters aimed at the optimization of different outputs of the pipeline: this aids the statistical strength of the next analyses, while retaining an overall simplicity in its application. 
+
+\subsubsection{Filtering of SNPs}
+
+After performing hyperparameters' tuning on the ALP1-ALP11 subset, we used \texttt{denovo\_map.pl} with parameters $m = 4$, $M = 1$ and $n = 1$ on the whole dataset. The output of this step was a standard \texttt{.vcf} file containing called SNPs and their positions, except for the fact that, since they were called on a catalog of stacks and not on a reference genome, the "chromosome" section showed sequentially increasing numbers according to the numerical ID of the stack. The file was later filtered using \texttt{vcftools} with the following parameters:
+\vspace{-0.2em}
+\begin{itemize}\setlength\itemsep{-0.7em}
+	\item \textbf{max-missing 0.9}: While the r80 filter in the \texttt{Stacks:} \texttt{denovo\_map.pl} ensures that SNPs are retained if present in at least 80\% of  each populations, \texttt{vcftools} instead filters out those with more than 10\% of missing data through the whole dataset. This ensures we retain only real polymorphic loci;
+	\item \textbf{min-meanDP 5}: Includes only sites with average depth values (over all the dataset) greater than 5, based on the "DP" tag in the \texttt{.vcf} file;
+	\item \textbf{thin 1000}: retains only one SNP every 1000 base pairs, to ensure independence of SNPs, assumption on which we operate. The more genetic markers in a study, the more of them are required to be independent in order to determine if and individual is part or not of a certain pool of DNA \cite{visscherLimitsIndividualIdentification2009}. SNPs that assort independently are said to be unlinked, and have a recombination frequency of 50\%, and the higher the frequency of recombination between two markers, the further away they are situated on a chromosome \cite{semagnPrinciplesRequirementsProspects}. There are two formulas that can be used to find the map distance $d$ in cM between two loci, depending on their recombination rate $R$: Haldane's (\ref{haldane}) and Kosambi's (\ref{kosambi}) \cite{huehnRandomVariabilityMap2010}.
+	\vspace{-0.2em}
+	\begin{equation}\label{haldane}
+		d_H = 
+		\begin{cases}
+			-0.50 \cdot \ln \left( 1-2R \right), & \text{for } R < 0.50\\
+			\infty, & \text{for } R = 0.50
+		\end{cases}
+	\end{equation}
+	\begin{equation}\label{kosambi}
+		d_K = 
+		\begin{cases}
+			0.25 \cdot \ln \left( \frac{1 + 2R}{1 - 2R} \right), & \text{for } R < 0.50\\
+			\infty, & \text{for } R = 0.50
+		\end{cases}
+	\end{equation}
+	
+	In theory, these formulas could be used to assess a minimum distance between SNPs to have no linkage or a partial one. When two loci are located on the same chromosome they can never be truly unlinked, since these functions possess a vertical asymptote at $R = 0.5$ (Figure \ref{fig:haldane-kosambi}).
+	 Only two loci located on different chromosomes are truly independent since they cannot physically recombine: their recombination rate is arbitrarily set to 50\% and their distance cannot be computed. We could consider independent those loci with a suppressed recombination rate ($R_i < average(R)$) \cite{semagnPrinciplesRequirementsProspects}, but in order to compute that, a genome-wide genetic mapping of \textit{Campanula thyrsoides} would be needed. Since there's no reference genome available for this species, we couldn't compute the average recombination rate, nor we could assess the SNPs location on a chromosome: our only information is about the locus position on a certain stack. By requesting a minimum distance of 1000 bp between SNPs, we could filter out SNPs on the same stack: they're built using reads with a median length of 100 bp, so a distance of 1000 bp is enough to ensure picking one SNP per stack.
+	 
+	 \begin{figure}[h!]
+	 	\centering
+	 	\includegraphics[width=0.7\textwidth]{haldane_kosambi.png}
+	 	\caption{\justifying{\footnotesize \textit{\textbf{Comparison of Haldane’s and Kosambi’s mapping functions.} \footnotesize{The red line shows a linear relationship between map distance (in cM) and recombination rate ($R$), while the black and the blue one show how the map distance grows exponentially with the recombination rate following, respectively, Haldane's (\ref{haldane}) and Kosambi's (\ref{kosambi}) functions. Haldane's assumes there no interference, namely the effect of a crossover in one region on the likelihood of a crossover in another one \cite{huehnRandomVariabilityMap2010}. There's no direct linear relationship between units of genetic distances in centimorgan (cM) and physical distances in kilobase pairs (kb), and depends solely on the organism in the study \cite{semagnPrinciplesRequirementsProspects}.}}}}
+	 	\label{fig:haldane-kosambi}
+	 \end{figure}
+	\item \textbf{maf 0.005}: Include only sites with a Minor Allele Frequency greater than 0.005. It is defined as the number of times an allele appears over all individuals at that site, divided by the total number of non-missing alleles. The minimum $maf$ we use as threshold is computed as:
+	\begin{equation}
+		maf_{threshold} = \frac{1}{\text{number of alleles} \cdot \text{number of samples}} = \frac{1}{2 \cdot 103}
+	\end{equation}
+	This metric helps to distinguish between common and uncommon SNPs in a population: the loci with low MAF have limited heterozygosity and are thus less informative. MAFs lower than 0.5\% usually refers to SNPs that describe rare variants behind, for example, uncommon diseases \cite{kanakaConceptsMeasuresDiversity2023} in a specific individual. Our study objective is population-wide analysis, so SNPs that refer only to a variant in a single, or a small group of individuals can be discarded. Furthermore, most novel (initially rare) alleles arising through mutation are deleterious and could have negative impacts: this means that they should not be targets for conservation \cite{whitlockConsequencesInsituStrategies2016}.
+\end{itemize}
+
+
+\subsection{Population genetics analyses}
+After obtaining the genotype at each locus where a SNP is found, this information can be used for a series of analyses: metrics for a quantitative analysis of the genetical structure of the populations and different clustering methods to individuate their belonging to bigger groups or a subdivision in smaller subpopulations. We're going to talk about each method to perform these analyses in detail, reserving the results and discussion to the appropriate chapters.
+
+\subsubsection{Metrics}
+To determine the genetical structure of the populations in a quantitative way, the most common used metrics are those defined by Wright \cite{wrightGeneticalStructurePopulations1949} as different fixation indexes. Assuming that the total putative original population is called $T$, each subpopulation deriving from its subdivision is referred as $S$ and is formed by individuals $I$, we can define:
+\vspace{0.15em}
+\begin{description}
+	\item[\textbf{$F_{IS}$}] - The inbreeding index that is most used in literature, called, by Wright (1949), 'current inbreeding coefficient'. It can be computed as:
+	\vspace{-0.15em}
+	\begin{equation}
+		F_{IS} = 1 - \dfrac{H_{ob}}{H_{exp}} = 1 - P_{IS}
+	\end{equation}
+	where $H_{exp}$ is the expected heterozigosity within the same subpopulation assumed generated by random mating, $H_{ob}$ is the observed heterozigosity and $P_{IS}$ is the panmictic index associated to $F_{IS}$. This is the only index that can be estimated from frequency of data of a single population \cite{b.s.weirEstimatingFStatisticsAnalysis1984} and ranges from -1 to 1, were -1 describes a population of individuals different from each other and 1 is associated to a population composed by fixed lines;
+	\item[\textbf{$F_{IT}$}] - This index is defined as the version of $F_{IS}$ which is computed for individuals relative to the total, and it's what Wright defines as, simply,  'inbreeding coefficient'. A clearer definition of this is given by Weir and Cockerman in 1984 \cite{b.s.weirEstimatingFStatisticsAnalysis1984}, as the correlation of genes within individuals of the full population. Differently from $F_{IS}$, $F_{IT}$ depends on the population's ($T$) size and history so it needs the information given by all the individuals ($I$) in the dataset \cite{b.s.weirEstimatingFStatisticsAnalysis1984}. It is unaffected, though, by the number of alleles sampled, the number of individuals within subpopulations ($S$) and the number of subpopulations themselves. Similarly to $F_{IS}$, $F_{IT}$ ranges from -1 to 1 and its interpretation reflects the same as the former. It can also be associated with a panmictic index $P_{IT} = 1 - F_{IT}$ \cite{wrightGeneticalStructurePopulations1949};
+	\item[\textbf{$F_{ST}$}] - Defined by Wright (1949) as the "correlation of randomly drawn gametes from the same population, relative to the total population", it is calculated as:
+	\vspace{-0.15em}
+	\begin{equation}\label{wright}
+		F_{ST}^W = \dfrac{F_{IT}-F_{IS}}{1-F_{IS}} = \dfrac{P_{IT}}{P_{IS}}
+	\end{equation}
+	$F_{ST}$ is strictly positive, with values ranging from 0 to 1, where 0 quantifies a little difference between subpopulations and 1 a strong difference between them. However, Wright did not specify what is the total population, so different authors interpreted it in different manners. While for Nei (1973) it is the combination of the two population samples, for Cockerman (1969) and Weir and Hill \cite{weirEstimatingFStatistics2002}, the total population is the most recent common ancestral population to the two subpopulations being considered. In synthesis, the former viewed $F_{ST}$ as a statistic from observed samples, which varies according to the number of sub populations observed \cite{b.s.weirEstimatingFStatisticsAnalysis1984}, while the others as a parameter of the evolutionary process \cite{bhatiaEstimatingInterpretingFST2013}. For this reason Weir and Cockerman (1984) define $F_{ST}$ also as "coancestry", and compute it as: 
+	\begin{equation}\label{WC}
+		F_{ST}^{WC} = 1- 
+		\dfrac{
+			2 
+			\cdot
+			\dfrac{n_1n_2}{n_1+n_2} 
+			\cdot
+			\dfrac{1}{n_1+n_2-2}
+			\cdot
+			[n_1p_1(1-p_1)+n_2p_2(1-p_2)]
+		}
+		{
+		\dfrac{n_1n_2}{n_1+n_2}(p_1-p_2)^2
+		+
+		\left ( 2 \cdot 
+		\frac{n_1n_2}{n_1+n_2}-1
+		\right )
+		\dfrac{1}{n_1+n_2-2}
+		[n_1p_1(1-p_1)+n_2p_2(1-p_2)]
+		}
+	\end{equation} where $n_i$ is the population $i$ sample size and $p_i$ is its allele frequency. If the sample sizes are unequal, the estimate will depend upon the ratio of sample sizes: this makes $F_{ST}^{WC}$ not comparable across studies with different sample sizes. It is possible to correct this estimate considering the ratio of sample sizes, but another, more direct method, was proposed in 2002 by Weir and Hill \cite{weirEstimatingFStatistics2002} which introduced population-specific estimates of $F_{ST}$ that is not influenced by the aforementioned limitation. Assuming $p_i^s$ allele frequency of the derived allele in population $i$ at SNP $s$ and $p_{anc}^s$ the allele frequency of the derived allele in the ancestral population at that SNP position, Weir and Hill define the following relationship between them:
+	\begin{equation}
+		\mathtt{E}[p_i^s | p_{anc}^s] = p_{anc}^s
+	\end{equation} 
+	for those SNPs that were already present in the ancestral population, and are not derived from a recent mutation. The variance present in the studied sample of the population $i$ is then used to calculate the population-specific $F_{ST}^i$ for a specific SNP $s$ as:
+	\begin{equation}\label{WH}
+		F_{ST}^{WH, i} =  \dfrac{Var(p_i^s | p_{anc}^s)}{p_{anc}^s(1-p_{anc}^s)}
+	\end{equation}
+	Estimates of $F_{ST}$ across multiple SNPs can be combined, but this can be done in two different ways: either first averaging the two components of equation \ref{WH} and then calculating the ratio ("ratio of averages" \cite{bhatiaEstimatingInterpretingFST2013}), or averaging genome-wide the single SNP estimates ("average of ratios"). Different softwares use distinct approaches, although the first method will converge to the correct underlying value as the number of independent SNPs increases, so it is the most recommended \cite{bhatiaEstimatingInterpretingFST2013}.
+	For a pair of population, the quantity is simply an average of the two population-specific $F_{ST}$ values:
+	\begin{equation}
+		F_{ST}^{WH} = \dfrac{F_{ST}^1+F_{ST}^2}{2}
+	\end{equation}
+\end{description}
+\vspace{-0.15em}
+We reported here different equations because we analyzed this quantity pairwise over all the populations using different softwares: $F_{ST}$ estimates can vary substantially based on the choice of estimator, but different results can be used to better describe the populations history and relationship between them. The softwares that were used to analyze the data were:
+\begin{itemize}\setlength\itemsep{-0.7em}
+	\vspace{-1.5em}
+	\item \texttt{Stacks:} \texttt{populations} which computes SNPs' $F_{ST}^{WC}$ (\ref{WC}), corrects it for a Fisher exact test p-value and computes an "average of ratios"; 
+	\item \texttt{vcftools} which calculates both a normal and weighted $F_{ST}^{WC}$   \footnote{A weighted $F_{ST}^{WC}$ is akin to $F_{ST}^{WH}$.};
+	\item R package \texttt{BEDASSLE} that measures $F_{ST}^{WH}$  (\ref{WH});
+	\item R package \texttt{hierfstat} which computes SNPs' $F_{ST}^{WC}$ , not weighted, and then performs an average of ratios exactly as \texttt{Stacks:} \texttt{populations}. Differently from \texttt{populations}, \texttt{hierfstat} doesn't correct the values with a statistical test, but supports bootstrapping even in the absence of a reference genome, so it is able to compute confidence intervals;
+	\item R package \texttt{StAMPP} which can perform bootstrapping as well and which outputs comprehend a weighted $F_{ST}^{WC}$, its confidence intervals and the p-value associated to these values.
+\end{itemize}
+
+\subsubsection{Isolation by Distance (IBD)}
+Isolation by distance refers to the phenomenon of restricted gene flow due to geographic distance: the goal to identify the geographical distance that makes two populations genetically distinct. Under IBD, random mating is more likely to occur between nearby sites than those more distantly located \cite{loaizaReviewGeneticDiversity2012}. To test the relationship between genetic and geographical distance, the most common approach is the use of Mantel test, first proposed in 1967 \cite{mantelDetectionDiseaseClustering1967}: it was originally created to test the temporal and spatial separations for $n(n-1)/2$ possible pairs that can be formed from $n$ observed cases of disease, but it can be applied to the pairwise $F_{ST}$ between populations, and their distance in meters. 
+
+The strength of the Mantel test in comparison to the procedures that statisticians had developed until that time, is that its statistical power is improved by applying a reciprocal transform to the pairwise separations ???? COSA INTENDEVO QUA???($\ / distance$)???? and the observed association is tested relative to its permutational variance \cite{mantelDetectionDiseaseClustering1967}, which is the variance obtained by permutation. The test is given by:
+\vspace{-0.15em}
+\begin{equation}\label{mantel}
+	Z_m = \sum^n_{i=1} \sum^n_{j=1} g_{ij} \times d_{ij}
+\end{equation}
+\vspace{-0.15em}
+where $g_{ij}$ and $d_{ij}$ are, respectively, the genetic and geographic distances between populations $i$ and $j$, considering $n$ of them. Then the $Z_{m}$ value is compared with a null distribution, which was originally proposed by Mantel as a standard normal deviate (SND):
+\vspace{-0.15em}
+\begin{equation}
+	SND = \dfrac{Z_m}{var(Z_m)^{1/2}}
+\end{equation}
+\vspace{-0.15em}
+The hypothesis under Mantel's test is simple: if there is a relationship between two matrices, the sum of the products of their elements will be high and randomizing rows and column will destroy this relationship. Values of $Z_m$ can be randomized and the p-value of the test can be computed as the probability of observing a $Z_m$ value higher than the one obtained by formula \ref{mantel} \cite{diniz-filhoMantelTestPopulation2013}.
+
+Mantel's test is usually applied using R package \texttt{vegan}: this package also allows the user to choose the most appropriate correlation metric between Pearson's, Spearman's and Kendall's. When applying the Pearson correlation $r$, the standardized version of Mantel's test ($Z_N$) is actually computed AS \cite{diniz-filhoMantelTestPopulation2013}:
+\vspace{-0.15em}
+\begin{equation}
+	Z_N = \dfrac{\sum^n_{i=1} \sum^n_{j=1} (g_{ij} - \bar{G}) \times (d_{ij} - \bar{D}) 
+	}
+	{var(G)^{1/2} \times var(D)^{1/2}
+	}
+\end{equation}
+where $\bar{G}$ and $\bar{D}$ are the means of the genetic and distance matrices. Similarly to standardizing Mantel's test using Pearson's correlation coefficient, one could employ Spearman's coefficient:
+\vspace{-0.15em}
+\begin{equation}
+	\rho = 1 - \dfrac{6 \sum^n_{i=1}(R_i - S_i)^2}{(n(n^2-1))}
+\end{equation}
+where $R_i$ represents the order of the values of G, while $S_i$ the order of the values of D, from smallest to the largest. A final metric that could be used is Kendall's $\tau$, which examines the relationship between all $n(n-1)/2$ possible comparisons between any pair of rank $(g_i, d_i)$ and $(g_j, d_j)$:
+\begin{equation}
+	\tau = \dfrac{(num_C - num_D)}{n(n-1)/2}
+\end{equation}
+where $num_C$ is the number of concordant pairs (how many larger ranks are below a certain rank) and $num_D$ is the number of discordand pairs (how many smaller ranks are below a certain rank). Each metric is recommended when its assumptions are valid (Table \ref{tab:correlation_metrics}): when the distribution of data is normal, a parametric coefficient like Pearson's is the most used, while Spearman's and Kendall's, being non-parametric, are more robust in many other cases \cite{el-hashashComparisonPearsonSpearman2022}. Before applying any of these methods for IBD testing, we checked for normality, linearity and presence of outliers in our samples' data.
+
+\begin{table}[h!]
+	\centering
+	\caption{\textit{\textbf{Comparison between correlation metrics.}}}
+	\label{tab:correlation_metrics}
+	\resizebox{0.6\textwidth}{!}{
+		\begin{tabular}{>{\itshape}p{5cm}ccc}
+			\toprule
+			\textbf{Assumptions} & \multicolumn{3}{c}{\textbf{Correlation metrics}} \\
+			\cmidrule(lr){2-4}
+			& Pearson & Spearman & Kendal \\
+			\midrule
+			Bivariate normality & Yes & No  & No  \\
+			Linearity           & Yes & Yes & No  \\
+			Monotony           & Yes & Yes & Yes \\
+			Sample size $N > 30$& Yes & No  & No  \\
+			Absence of outliers & Yes & No  & No  \\
+			\bottomrule
+		\end{tabular}
+	}
+\end{table}
+
+
+\subsubsection{Phylogenetic tree}
+A phylogenetic tree, also known as a cladogram or evolutionary tree, is a graphical representation that illustrates the evolutionary and phylogenetic relationships between taxa based on their genetic characteristics \ref{zouCommonMethodsPhylogenetic2024}. It is essentially a way to visualize clustering of the data: different levels of clustering can be selected to represent clades, which encompass a node and all lineages stemming from it. Trees can be unrooted and rooted: the latter have a root node from which the rest of the tree diverges, indicating an evolutionary direction.
+
+We used two different methods when inferring a phylogenetic tree for the \textit{Campanula thyrsoides} samples in the study, and the same methodology was applied to the other projects:
+\vspace{-0.15em}
+\begin{description}\setlength\itemsep{-0.7em}
+	\item [Neighbor joining, a distance-based method]: for this tree we used R package \texttt{poppr} \cite{kamvarPopprGeneticAnalysis2013}. The function implemented by this package automates the process of bootstrapping genetic data to create a dendrogram: bootstrapping is any test or metric that uses random sampling with replacement and falls under the broader class of resampling methods \cite{ojhaChapter5Computational2022a}. It first builds a distance matrix between pairs of samples $j$ and $z$ based on the fraction of dissimilar SNPs: this is comparable to the computation of Hamming distance ($D_H(j,z)$) where SNPs information is treated as a string where the presence of a different SNP at locus $i$ increments the dissimilarity value by 1. The Hamming distance is thus calculated as:
+	\begin{equation}
+		D_H(j, z) = \sum^n_{i=1} 1(j_i \neq z_i)
+	\end{equation} 
+	Missing data is set it to the average allele frequency in the dataset. At each iteration, the matrix is updated by merging the two nodes with the smallest distance and a new node connecting these two clusters is created \cite{zouCommonMethodsPhylogenetic2024}. Iterations are repeated until only one cluster remains, so this method produces only one tree;
+	\item [Maximum likelihood, a character-based method]: for this method we used software \texttt{iqtree}, which generates a large number of hypothetical trees using as input a multiple sequence alignment (MSA) of the samples, and reconstructs the tree that is best explained by the data. To respect the requirement of MSA input, we converted the data from the \texttt{.vcf} file in a \texttt{.phylip} file, prior to running this command.
+	
+	A suitable evolutionary model (or sequence evolution model, SE \cite{kalyaanamoorthyModelFinderFastModel2017}) is selected based on the sequence data being studied: it includes both a substitution model and a RHAS (rate heterogenerity across site) model, which might assume that either all sites evolved at the same rate or that it follows a probability distribution. The software we use (\texttt{iqtree}) accepts a flag (\texttt{-MFP}) which runs ModelFinder \cite{kalyaanamoorthyModelFinderFastModel2017} and implements a greedy strategy that searches tree space for every model of SE considered and selects the one with the lowest error metric: we decided to use BIC value (Bayesian Information Criterior) as it successfully penalizes evolutionary models with big amount of parameters that don't substantially improve performance. Lastly, we made sure to run ModelFinder including an ascertainment bias correction (+ASC) model which should be applied if the alignment does not contain constant sites (such as SNPs data) \cite{lewisLikelihoodApproachEstimating2001}: without it, the branch lengths could've been overestimated \cite{wongIQTREE3Phylogenomic2025}. This method not only produces numerous trees, but based on them it can build a network of evolutionary relationships based on all the samples: for the sake of simplicity of visualization and comparison, a consensus tree is usually chosen as the final output of such method, which represents the most common features or relationships among a set of trees.
+\end{description}
+
+\subsubsection{STRUCTURE}
+Talk about Admixture, Evanno and Puechmaille methods.
+
+\section{\textit{Anacamptis} spp.}
+\subsection{Wet lab protocol}
+\subsection{Dry lab analyses}
+The data for \textit{Anacamptis pyramidalis} and \textit{Anacamptis berica} was provided by University of Vienna already filtered and cleaned, so the same pipeline was applied starting from the variant calling step (\autoref{variant-calling}). The difference was that a Monte Carlo search for the best hyper-parameters wasn't needed, as the chosen parameters were previously assessed by PhD candidate Scamorcin, and selected as $m = 3, \ M = 4, \ n = 4$. All of the subsequent analyses were carried in the same way.
+
+\section{\textit{Solanum tuberosum} cultivars}
+A populations' studies was neither the objective of this project, nor possible, since only one repetition per cultivar/species was provided. The only subsequent analysis that was performed was the drawing of an unrooted phylogenetic tree.
+
+\subsection{Wet lab protocol}
+Talk about quality control and that the cultivar samples were prepared using ApeK1, while the antique species' ones were provided already cleaned since they come from public datasets.
+
+\subsection{Dry lab analyses}
+Differently from the previous two projects, a reference genome is available, so the variant calling step (\autoref{variant-calling}) required a different approach.
+\subsubsection{Choice of species of the \textit{Solanum} family}
+
+
+
+\clearpage
+\chapter{Results}
+
+\section{\textit{Campanula thyrsoides}}
+\subsection{Pipeline refinement}
+\subsubsection{Quality checks}
+Unfortunately, the whole CAN population consisting in the majority of the outgroup of \textit{Campanula thyrsoides} subsp. \textit{thyrsoides} had to be excluded at the Samples preparation step, \autoref{sec:SamplesPreparation} (\autoref{Materials and Methods}). Nevertheless, the individuals from population CTT still could be used as the outgroup to which confront the individuals of the subspecies carniolica. From the original 153, only 106 individuals across 10 populations were used to build the library and thus were sequenced, with a mean of 10.6 individuals per population (excluding CAN).
+\subsubsection{Improvement of trimming by using fastp}
+\subsection{Variant calling}
+\subsubsection{Stacks: denovo\_map.pl hyper-parameters tuning, results}
+\subsection{Populations genetics results}
+Bootstrap values in a phylogenetic tree indicate that out of 100, how many times the same branch is observed when repeating the generation of a phylogenetic tree on a resampled set of data. \cite{ojhaChapter5Computational2022a}
+\section{\textit{Anacamptis} spp.}
+
+\section{\textit{Solanum tuberosum} cultivars}
+
+\clearpage
+\chapter{Discussion}
+\section{General observations}
+\vspace{-1.5em}
+A common pipeline could be defined, but it still needs the user's intervention.
+
+\section{\textit{Campanula thyrsoides}}
+\vspace{-1.5em}
+Populations are distinct but posses gene flow
+Don't forget talking about Gametophytic self-incompatibility, as said on Ægisdóttir \textit{et al.}, 2009 \cite{aegisdottirIsolatedPopulationsRare2009}.
+Also don't forget to say that in Lombardy no carniolica was ever seen but the results from PDR show that it is now there, and it's not a thyrsoides like it was previously thought.
+
+\section{\textit{Anacamptis} spp.}
+\vspace{-1.5em}
+Separation of species, not of populations
+Cannot differentiate between natural and urban, while instead species are very divided: this shows that the pipeline is robust in also underline similarities and don't force subdivisions if they aren't supported.
+
+\section{{\textit{Solanum tuberosum} cultivars}}
+\vspace{-1.5em}
+Cultivars are more variegated than expected
+This was a very interesting results since it showed some strength of this type of Pipeline. It managed to:
+\begin{itemize}\setlength\itemsep{-0.7em}
+	\vspace{-1.5em}
+	\item Correctly assess (chacoense, chauca e le altre che non ricordo) as the most antique species, which is right since they are from the Andes and are not currently used as a food source, so rarely cross-bred;
+	\item Show that some of the cultivars are very similar to their hypothesized commercial variants, accordingly to the color of their peel and pulp, while two (three?) were indeed closer to antique species;
+	\item Even find an hybrid between some cultivars, probably the result of cross-breeding between them.
+\end{itemize} 
+
+
+
+
+\clearpage
+\chapter{Conclusion and future perspectives}
+Campanula doesn't require an intervention, but the situation should be adequately monitored. A similar analysis should be repeated in a couple of years after the Park's intervention and the breeding between Monte Serva's and Alpago's population.
+
+The GBS approach used shows robustness to different non-model organisms, performing exceptionally well both in the presence or not of a reference genome and with the use of different types of restriction enzymes. These are good news for laboratories looking to contain costs but of course interested in delivering high quality results and studies.
+
+The same steps could be applied with different kingdoms, namely Animal and Fungi. Archea and Bacteria could benefit from this approach but its not strictly necessary, due to the incredibly smaller genome they possess. 
+
+
+\clearpage
+\chapter{Bibliography}
+\printbibliography
+
+\clearpage
+\chapter{Additional material}\label{chap:additionalmaterial}
+Here are listed and reported all the materials named and used for the preparation and analysis of the data: for the sake of being concise, we avoided going in detail in the \ref{Materials and Methods}. Materials and Methods section. All information is reported here and, in the case of pipelines and additional files, is freely downloadable from the Github repository \texttt{flavialeotta /Master-thesis}.
+\vspace{-1em}
+\section{Protocols}
+\vspace{-1em}
+In this section are reported, in detail, the protocols used in the wet lab before receiving the data: they can give some insight on how the samples were prepared and treated, which can influence the quality of data, as previously discussed.
+\vspace{-1em}
+\subsection{SILEX: CTAB-Silica extraction protocol}
+\vspace{-1em}
+SILEX is a highly-throughput DNA extraction protocol, based on the standard CTAB method with a DNA silica matrix recovery. Here we report the steps taken to extract the DNA samples needed to produce the NGS data used in the previous analyses. \cite{vilanovaSILEXFastInexpensive2020}
+\vspace{-1em}
+\begin{enumerate}\setlength\itemsep{-0.7em}
+\item Grind the tissue with Qiagen TissueLyser;
+\item Add 1 mL of CTAB extraction buffer and 14 mL of $\beta$-mercaptoethanol for each sample and vortex, until complete homogenization;
+\item Incubate in a thermoblock at 65°C for 45 minutes;
+\item Let the samples rest on ice for 5 minutes;
+\item Add 700 $\mu$L of the protein precipitation buffer, which is a solution of Chloroform:Isoamyl Alcohol (24:1), and turn the tubes upside down to mix the solution;
+\item Centrifuge at 11000 rpm for 5 minutes;
+\item Transfer 800 $\mu$L of supernatant phase in a new 2 mL tube;
+\item Add 2,5 $\mu$L of RNAse and incubate at 35°C for 20 minutes;
+\item Add 480 $\mu$L of binding buffer (25M NaCl + 20\% PEG 8000) and gently invert the tube by hand to mix the solution;
+\item Add 700 $\mu$L of EtOH 100\% and turn the tubes upside down;
+\item Add 20 $\mu$L of silica matrix buffer\footnote{The Silica matrix buffer must be prepared beforehand following the protocol illustrated by Vilanova \textit{et al.} \cite{vilanovaSILEXFastInexpensive2020}.} and shake for 5 minutes;
+\item Centrifuge for a few seconds and discard the supernatant;
+\item Add 700 $\mu$L of EtOH 70\%;
+\item Suspend silica by turning the tubes upside down and spin again for a few seconds;
+\item Discard the supernatant and turn the tubes upside down on paper for 10 minutes to let ethanol fully evaporate;
+\item Add 100 $\mu$L elution buffer (10 mM Tris HCl pH 8.0 and 1 mM EDTA pH 8.0) and shake gently by hand until the pellet is re-suspended;
+\item Incubate at 65°C for 3-5 minutes;
+\item Centrifuge at 14000 rpm for 10 minutes;
+\item Pipette 70 $\mu$L of supernatant and store it in a 1.5 mL Eppendorf.
+\end{enumerate}
+
+\subsection{DNA digestion}
+DNA digestion protocol was used to digest the same quantity of DNA for each sample. Since the goal was to digest 50 ng of DNA and each sample had a different concentration, we calculated the volume of DNA to digest for each sample \textit{i} as:
+\begin{equation}\label{volDNA} 
+	V_{DNA_i} = \frac{m \ (ng)}{[DNA]_{i} \ (ng / \mu L)}= \frac{50 \ ng}{[DNA]_{i} \ (ng/\mu L)}
+\end{equation}
+by using the concentration of DNA as obtained using Qubit. The samples to digest ($50 \mu L$ each), to be prepared on ice, had to contain:
+\vspace{-1.5em}
+\begin{enumerate}\setlength\itemsep{-0.7em}
+	\item first distilled and de-ionized water ($ddH_2O$) calculated as $44 \mu L - V_{DNA}$ and reported in Table \ref{tab:digestion};
+    \item then $4\mu L$ of NEBuffer\textsuperscript{TM} r3.1 10x; \footnote{1X NEBuffer\textsuperscript{TM} r3.1 contains: 100 mM NaCl, 50 mM Tris-HCl, 10 mM MgCl2, 100 µg/ml Recombinant Albumin (pH 7.9 @ 25°C).}
+    \item extracted DNA as calculated with formula \ref{volDNA} and reported in Table \ref{tab:digestion};
+    \item $2 \mu L$ of ApeK1 $(\frac{5U}{\mu L})$. \footnote{U stands for enzyme unit, and is related to the katal by the following: $1 \ U = 16.67 \ nkat$. \cite{nomenclaturecommitteeoftheinternationalunionofbiochemistrync-iubUnitsEnzymeActivity1979}. We know that the catalytic activity of an enzyme is the increase in the rate of chemical reaction that the enzyme produces. The katal (symbol: kat) is that catalytic activity, that will raise the rate of reaction’ by one mole per second.}
+\end{enumerate}
+\vspace{-1.5em}
+The samples went through four different protocols for digestion (Table \ref{tab:digestion}): the difference between them are minimal. Those that got digested for 4 hours and then incubated in a thermocycler (80°C lid, hold 20°C) for an additional 8 hours with more ApeK1 and buffer, show better smears in digestion but only slightly better bands in amplification.
+
+\begin{table}[h!]
+	\centering
+	\caption{\textit{Digestion information}}
+	\label{tab:digestion}
+	\resizebox{\textwidth}{!}{
+		\begin{tabular}{|>{\centering\arraybackslash}p{2.2cm} |
+				>{\centering\arraybackslash}p{1.5cm} |
+				>{\centering\arraybackslash}p{1.5cm} |
+				>{\centering\arraybackslash}p{1.5cm} ||
+				>{\centering\arraybackslash}p{2.2cm} |
+				>{\centering\arraybackslash}p{1.5cm} |
+				>{\centering\arraybackslash}p{1.5cm} |
+				>{\centering\arraybackslash}p{1.5cm} ||
+				>{\centering\arraybackslash}p{2.2cm} |
+				>{\centering\arraybackslash}p{1.5cm}|
+				>{\centering\arraybackslash}p{1.5cm}|
+				>{\centering\arraybackslash}p{1.5cm}|}
+			\toprule
+			\textbf{Sample ID} &\textbf{$ng/\mu L$ qubit} & \textbf{$\mu L$ sample} &$\mu L$ $H_2O$ &\textbf{Sample ID} & \textbf{$ng/\mu L$ qubit} & \textbf{$\mu L$ sample} & $\mu L$ $H_2O$&\textbf{Sample ID} & \textbf{$ng/\mu L$  qubit} & \textbf{$\mu L$ sample} & $\mu L$ $H_2O$\\
+			\midrule
+			\midrule
+			ALP1 & 22.8 & 21.93 & 22.07 & MAU8* & 30.6 & 16.34 & 27.66 & SP1I1$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			  \\
+			ALP2 & 23.0 & 21.74 & 22.26 & MAU9* & 15.5 & 32.26 & 11.74 & SP2I2$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			  \\
+			ALP3 & 41.4 & 12.08 & 31.92 & MAU10* & 15.5 & 31.85 & 12.15 & SP4I4$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			  \\
+			ALP5 & 56.0 & 8.93 & 35.07 & MAU11* & 107 & 4.67 & 39.33 & SP4AI5$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			\\
+			ALP6 & 21.2 & 23.58 & 20.42 & PDR1* & 37.4 & 13.37 & 30.63 & SP4BI6$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			 \\
+			ALP7 & 36.8 & 13.59 & 30.41 & PDR2* & 54.0 & 9.26 & 34.74 & SP5I7**& 15.4 & 32.47 & 11.53 \\
+			ALP8 & 26.2 & 19.08 & 24.92 & PDR3* & 30.2 & 16.56 & 27.44 & SP6I8**& 24.8 & 20.16 & 23.84 \\
+			ALP9 & 31.6 & 15.82 & 28.18 & PDR4* & 34.2 & 14.62 & 29.38 & SP7I9**& 76.8 & 6.51 & 37.49 \\
+			ALP10 & 44.6 & 11.21 & 32.79 & PDR5* & 60.4 & 8.28 & 35.72 & SP7I10**& 47.8 & 10.46 & 33.54 \\
+			ALP11 & 13.6 & 36.76 & 7.24 & PDR6$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& SP7I11**& 83.0 & 6.02 & 37.98 \\
+			ALP12* & 24.0 & 20.83 & 23.17 & PDR7$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& SP10I12**& 60.6 & 8.25 & 35.75 \\
+			ALP13$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PDR8* & 31.2 & 16.03 & 27.97 & SP11I13**& 49.0 & 10.20 & 33.80 \\
+			ALP14* & 22.8 & 21.93 & 22.07 & PDR9* & 32.2 & 15.53 & 28.47 & SP3I3$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			 \\
+			ALP15* & 22.2 & 22.52 & 21.48 & PDR10* & 36.2 & 13.81 & 30.19 & SP11I14*& 50.4 & 9.92 & 34.08 \\
+			CAN1$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PDR11* & 53.2 & 9.40 & 34.60 & SP12I15**& 74.4 & 6.72 & 37.28 \\
+			CAN3$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&PDR12* & 30.2 & 16.56 & 27.44 & SP13I16**& 73.0 & 6.85 & 37.15 \\
+			CAN4$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PDR13* & 70.4 & 7.10 & 36.90 & SP14I17**& 23.2 & 21.55 & 22.45 \\
+			CAN5$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PDR14* & 35.4 & 14.12 & 29.88 & SP17I18**& 61.1 & 8.18 & 35.82 \\
+			CAN6$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PDR15* & 27.6 & 18.12 & 25.88 & SP17I19*& 57.8 & 8.65 & 35.35 \\
+			CAN7$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PPURA1* & 45.4 & 11.01 & 32.99 & SNEV1**& 191.0 & 2.62 & 41.38 \\
+			CAN9$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PPURA2* & 49.6 & 10.08 & 33.92 & SNEV2*& 45.8 & 10.92 & 33.08 \\
+			CAN10$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PPURA3* & 52.0 & 9.62 & 34.38 & SNEV3*& 25.2 & 19.84 & 24.16 \\
+			CAN11$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PPURA4** & 50.0 & 10.00 & 34.00 & SNEV4$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			  \\
+			CAN12$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PPURA5** & 47.2 & 10.59 & 33.41 & SNEV5**& 72.4 & 6.91 & 37.09 \\
+			CAN13$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PPURA6$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& SNEV6**& 55.8 & 8.96 & 35.04 \\
+			CTT1*& 71.4 & 7.00 & 37.00 & PPURA7** & 31.8 & 15.72 & 28.28 & SNEV7& 92.7 & 5.39 & 38.61 \\
+			CTT2*& 57.4 & 8.71 & 35.29 & PPURA8** & 25.2 & 19.84 & 24.16 & SNEV8& 51.6 & 9.69 & 34.31 \\
+			CTT3*& 49.4 & 10.12 & 33.88 & PPURA9$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&SNEV9**& 28.8 & 17.36 & 26.64 \\
+			LPASS1*& 25.4 & 19.69 & 24.31 & PPURA10** & 36.4 & 13.74 & 30.26 & SNEV10**& 39.0 & 12.82 & 31.18 \\
+			LPASS2*& 50.8 & 9.84 & 34.16 & PPURA11** & 83.8 & 5.97 & 38.03 & SNEV11**& 71.4 & 7.00 & 37.00 \\
+			LPASS3$\dagger$&
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& PPURA12$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& SNEV12$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			  \\
+			LPASS4*& 29.2 & 17.12 & 26.88 & PPURA13** & 24.2 & 20.66 & 23.34 & SNEV13**& 53.2 & 9.40 & 34.60 \\
+			LPASS5*& 192 & 2.60 & 41.40 & PPURA14$\dagger$&
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&SNEV14**& 28.8 & 17.36 & 26.64 \\
+			LPASS6*& 58.4 & 8.56 & 35.44 & PPURA15**& 16.0 & 31.25 & 12.75 & SNEV15$\dagger$&
+			\multicolumn{3}{p{5.5cm}|}{\rule{\linewidth}{\lightrulewidth}} %
+			 \\
+			LPASS7*& 40.0 & 12.50 & 31.50 & RT1$\dagger$&
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& STE1**& 76.8 & 6.51 & 37.49 \\
+			LPASS8*& 29.2 & 17.12 & 26.88 & RT2$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&STE3**& 73.2 & 6.83 & 37.17 \\
+			LPASS9*& 35.2 & 14.20 & 29.80 & RT3** & 18.5 & 27.03 & 16.97 & STE4**& 110.0 & 4.55 & 39.45 \\
+			LPASS10*& 41.8 & 11.96 & 32.04 & RT4$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&STE5*& 80.0 & 6.25 & 37.75 \\
+			LPASS11*& 25.6 & 19.53 & 24.47 & RT5$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&STE6**& 38.4 & 13.02 & 30.98 \\
+			LPASS12*& 32.6 & 15.34 & 28.66 & RT6** & 16.8 & 29.76 & 14.24 & STE7**& 126.0 & 3.97 & 40.03 \\
+			LPASS13*& 23.4 & 21.37 & 22.63 & RT7 $\dagger$&
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& STE8$\star$&  &  &  \\
+			LPASS14*& 30.0 & 16.67 & 27.33 & RT8$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& STE9$\star$& 31.1 & 16.08 & 27.92 \\
+			LPASS15*& 22.4 & 22.32 & 21.68 & RT9**& 74.0 & 6.76 & 37.24 & STE10$\star$& 36.6 & 13.66 & 30.34 \\
+			MAU1*& 34.0 & 14.71 & 29.29 & RT10$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&STE11$\star$& 30.8 & 16.23 & 27.77 \\
+			MAU2$\dagger$&
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& RT11** & 31.4 & 15.92 & 28.08 & STE13$\star$& 25.8 & 19.38 & 24.62 \\\
+			MAU3$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&  RT12$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& STE14$\star$ & 49.4 & 10.12 & 33.88 \\
+			MAU4$\dagger$&
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& RT13$\dagger$ &
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			&STE15**& 51.6 & 9.69 & 34.31 \\
+			MAU5*& 25.0 & 20.00 & 24.00 & RT14** & 44.6 & 11.21 & 32.79 & &  &  &  \\
+			MAU6$\dagger$&
+			\multicolumn{3}{p{5.5cm}||}{\rule{\linewidth}{\lightrulewidth}} %
+			& RT15** & 112.0 & 4.46 & 39.54 & &  &  &  \\
+			MAU7*& 50.8 & 9.84 & 34.16 & RT16** & 50.8 &  9.84  & 34.16 & &  &  &  \\
+			\bottomrule
+		\end{tabular}
+	}
+	\caption*{\footnotesize{\textit{The samples went through different digestion protocols. Legend: () = standard protocol of 2 hours digestion, (*) = overnight digestion (8 hours), (**)  = 4 hours digestion and additionally overnight (8 hours) after adding again the solution of ApeK1 and NEBuffer r3.1 10x, ($\star$) = 4 hours digestion, ($\dagger$) = they were not digested for absence of DNA on gel, so their row is crossed out.}}}
+\end{table}
+
+
+\subsection{Adapters preparation}
+Adapters are divided in top and bottom strands as shown in Figure \ref{fig:library} in the Materials and Methods section: an adapter stock needs to be prepared as follows.
+\vspace{-1.5em}
+\begin{enumerate}\setlength\itemsep{-0.7em}
+	\item Resuspend lyphilized oligos in TE\footnote{Eurofins' TE buffer contains: 10 mM Tris, 1 mM EDTA (pH 8 @ 25°C).} buffer up to $200 \mu M$;
+	\item In a PCR tube mix add $25 \mu L$ of top strand DNA oligo, $25 \mu L$ of bottom strand DNA oligo and $50 \mu L$ of TE;
+	\item Perform annealing reaction in a thermocycler with following program:
+	\vspace{-1.5em}
+	\begin{itemize}\setlength\itemsep{-0.7em}
+		\item 2' at 95°C;
+		\item Ramp from 95°C to 25 °C lowering the temperature by 0.1°C per second;
+		\item 30' at 25°C;
+		\item hold at 20°C.
+	\end{itemize}
+	\item Perform a first dilution. For barcoded adapters (top strand):
+	\vspace{-1em}
+	\begin{itemize}\setlength\itemsep{-0.7em}
+		\item Bring together in a 1.5 mL tube $5.6 \mu L$ of annealed barcoded adapter and $995 \mu L$ of TE nuffer;
+		\item Vortex and spin down.
+	\end{itemize}
+	\vspace{-0.5em}
+	For the common adapters:
+	\vspace{-1em}
+	\begin{itemize}\setlength\itemsep{-0.7em}
+		\item Bring together in a 1.5 mL tube $100 \mu L$ of annealed common adapter and $900 \mu L$ of TE buffer;
+		\item Vortex and spin down.
+	\end{itemize}
+	\item Quantify adapters using Qubit;
+	\item Mix each barcoded adapter ($300 \ ng$) with common adapter ($300 \ ng$) in a $1,5 mL$ tube with $200 \ \mu L$ of TE buffer at $3 \ ng/\mu L$ concentration;
+	\item Dilute the stock with water to obtain a concentration of $0.6 \ ng/ \mu L$ and store at -20 °C.
+\end{enumerate}
+
+\subsection{Adapters ligation}
+After the previous step, we have, for each sample, its digested DNA and working adapter stock containing its own barcode (complete list in Table \ref{tab:barcodes}). The ligation protocol is comprised of the following steps to be followed in ice:
+\vspace{-1.5em}
+\begin{enumerate}\setlength\itemsep{-0.7em}
+	\item Transfer $20 \ \mu L$ of each digested DNA into PCR tubes, along with $6 \ \mu L$ of adapter work solution (different for each sample) and $24 \ \mu L$ of MasterMix solution\footnote{The MasterMix solution for 1 reaction contains: $17 \ \mu L$ of water, $5 \ \mu L$ of T4 DNA Ligase Buffer 10x and $1.6 \ \mu L$ of T4 DNA ligase.} (common for all samples);
+	\item Incubate in thermocycler with the following program:
+	\vspace{-1em}
+	\begin{itemize}\setlength\itemsep{-0.7em}
+		\item 2h at 22°C (non heated lid);
+		\item 30' at 65°C:
+		\item hold at 4°C.
+	\end{itemize}
+\end{enumerate}
+
+\subsection{Pooling and amplification}
+We used Monarch PCR and DNA cleanup kit.
+\vspace{-1.5em}
+\begin{enumerate}\setlength\itemsep{-0.7em}
+	\item Combine $5 \ \mu L$ of each sample into a single 1.5 mL tube. Since the protocol states that it's better to not purify together more than 48 sample, we mixed all of them together and then split them in half in two 1.5 mL tubes;
+	\item Add 5 volumes of binding buffer to each pool sample and mix by pipetting;
+	\item Wash column following kit's instructions;
+	\item Elute each column with NEB's elution buffer (EB), $1 \ \mu L$ every 2 samples present in the pool. Since we used the maximum amount of samples (48), we used $24 \ \mu L$ of EB;
+	\item Combine all colums in a single tube;
+	\item Add PCR MasterMix\footnote{The PCR MasterMix for 1 reaction contains: $34 \ \mu L$ of $H_2O$, $10 \ \mu L$ of NEB 5x Taq Master Mix, $1 \ \mu L$ Forward primer (12.5 uM), $1 \ \mu L$ Reverse primer (12.5 uM) and $4 \ \mu L$ of clean pooled ligated DNA.} for 8 amplifications
+\end{enumerate}
+
+\newpage
+\section{Pipelines}\label{sec:pipelines}
+\vspace{-1em}
+All files, both main bash scripts files and supporting ones, are uploaded and available to download on Github, at repository \texttt{flavialeotta/Master-thesis}.
+\vspace{-1em}
+
+\subsubsection{Additional file: Barcodes}\label{subsec:barcodes}
+\vspace{-1em}
+The files \textit{barcodes1.tsv} and  \textit{barcodes2.tsv} contain the individual-specific barcodes, respectively for the two sequencing batches (one containing the first 10 samples, and the second containing the remaining 96), as reported in Table \ref{tab:barcodes}. They're divided in two different files because the multiplexing steps were performed separately at the reception of the sequenced data, as to not assign the wrong ID to the individuals sharing the same barcode (for example, ALP1 and ALP12).
+\begin{table}[h!]
+    \centering
+    \caption{\textit{Individual-specific barcodes}}
+    \label{tab:barcodes}
+    \resizebox{\textwidth}{!}{
+    \begin{tabular}{|>{\centering\arraybackslash}p{3cm} |
+                    >{\centering\arraybackslash}p{3cm} ||
+                    >{\centering\arraybackslash}p{3cm} |
+                    >{\centering\arraybackslash}p{3cm} ||
+                    >{\centering\arraybackslash}p{3cm} |
+                    >{\centering\arraybackslash}p{3cm}|}
+        \toprule
+        \textbf{Individual} & \textbf{Barcode} & \textbf{Invidual} & \textbf{Barcode} & \textbf{Invidual} & \textbf{Barcode}\\
+        \midrule
+        ALP1 & CTCC & MAU10 & CATCT & SP7I9  & GAACTTC\\
+        ALP2 & TGCA & MAU11 & CCTAC & SP7I10 & GGACCTA\\
+        ALP3 & ACTA & PDR1 & GAGGA & SP7I11 & GTCGATT\\
+        ALP5 & CAGA & PDR2 & GGAAC & SP10I12 & AACGCCT\\
+        ALP6 & AACT & PDR3 & GTCAA & SP11I13 & AATATGC\\
+        ALP7 & GCGT & PDR4 & TAATA & SP11I14 & ACGTGTT\\
+        ALP8 & CGAT & PDR5 & TACAT & SP12I15 & ATTAATT\\
+        ALP9 & GTAA & PDR8 & TCGTT & SP13I16 & ATTGGAT\\
+        ALP10 & AGGC & PDR9 & GGTTGT & SP14I17 & CATAAGT\\
+        ALP11* & GATC & PDR10 & CCAGCT & SP17I18 & CGCTGAT\\
+        \cline{1-2}
+        ALP12 & CTCC & PDR11 & TTCAGA & SP17I19 & CGGTAGA\\
+        ALP14 & TGCA & PDR12 & TAGGAA & SNEV1 & CTACGGA\\
+        ALP15 & ACTA & PDR13 & GCTCTA & SNEV2 & GCGGAAT\\
+        CTT1 & CAGA & PDR14 & CCACAA & SNEV3 & TAGCGGA\\
+        CTT2 & AACT & PDR15 & CTTCCA & SNEV5 & TCGAAGA\\
+        CTT3 & GCGT & PPURA1 & GAGATA & SNEV6 & TCTGTGA\\
+        LPASS1 & CGAT & PPURA2 & ATGCCT & SNEV7 & TGCTGGA\\
+        LPASS2 & GTAA & PPURA3 & AGTGGA & SNEV8 & ACGACTAC\\
+        LPASS4 & AGGC & PPURA4 & ACCTAA & SNEV9 & TAGCATGC\\
+        LPASS5* & GATC & PPURA5 & ATATGT & SNEV10 & TAGGCCAT\\
+        LPASS6* & TCAC & PPURA7 & ATCGTA & SNEV11 & TGCAAGGA\\
+        LPASS7 & TGCGA & PPURA8 & CATCGT & SNEV13 & TGGTACGT\\
+        LPASS8 & CGCTT & PPURA10 & CGCGGT & SNEV14 & TCTCAGTC\\
+        LPASS9 & TCACC & PPURA11 & CTATTA & STE1 & CCGGATAT\\
+        LPASS10 & CTAGC & PPURA13 & GCCAGT & STE3 & CGCCTTAT\\
+        LPASS11 & ACAAA & PPURA15 & GGAAGA & STE4 & AACCGAGA\\
+        LPASS12 & TTCTC & RT3 & GTACTT & STE5 & ACAGGGAA\\
+        LPASS13 & AGCCC & RT6 & GTTGAA & STE6 & ACGTGGTA\\
+        LPASS14 & GTATT & RT9 & TAACGA & STE7 &CCATGGGT \\
+        LPASS15 & CTGTA & RT11 & TGGCTA & STE8 & CGCGGAGA\\
+        MAU1 & ACCGT & RT14 & TATTTTT & STE9 & CGTGTGGT\\
+        MAU5 & GCTTA & RT15 & CTTGCTT & STE10 & GCTGTGGA\\
+        MAU7 & GGTGT & RT16 & ATGAAAC & STE11 & GGATTGGT\\
+        MAU8 & AGGAT & SP5I7 & AAAAGTT & STE13 & GTGAGGGT\\
+        MAU9 & ATTGA & SP6I8 & GAATTCA & STE14 & TATCGGGA\\
+         &  &  &  & STE15 & TTCCTGGA\\
+        \bottomrule
+    \end{tabular}
+    }
+    \caption*{\footnotesize{\textit{Since the individuals that didn't pass the quality checks are removed only later in the analysis, we report all the samples sent for sequencing, along with their barcodes, even if the ones with an asterisk (*) are not part of the final results. An horizontal line after ALP11 separates the two sequencing batches.}}}
+\end{table}
+\vspace{-2em}
+
+\subsubsection{Additional step: Renaming}
+\vspace{-1em}
+The pipeline Denovo\_map.pl in stacks expects read files to be named in a specific way, namely $\texttt{[Population name].1.fq.gz}$ and $\texttt{[Population name].2.fq.gz}$ for each pair of forward and reverse reads. We noticed that in the previous filtering step, the $\texttt{STACKS: process\_radtags}$ function's automatic output naming didn't comply to this expectation. We implemented a script that recursively renames the files in the correct way: this is not a step in the analysis, but it prepares the files for $\texttt{STACKS: denovo\_map.pl}$.
+
+\newpage
+\section{Software and libraries versions}
+\vspace{-2em}
+For the analysis to be reproducible, in this section we specify all the software and libraries used, as well as their versions. \\
+\\
+\textbf{Server asimina:} Computations for the pre-processing and analysis of reads were performed on a Supermicro server with 160 threads, 3 Tb of RAM and 11 Tb of disk space configured in RAID 6, with Ubuntu server OS 4.15.0-213-generic. Server \texttt{asimina} is available at IP address 159.149.160.43 but not freely accessible. The packages used for the analysis on the server are:
+\vspace{-2em}
+\begin{itemize}\setlength\itemsep{-0.7em}
+    \item conda 25.1.1
+    \item fastp 0.24.0
+    \item FastQC v0.11.5
+    \item multiqc 1.27.1
+    \item stacks 2.68
+    \item (((CONTROLLARE VERSIONI DI QUESTE)))
+    \item iqtree
+    \item plink
+    \item admixture
+    \item STRUCTURE
+    \item fastq-mcf
+    \item vcftools
+\end{itemize}
+\vspace{-1em}
+\textbf{Python:} The optimization algorithm was implemented on Python version: 3.12.9. Libraries used:
+\vspace{-2em}
+\begin{itemize}\setlength\itemsep{-0.7em}
+    \item Numpy 1.26.4
+    \item Pandas 2.2.2
+    \item Scikit-learn 1.5.0
+    \item Scikit-optimize 0.10.2
+\end{itemize}
+\vspace{-1em}
+\textbf{R:} Graphs generation and populations' genetic analysis were performed using R version 4.4.2, on RStudio version 2024.12.1+563. Packages used:
+\vspace{-2em}
+\begin{itemize}\setlength\itemsep{-0.7em}
+    \item RColorBrewer 1.1.3
+    \item caret 7.0.1
+    \item dplyr 1.1.4
+    \item ggmap 4.0.0.900
+    \item ggplot2 3.5.1
+    \item gridExtra 2.3
+    \item plotly 4.10.4
+    \item rnaturalearth 1.0.1
+    \item rnaturalearthdata 1.0.0
+    \item sf 1.0.19
+    \item tidyverse 2.0.0
+    \item (((AGGIUNGERE PACCHETTI)))
+\end{itemize}
+
+% Acknowledgement
+\clearpage
+\chapter{Acknowledgment}
+\noindent  To Maria, without her this thesis wouldn't exist.
+\thispagestyle{empty}
+\clearpage
+
+
+\end{document}

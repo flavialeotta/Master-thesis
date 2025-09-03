@@ -1,0 +1,2680 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{vijayanGermplasmConservationMulberry2011}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c02f372ae8b18ba6c12c68a19888e6b3}{%
+           family={Vijayan},
+           familyi={V\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+        {{hash=f712e907d695229928d5b1a9f5dac647}{%
+           family={Saratchandra},
+           familyi={S\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod}}}%
+        {{hash=5389ae9b30264db654fe12d8f8197a22}{%
+           family={Teixeira\bibnamedelimb da\bibnamedelima Silva},
+           familyi={T\bibinitperiod\bibinitdelim d\bibinitperiod\bibinitdelim S\bibinitperiod},
+           given={Jaime\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{06e1a8dc15cc196a48815b872a811959}
+      \strng{fullhash}{06e1a8dc15cc196a48815b872a811959}
+      \strng{fullhashraw}{06e1a8dc15cc196a48815b872a811959}
+      \strng{bibnamehash}{06e1a8dc15cc196a48815b872a811959}
+      \strng{authorbibnamehash}{06e1a8dc15cc196a48815b872a811959}
+      \strng{authornamehash}{06e1a8dc15cc196a48815b872a811959}
+      \strng{authorfullhash}{06e1a8dc15cc196a48815b872a811959}
+      \strng{authorfullhashraw}{06e1a8dc15cc196a48815b872a811959}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As the threat from urbanization, climatic changes, out breaks of new diseases and pests, and the frequent occurrence of natural calamities increases as a result of global warming, conservation of plant genetic resources is seen widely as a necessary step to preserve the world's germplasm for posterity. Conservation strategies for vegetatively propagated plants are different from those adopted for conserving annual crops. This article summarizes the strategies that are best suited for better and safer conservation of precious genetic germplasm of mulberry, an economically important tree of Asia. An overview of the merits and demerits of in situ, ex situ and in vitro techniques as well as DNA banking or cryopreservation is provided in the context of mulberry genetic resources.}
+      \field{day}{10}
+      \field{issn}{0304-4238}
+      \field{journaltitle}{Scientia Horticulturae}
+      \field{month}{5}
+      \field{number}{4}
+      \field{shortjournal}{Scientia Horticulturae}
+      \field{title}{Germplasm Conservation in Mulberry ({{{\mkbibemph{Morus}}}} Spp.)}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{128}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{371\bibrangedash 379}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.scienta.2010.11.012
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\GBS4M5LG\\Vijayan et al. - 2011 - Germplasm conservation in mulberry (Morus spp.).pdf;C\:\\Users\\flavi\\Zotero\\storage\\FRLFZDJR\\S0304423810005169.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304423810005169
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0304423810005169
+      \endverb
+      \keyw{Conservation,Cryopreservation,DNA banking,Mulberry,Plant genetic resources}
+    \endentry
+    \entry{penceDefiningExceptionalSpecies2022}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=633757bf258998af0865bf860cd23e87}{%
+           family={Pence},
+           familyi={P\bibinitperiod},
+           given={Valerie\bibnamedelima C.},
+           giveni={V\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a2608d8ba888c1186c5ced7b3a07eac8}{%
+           family={Meyer},
+           familyi={M\bibinitperiod},
+           given={Abby},
+           giveni={A\bibinitperiod}}}%
+        {{hash=7ab77bcfbec6bf641109a7f988fab53c}{%
+           family={Linsky},
+           familyi={L\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a174714f25e45528c109b275594553ba}{%
+           family={Gratzfeld},
+           familyi={G\bibinitperiod},
+           given={Joachim},
+           giveni={J\bibinitperiod}}}%
+        {{hash=90deb3c2dad9fd9a1efe82c6e9e2ca8c}{%
+           family={Pritchard},
+           familyi={P\bibinitperiod},
+           given={Hugh\bibnamedelima W.},
+           giveni={H\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=634fe4165c67182118e3062e77ce9bfa}{%
+           family={Westwood},
+           familyi={W\bibinitperiod},
+           given={Murphy},
+           giveni={M\bibinitperiod}}}%
+        {{hash=eb8d94ff39a933d1f4dc7a686eb4f7cf}{%
+           family={Bruns},
+           familyi={B\bibinitperiod},
+           given={Emily\bibnamedelima Beckman},
+           giveni={E\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+      }
+      \strng{namehash}{404e05f56975b081bf6027f9051eb144}
+      \strng{fullhash}{3d6a255b7f2a216569f5484de5cbbcf4}
+      \strng{fullhashraw}{3d6a255b7f2a216569f5484de5cbbcf4}
+      \strng{bibnamehash}{404e05f56975b081bf6027f9051eb144}
+      \strng{authorbibnamehash}{404e05f56975b081bf6027f9051eb144}
+      \strng{authornamehash}{404e05f56975b081bf6027f9051eb144}
+      \strng{authorfullhash}{3d6a255b7f2a216569f5484de5cbbcf4}
+      \strng{authorfullhashraw}{3d6a255b7f2a216569f5484de5cbbcf4}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The multiple, complex risks to plant species survival are increasing, and conservation strategies that include ex situ as well as in situ approaches are needed now more than ever. Seed banking (drying at c.15\% relative humidity and then storing at −20~°C) is the most efficient and effective ex situ method for long-term conservation for a majority of plant species. However, some plant species are not amenable to this practice, and such species have been labeled exceptional. Critical limitations to conventional seed banking include: 1) the unavailability of sufficient seed for storage; 2) seeds that are completely intolerant of the drying process (recalcitrant); 3) fully or partially desiccation tolerant seeds that are short-lived or sensitive to storage in a conventional freezer; and 4) seeds exhibiting complex dormancies that significantly hinder post-storage germination. Here we describe species examples to illustrate the key features of these four factors of exceptionality. This definition of exceptionality will provide the foundation for identifying exceptional species and directing resources to the appropriate approaches needed for their conservation. The long-term ex situ conservation of exceptional species will require living collections, as well as technologies involving expertise in cryobiotechnology, seed biology, plant physiology, plant ecology, and horticulture, emphasizing the importance of fully integrating multi-disciplinary conservation actions underpinned by training and knowledge exchange. Given that the number of known exceptional species is anticipated to increase substantially with further research, we call for immediate, concerted, and focused international action to address the conservation needs of the world's exceptional plant species.}
+      \field{day}{1}
+      \field{issn}{0006-3207}
+      \field{journaltitle}{Biological Conservation}
+      \field{month}{2}
+      \field{shortjournal}{Biological Conservation}
+      \field{title}{Defining Exceptional Species—{{A}} Conceptual Framework to Expand and Advance Ex Situ Conservation of Plant Diversity beyond Conventional Seed Banking}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{266}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{109440}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.biocon.2021.109440
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\L7J8MUFD\\Pence et al. - 2022 - Defining exceptional species—A conceptual framework to expand and advance ex situ conservation of pl.pdf;C\:\\Users\\flavi\\Zotero\\storage\\TRZR7EUA\\S0006320721004924.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006320721004924
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006320721004924
+      \endverb
+      \keyw{Cryobiotechnology,Integrated ex situ conservation,Living collections,Orthodox seed,Recalcitrant seed,Seed banking}
+    \endentry
+    \entry{volisQuasiSituBridge2010}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=78f11e36dc01429578282317a2a833e3}{%
+           family={Volis},
+           familyi={V\bibinitperiod},
+           given={Sergei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f6af7596db4f905d752d48156c79f988}{%
+           family={Blecher},
+           familyi={B\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c516fb08abeb7e68996c29054e75477}
+      \strng{fullhash}{2c516fb08abeb7e68996c29054e75477}
+      \strng{fullhashraw}{2c516fb08abeb7e68996c29054e75477}
+      \strng{bibnamehash}{2c516fb08abeb7e68996c29054e75477}
+      \strng{authorbibnamehash}{2c516fb08abeb7e68996c29054e75477}
+      \strng{authornamehash}{2c516fb08abeb7e68996c29054e75477}
+      \strng{authorfullhash}{2c516fb08abeb7e68996c29054e75477}
+      \strng{authorfullhashraw}{2c516fb08abeb7e68996c29054e75477}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{issn}{0960-3115, 1572-9710}
+      \field{journaltitle}{Biodiversity and Conservation}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{9}
+      \field{shortjournal}{Biodivers Conserv}
+      \field{shorttitle}{Quasi in Situ}
+      \field{title}{Quasi in Situ: A Bridge between Ex Situ and in Situ Conservation of Plants}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{19}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2441\bibrangedash 2454}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1007/s10531-010-9849-2
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\7QC574XH\Volis e Blecher - 2010 - Quasi in situ a bridge between ex situ and in situ conservation of plants.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/s10531-010-9849-2
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/s10531-010-9849-2
+      \endverb
+    \endentry
+    \entry{whitlockConsequencesInsituStrategies2016}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=0cddcb45f1e7959ee4568b7bad820d6a}{%
+           family={Whitlock},
+           familyi={W\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod}}}%
+        {{hash=89cd3dde354cbaf4a9cc77e26dd6e022}{%
+           family={Hipperson},
+           familyi={H\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=78dbbead33133154bf1cdb7b1cfedece}{%
+           family={Thompson},
+           familyi={T\bibinitperiod},
+           given={D.\bibnamedelimi B.\bibnamedelimi A.},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=337e903541b1b111b6a15b37302ae6cc}{%
+           family={Butlin},
+           familyi={B\bibinitperiod},
+           given={R.\bibnamedelimi K.},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=1b813e8352124c7644d34e4c2eecc542}{%
+           family={Burke},
+           familyi={B\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{da89f2adcb7f3d1267d78f5c712843e4}
+      \strng{fullhash}{da89f2adcb7f3d1267d78f5c712843e4}
+      \strng{fullhashraw}{da89f2adcb7f3d1267d78f5c712843e4}
+      \strng{bibnamehash}{da89f2adcb7f3d1267d78f5c712843e4}
+      \strng{authorbibnamehash}{da89f2adcb7f3d1267d78f5c712843e4}
+      \strng{authornamehash}{da89f2adcb7f3d1267d78f5c712843e4}
+      \strng{authorfullhash}{da89f2adcb7f3d1267d78f5c712843e4}
+      \strng{authorfullhashraw}{da89f2adcb7f3d1267d78f5c712843e4}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Conservation biologists have drawn up a range of guidelines for the conservation of genetic diversity—to maximise the chances that populations of threatened species persist, and to conserve this variation for its potential utility. However, our understanding of the effectiveness of conservation guidelines for maintaining genetic diversity in situ is limited. Furthermore, we lack information on how species-level variation in mating system affects these genetic conservation strategies. We used the British geographical ranges of eight widespread but declining plant species, varying in breeding system, as a model to assess the effectiveness of guidelines for the in-situ conservation of neutral genetic diversity. By applying simulated in-situ conservation scenarios to amplified fragment length polymorphism data, we show that the conservation of one population (the “minimum-set” approach) would retain \textasciitilde 70\% of common allelic variation, but few or no rare alleles (alleles with frequency≤0.05). Our results indicate that the conservation of {$>$}35\% of populations would be needed to reach the Convention on Biological Diversity's recommendation to conserve 70\% of genetic diversity in situ, as applied to rare alleles (\textasciitilde 10 populations within each species' British range). The capture of genetic variation in simulated conservation networks was insensitive to breeding system. However, a spatially stratified approach to population selection led to significantly greater capture rates for common alleles in two of our study species, relative to a spatially random strategy. Our study highlights the challenges of conserving genetic variation, and emphasises the vulnerability of genetic biodiversity to reductions in the extent of species' ranges.}
+      \field{day}{1}
+      \field{issn}{0006-3207}
+      \field{journaltitle}{Biological Conservation}
+      \field{month}{11}
+      \field{shortjournal}{Biological Conservation}
+      \field{title}{Consequences of {\mkbibemph{In-Situ}} Strategies for the Conservation of Plant Genetic Diversity}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{203}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{134\bibrangedash 142}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.biocon.2016.08.006
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\AQGZS5Z6\\Whitlock et al. - 2016 - Consequences of in-situ strategies for the conservation of plant genetic diversity.pdf;C\:\\Users\\flavi\\Zotero\\storage\\M3L976VE\\S0006320716303093.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006320716303093
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006320716303093
+      \endverb
+      \keyw{AFLP,Biogeography,conservation,Conservation genetics,Genetic diversity,Plants}
+    \endentry
+    \entry{hobanOptimalSamplingSeeds2014}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=6e2d4dfd64e55d6a92fa4f58309941ac}{%
+           family={Hoban},
+           familyi={H\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=dfda7306d1906d0a9a4bef6aac08f8d2}{%
+           family={Schlarbaum},
+           familyi={S\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{4900b098f8a606b0f6c92d07f92e6c60}
+      \strng{fullhash}{4900b098f8a606b0f6c92d07f92e6c60}
+      \strng{fullhashraw}{4900b098f8a606b0f6c92d07f92e6c60}
+      \strng{bibnamehash}{4900b098f8a606b0f6c92d07f92e6c60}
+      \strng{authorbibnamehash}{4900b098f8a606b0f6c92d07f92e6c60}
+      \strng{authornamehash}{4900b098f8a606b0f6c92d07f92e6c60}
+      \strng{authorfullhash}{4900b098f8a606b0f6c92d07f92e6c60}
+      \strng{authorfullhashraw}{4900b098f8a606b0f6c92d07f92e6c60}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{As habitat loss accelerates, there is pressing need to preserve plant genetic diversity in ex situ conservation collections. Population structure (i.e. subdivision), which is common in plants, may be an important consideration when planning such collections because it results in locally restricted alleles or traits, which have high conservation, ecological, or economic value. Nonetheless, common protocols for ex situ collections do not consider population structure. To help inform collection decisions, we utilize computer simulations with different levels of realistic hierarchical population structure to evaluate the expected performance of an array of sample sizes and several spatial distributions of sampled populations. We quantify how population structure affects the expected probability of capturing alleles (especially rare alleles). We also test the effect of family-level structure due to pollen pool composition (e.g., sibling clusters). Our findings suggest that when range-wide population structure exists, the spatial distribution of sampled populations is crucial: sampling one population per region (dispersed sampling) captured up to 175\% more alleles than sampling all populations in one region (constrained sampling), and nearly as much as sampling all existing populations. The spatial effect is strongest for poorly-connected (low gene flow) species. Under realistic population structure, moderate sampling (25–30 individuals per population) from few but widely-spaced populations performs optimally; this differs from previous recommended guidelines that do not consider structure. There is smaller effect of the pollen pool composition on collection performance. We conclude that seed collection plans should incorporate spatial considerations, especially for poorly-connected taxa. Our simulation approach can be extended to particular species and other spatial patterns. We use the butternut tree as a case study for collection planning.}
+      \field{day}{1}
+      \field{issn}{0006-3207}
+      \field{journaltitle}{Biological Conservation}
+      \field{month}{9}
+      \field{shortjournal}{Biological Conservation}
+      \field{title}{Optimal Sampling of Seeds from Plant Populations for {\mkbibemph{Ex-Situ}} Conservation of Genetic Biodiversity, Considering Realistic Population Structure}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{177}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{90\bibrangedash 99}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.biocon.2014.06.014
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\IPIWI4RB\\Hoban e Schlarbaum - 2014 - Optimal sampling of seeds from plant populations for ex-situ conservation of genetic biodiver.pdf;C\:\\Users\\flavi\\Zotero\\storage\\Y2ZMG4GK\\S0006320714002419.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006320714002419
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006320714002419
+      \endverb
+      \keyw{Biodiversity,Genetic diversity,Living collection,Minimum sample size,Optimization,Sample strategy,sampling,Seed bank,Simulations}
+    \endentry
+    \entry{iucn/sscGuidelinesUseEx2014}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=3a9e80665ccd955e1b1f38a77302d7ef}{%
+           family={{IUCN/SSC}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {IUCN Species Survival Commission}%
+      }
+      \list{location}{1}{%
+        {Gland, Switzerland}%
+      }
+      \strng{namehash}{3a9e80665ccd955e1b1f38a77302d7ef}
+      \strng{fullhash}{3a9e80665ccd955e1b1f38a77302d7ef}
+      \strng{fullhashraw}{3a9e80665ccd955e1b1f38a77302d7ef}
+      \strng{bibnamehash}{3a9e80665ccd955e1b1f38a77302d7ef}
+      \strng{authorbibnamehash}{3a9e80665ccd955e1b1f38a77302d7ef}
+      \strng{authornamehash}{3a9e80665ccd955e1b1f38a77302d7ef}
+      \strng{authorfullhash}{3a9e80665ccd955e1b1f38a77302d7ef}
+      \strng{authorfullhashraw}{3a9e80665ccd955e1b1f38a77302d7ef}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{number}{Version 2.0}
+      \field{title}{Guidelines on the {{Use}} of {{Ex Situ Management}} for {{Species Conservation}}.}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{20}
+      \range{pages}{1}
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\KGTJQDNA\IUCNSSC - 2014 - Guidelines on the Use of Ex Situ Management for Species Conservation..pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://portals.iucn.org/library/sites/library/files/documents/2014-064.pdf
+      \endverb
+      \verb{url}
+      \verb https://portals.iucn.org/library/sites/library/files/documents/2014-064.pdf
+      \endverb
+    \endentry
+    \entry{aegisdottirIsolatedPopulationsRare2009}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=a908e43bbf9d19272cb8e16916795488}{%
+           family={Ægisdóttir},
+           familyi={Æ\bibinitperiod},
+           given={Hafdís\bibnamedelima Hanna},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=c90034167121775efff93ddabf50c6d4}{%
+           family={Kuss},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8b5a077e653a13a97073be24263701d5}{%
+           family={Stöcklin},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{093cd3ae3f9d132ed72f45bed8c21233}
+      \strng{fullhash}{093cd3ae3f9d132ed72f45bed8c21233}
+      \strng{fullhashraw}{093cd3ae3f9d132ed72f45bed8c21233}
+      \strng{bibnamehash}{093cd3ae3f9d132ed72f45bed8c21233}
+      \strng{authorbibnamehash}{093cd3ae3f9d132ed72f45bed8c21233}
+      \strng{authornamehash}{093cd3ae3f9d132ed72f45bed8c21233}
+      \strng{authorfullhash}{093cd3ae3f9d132ed72f45bed8c21233}
+      \strng{authorfullhashraw}{093cd3ae3f9d132ed72f45bed8c21233}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Gene flow and genetic variability within and among alpine plant populations can be greatly influenced by the steep environmental gradients and heterogeneous topography of alpine landscapes. In this study, the effects are examined of natural isolation of alpine habitats on genetic diversity and geographic structure in populations of C. thyrsoides, a rare and isolated European Alpine monocarpic perennial with limited seed dispersal capacity.Molecular diversity was analysed for 736 individuals from 32 populations in the Swiss Alps and adjacent Jura mountains using five polymorphic microsatellite loci. Pollen flow was estimated using pollen grain-sized fluorescent powder. In addition, individual-based Bayesian approaches were applied to examine population structure.High within-population genetic diversity (HE = 0·76) and a relatively low inbreeding coefficient (FIS = 0·022) were found. Genetic differentiation among populations measured with a standardized measure was considerable (G′ST = 0·53). A significant isolation-by-distance relationship was found (r = 0·62, P \&lt; 0·001) and a significant geographic sub-structure, coinciding with proposed postglacial migration patterns. Altitudinal location and size of populations did not influence molecular variation. Direct measures of pollen flow revealed that insect-mediated pollen dispersal was restricted to short distances within a population.The natural isolation of suitable habitats for C. thyrsoides restricts gene flow among the populations as expected for a monocarpic species with very limited seed dispersal capacities. The observed high within-population genetic diversity in this rare monocarpic perennial is best explained by its outcrossing behaviour, long-lived individuals and overlapping generations. Despite the high within-population genetic diversity, the considerable genetic differentiation and the clear western–eastern differentiation in this species merits consideration in future conservation efforts.}
+      \field{day}{1}
+      \field{issn}{0305-7364}
+      \field{journaltitle}{Annals of Botany}
+      \field{month}{12}
+      \field{number}{7}
+      \field{shortjournal}{Annals of Botany}
+      \field{title}{Isolated Populations of a Rare Alpine Plant Show High Genetic Diversity and Considerable Population Differentiation}
+      \field{urlday}{5}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{volume}{104}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1313\bibrangedash 1322}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1093/aob/mcp242
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\TZERIFFX\\Ægisdóttir et al. - 2009 - Isolated populations of a rare alpine plant show high genetic diversity and considerable population.pdf;C\:\\Users\\flavi\\Zotero\\storage\\Q4SQCTQT\\165304.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1093/aob/mcp242
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1093/aob/mcp242
+      \endverb
+    \endentry
+    \entry{scheepensDifferentiationMorphologyFlowering2011}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=76be75f2bcb7232d0827557fd4f50b92}{%
+           family={Scheepens},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=c90034167121775efff93ddabf50c6d4}{%
+           family={Kuss},
+           familyi={K\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=8b5a077e653a13a97073be24263701d5}{%
+           family={Stöcklin},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c5b4f3ce980176a0a5b41ae01a4fbd5b}
+      \strng{fullhash}{c5b4f3ce980176a0a5b41ae01a4fbd5b}
+      \strng{fullhashraw}{c5b4f3ce980176a0a5b41ae01a4fbd5b}
+      \strng{bibnamehash}{c5b4f3ce980176a0a5b41ae01a4fbd5b}
+      \strng{authorbibnamehash}{c5b4f3ce980176a0a5b41ae01a4fbd5b}
+      \strng{authornamehash}{c5b4f3ce980176a0a5b41ae01a4fbd5b}
+      \strng{authorfullhash}{c5b4f3ce980176a0a5b41ae01a4fbd5b}
+      \strng{authorfullhashraw}{c5b4f3ce980176a0a5b41ae01a4fbd5b}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Subspecies are usually characterised by sets of morphological discontinuities. By means of common garden experiments, we investigated genetic differentiation in morphological and phenological traits in two geographically disjunct subspecies of Campanula thyrsoides L., i.e. subsp. thyrsoides (=C.* thyrsoides) occurring in the European Alps and Jura Mountains, and subsp. carniolica (=C.* carniolica) occurring in the Southeastern Alps and the Dinaric Arc. Nine out of 16 investigated traits were significantly different between C.* thyrsoides and C.* carniolica. For C.* carniolica inflorescence length was 1.4×, and above-ground biomass 2.7× higher, while flower density was significantly lower. Campanula* carniolica also showed delayed flowering and flower development from bottom to top as compared to C.* thyrsoides which flowered from top to bottom. The inflorescence growth was indeterminate and flowering took several weeks in C.* carniolica, whereas C.* thyrsoides showed determinate flowering, rapidly opening all flowers within a few days. This differentiation in flowering phenology is likely to be adaptive. The submediterranean climate favours indeterminate flowering in C.* carniolica, allowing ongoing growth of the inflorescence throughout the long summer until environmental conditions worsen, whereas determinate and early flowering in C.* thyrsoides is favourable in the short growing season in the high Alps where seed production must be secured before temperature drops. Glacial survival in refugia with different climates (alpine vs. submediterranean) may have caused this regional differentiation.}
+      \field{day}{1}
+      \field{issn}{1664-221X}
+      \field{journaltitle}{Alpine Botany}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1}
+      \field{shortjournal}{Alp Botany}
+      \field{title}{Differentiation in Morphology and Flowering Phenology between Two {{Campanulathyrsoides L}}. Subspecies}
+      \field{urlday}{14}
+      \field{urlmonth}{5}
+      \field{urlyear}{2025}
+      \field{volume}{121}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{37\bibrangedash 47}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1007/s00035-011-0087-3
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\I2QQV796\Scheepens et al. - 2011 - Differentiation in morphology and flowering phenology between two Campanulathyrsoides L. subspecies.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00035-011-0087-3
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00035-011-0087-3
+      \endverb
+      \keyw{Campanula thyrsoides subsp. carniolica,Circadian rhythms in plants,Common garden,Determinate flowering,European Alps,Flowering,Glacial history,Phenology,Plant Development,Plant Reproduction,Pollen}
+    \endentry
+    \entry{fabiocontiAnnotatedChecklistItalian2005}{report}{}{}
+      \name{author}{4}{}{%
+        {{hash=434a3e43d55b244adc2296cfe061ee20}{%
+           family={{Fabio Conti}},
+           familyi={F\bibinitperiod}}}%
+        {{hash=3e71a423dee184a6069075dc06c0de75}{%
+           family={{Giovanna Abbate}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=e1d94b6e7c441f555e53a997d69e6489}{%
+           family={{Alessandro Alessandrini}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=1621b54db264496f1b4c93b5b40995a5}{%
+           family={{Carlo Blasi}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{5f5b837c45bcfb0689abdaa2c5f69f56}
+      \strng{fullhash}{5f5b837c45bcfb0689abdaa2c5f69f56}
+      \strng{fullhashraw}{5f5b837c45bcfb0689abdaa2c5f69f56}
+      \strng{bibnamehash}{5f5b837c45bcfb0689abdaa2c5f69f56}
+      \strng{authorbibnamehash}{5f5b837c45bcfb0689abdaa2c5f69f56}
+      \strng{authornamehash}{5f5b837c45bcfb0689abdaa2c5f69f56}
+      \strng{authorfullhash}{5f5b837c45bcfb0689abdaa2c5f69f56}
+      \strng{authorfullhashraw}{5f5b837c45bcfb0689abdaa2c5f69f56}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{PDF | On Jan 1, 2005, Fabio Conti and others published An annotated checklist of the Italian vascular flora | Find, read and cite all the research you need on ResearchGate}
+      \field{langid}{english}
+      \field{title}{An Annotated Checklist of the {{Italian}} Vascular Flora}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\NTRHXAXG\\Fabio Conti, Giovanna Abbate, Alessandro Alessandrini, Carlo Blasi - 2005 - An annotated checklist of the Italian vascular flora.pdf;C\:\\Users\\flavi\\Zotero\\storage\\93IBHE97\\283714806_An_annotated_checklist_of_the_Italian_vascular_flora.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/283714806_An_annotated_checklist_of_the_Italian_vascular_flora
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/283714806_An_annotated_checklist_of_the_Italian_vascular_flora
+      \endverb
+    \endentry
+    \entry{grazianorossiListaRossaFlora2020}{misc}{}{}
+      \name{author}{38}{}{%
+        {{hash=30d2d607710e601be2d338c713ee90c3}{%
+           family={{Graziano Rossi}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=eb66c3eb296ee5ba7f1b8e542fb51182}{%
+           family={{Simone Orsenigo}},
+           familyi={S\bibinitperiod}}}%
+        {{hash=d7a6917f6fe70ead35cc20da259172ba}{%
+           family={{Domenico Gargano}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=73cc7c5a6c34c432c777ab83d5319000}{%
+           family={{Chiara Montagnani}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=8fe42d239532ed5d739928b737f8034a}{%
+           family={{Lorenzo Peruzzi}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=cf6104c2882edc061f648de01d2b65b3}{%
+           family={{Giuseppe Fenu}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=55310d903788c303762062d084291fbf}{%
+           family={{Thomas Abeli}},
+           familyi={T\bibinitperiod}}}%
+        {{hash=e1d94b6e7c441f555e53a997d69e6489}{%
+           family={{Alessandro Alessandrini}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=1ba068b67b043cdc20a09b4223bfffae}{%
+           family={{Giovanni Astuti}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=5d410f3a3a5e2b4de2d8b175f2b36490}{%
+           family={{Gianluigi Bacchetta}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=875f0e5edb6c37421cc3fde061232ac1}{%
+           family={{Fabrizio Bartolucci}},
+           familyi={F\bibinitperiod}}}%
+        {{hash=57e21271322cd2042ab4efbcef0f7805}{%
+           family={{Liliana Bernardo}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=707d6e890f8b87dcc0fd542348cebbaf}{%
+           family={{Maurizio Bovio}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=e14ea94a43c9531030d04268f5b5919d}{%
+           family={{Salvatore Brullo}},
+           familyi={S\bibinitperiod}}}%
+        {{hash=8319b2424c87e2807824851e7ba8c53b}{%
+           family={{Angelino Carta}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=f09b0a1564d915cb0b2fb712aa9136dc}{%
+           family={{Miris Castello}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=434a3e43d55b244adc2296cfe061ee20}{%
+           family={{Fabio Conti}},
+           familyi={F\bibinitperiod}}}%
+        {{hash=0ef2965d884e2ac9ee412d6f82850a66}{%
+           family={{Donatella Cogoni}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=97d75c8dedcc0face7e7fea72943a8de}{%
+           family={{Gianniantonio Domina}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=162d4f5fd9983acba9af7838ec6162c6}{%
+           family={{Bruno Foggi}},
+           familyi={B\bibinitperiod}}}%
+        {{hash=7194d62b0b438189874362358ec652b1}{%
+           family={{Matilde Gennai}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=a62d9a702b66d41bb8c8583a2f065e47}{%
+           family={{Daniela Gigante}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=d51b85aa0821b9d470493a935ae26f12}{%
+           family={{Mauro Iberite}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=c3de43c1e68cbf5ffeb5670ec6328425}{%
+           family={{Cesare Lasen}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=2f56dc84c6ba8299e2d4edb15b05c86e}{%
+           family={{Sara Magrini}},
+           familyi={S\bibinitperiod}}}%
+        {{hash=35412e1a64cd673183a743a036c36d32}{%
+           family={{Gianluca Nicolella}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=d450fb0799742795343955989b8f491b}{%
+           family={{Maria Silvia Pinna}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=fe06a0c64603f72428cde24cdefcfcde}{%
+           family={{Laura Poggio}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=7a1f606444442ead83370919201200b9}{%
+           family={{Filippo Prosser}},
+           familyi={F\bibinitperiod}}}%
+        {{hash=20b46d533e02c702ff7c4f029c165e60}{%
+           family={{Annalisa Santangelo}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=8890bf3d614f71a8a2a292541fea0352}{%
+           family={{Alberto Selvaggi}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=1aae7a776dc46820f41b0b98ee5246b0}{%
+           family={{Adriano Stinca}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=35ca7f13af59694f4617ce4d83de0930}{%
+           family={{Nicoletta Tartaglini}},
+           familyi={N\bibinitperiod}}}%
+        {{hash=a4207e45b38db8eeb32239a567f3cbd5}{%
+           family={{Angelo Troia}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=e3f3c3944123a8f3bda590bf17c7536c}{%
+           family={{Maria Cristina Villani}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=2d59e44a49a9f9271ae28db63870552e}{%
+           family={{Robert Wagensommer}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=dd843abdeb9ca1413de1fa0c88802372}{%
+           family={{Thomas Wilhalm}},
+           familyi={T\bibinitperiod}}}%
+        {{hash=1621b54db264496f1b4c93b5b40995a5}{%
+           family={{Carlo Blasi}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{organization}{1}{%
+        {Ministero dell’Ambiente e della Tutela del Territorio e del Mare}%
+      }
+      \strng{namehash}{7de5f404803ac1bbbe8e7c62f8680cf3}
+      \strng{fullhash}{0b33e02afb1f9cb19035abfc3d9b7714}
+      \strng{fullhashraw}{0b33e02afb1f9cb19035abfc3d9b7714}
+      \strng{bibnamehash}{7de5f404803ac1bbbe8e7c62f8680cf3}
+      \strng{authorbibnamehash}{7de5f404803ac1bbbe8e7c62f8680cf3}
+      \strng{authornamehash}{7de5f404803ac1bbbe8e7c62f8680cf3}
+      \strng{authorfullhash}{0b33e02afb1f9cb19035abfc3d9b7714}
+      \strng{authorfullhashraw}{0b33e02afb1f9cb19035abfc3d9b7714}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Lista {{Rossa}} Della {{Flora Italiana}}. 2 {{Endemiti}} e Altre Specie Minacciate.}
+      \field{year}{2020}
+      \field{dateera}{ce}
+    \endentry
+    \entry{habelBurdenGeneticDiversity2012}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=335f703d287022b5fb916255b1009289}{%
+           family={Habel},
+           familyi={H\bibinitperiod},
+           given={Jan\bibnamedelima Christian},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=13f9fa6d031d515546d90bffb18a0754}{%
+           family={Schmitt},
+           familyi={S\bibinitperiod},
+           given={Thomas},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{9e23627c80d7e56890bdf2a889abc873}
+      \strng{fullhash}{9e23627c80d7e56890bdf2a889abc873}
+      \strng{fullhashraw}{9e23627c80d7e56890bdf2a889abc873}
+      \strng{bibnamehash}{9e23627c80d7e56890bdf2a889abc873}
+      \strng{authorbibnamehash}{9e23627c80d7e56890bdf2a889abc873}
+      \strng{authornamehash}{9e23627c80d7e56890bdf2a889abc873}
+      \strng{authorfullhash}{9e23627c80d7e56890bdf2a889abc873}
+      \strng{authorfullhashraw}{9e23627c80d7e56890bdf2a889abc873}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In general, species with large ecological amplitudes are equipped with high genetic diversities. In contrast, more specialised species with narrow ecological amplitudes show low levels of genetic diversity. Generalist species are mostly rather marginally affected by recent land-use changes; specialist can be supported by specific conservation measures. We argue that, in the light of Conservation Genetics, species being ecologically intermediate between these two extremes are the most seriously affected ones by recent environmental changes. Such species which formerly occurred in large population networks have to sustain their high level of genetic variability via gene flow. Today, species from the latter group are negatively affected by rapid habitat collapses causing sudden lacks of population interconnectivity. Therefore, species with intermediate habitat demands and originally high genetic diversity might be at highest risk due to inbreeding depressions.}
+      \field{day}{1}
+      \field{issn}{0006-3207}
+      \field{journaltitle}{Biological Conservation}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{Biological Conservation}
+      \field{title}{The Burden of Genetic Diversity}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{147}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{270\bibrangedash 274}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1016/j.biocon.2011.11.028
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\7RUI7CCK\\Habel e Schmitt - 2012 - The burden of genetic diversity.pdf;C\:\\Users\\flavi\\Zotero\\storage\\MMA93EIK\\S0006320711004484.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006320711004484
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S0006320711004484
+      \endverb
+      \keyw{Fitness,Generalist,Genetic differentiation,Genetic diversity,Land use change,Specialist,Vulnerability}
+    \endentry
+    \entry{andrewsHarnessingPowerRADseq2016}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=6449e1e9aeb9cbcdcf75044fcb19111c}{%
+           family={Andrews},
+           familyi={A\bibinitperiod},
+           given={Kimberly\bibnamedelima R.},
+           giveni={K\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=cfccad72a4b3af0affe1d301748425c4}{%
+           family={Good},
+           familyi={G\bibinitperiod},
+           given={Jeffrey\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=4aa72995a06492e441d5d2402e18f4a8}{%
+           family={Miller},
+           familyi={M\bibinitperiod},
+           given={Michael\bibnamedelima R.},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=612fb028661d97162fd6aa7258469934}{%
+           family={Luikart},
+           familyi={L\bibinitperiod},
+           given={Gordon},
+           giveni={G\bibinitperiod}}}%
+        {{hash=cf631a0257bed026baf4d18ec13539b4}{%
+           family={Hohenlohe},
+           familyi={H\bibinitperiod},
+           given={Paul\bibnamedelima A.},
+           giveni={P\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{fb8e34c05273cbc2ce0aae5272d57541}
+      \strng{fullhash}{fb8e34c05273cbc2ce0aae5272d57541}
+      \strng{fullhashraw}{fb8e34c05273cbc2ce0aae5272d57541}
+      \strng{bibnamehash}{fb8e34c05273cbc2ce0aae5272d57541}
+      \strng{authorbibnamehash}{fb8e34c05273cbc2ce0aae5272d57541}
+      \strng{authornamehash}{fb8e34c05273cbc2ce0aae5272d57541}
+      \strng{authorfullhash}{fb8e34c05273cbc2ce0aae5272d57541}
+      \strng{authorfullhashraw}{fb8e34c05273cbc2ce0aae5272d57541}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{RADseq has fuelled studies in ecological, evolutionary and conservation genomics by using next-generation sequencing to uncover hundreds or thousands of polymorphic loci across the genome in a single, simple and cost-effective experiment. RADseq does not require any prior genomic information for the taxa being studied, and is therefore particularly advantageous for studies of non-model organisms.Numerous technical variations on RADseq have been developed, which promise to increase the flexibility and decrease the cost and effort of genomics studies. Differences among the methods lead to important considerations for all steps of genomics studies, from the types of scientific questions that can be addressed and the costs of library preparation and sequencing to the types of bias and error that are inherent in the resulting data.Allele dropout, PCR duplicates and variance in depth of coverage among loci are important sources of error and bias in RADseq studies, and the prevalence of these phenomena will vary across RADseq methods.Other important considerations when designing a RADseq study include the number, length and coverage of loci needed to address the research question; the availability of prior genomic resources; the budget; and the consistency of data across sequencing runs and laboratories.There is no single best or most flexible RADseq method. Researchers must consider the trade-offs of the different methods, and choose the approach that is best suited to their study goals.}
+      \field{issn}{1471-0064}
+      \field{journaltitle}{Nature Reviews Genetics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{Nat Rev Genet}
+      \field{title}{Harnessing the Power of {{RADseq}} for Ecological and Evolutionary Genomics}
+      \field{urlday}{21}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{17}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{81\bibrangedash 92}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1038/nrg.2015.28
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\CQL4GXUL\Andrews et al. - 2016 - Harnessing the power of RADseq for ecological and evolutionary genomics.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nrg.2015.28
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nrg.2015.28
+      \endverb
+      \keyw{DNA restriction-modification enzymes,DNA sequencing,Ecology,Evolutionary genetics,Genetic techniques}
+    \endentry
+    \entry{freiHighGeneticDifferentiation2012}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=839fb0ef5940d2b26380ca8d09a250fb}{%
+           family={Frei},
+           familyi={F\bibinitperiod},
+           given={Eva\bibnamedelima S.},
+           giveni={E\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=76be75f2bcb7232d0827557fd4f50b92}{%
+           family={Scheepens},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=8b5a077e653a13a97073be24263701d5}{%
+           family={Stöcklin},
+           familyi={S\bibinitperiod},
+           given={Jürg},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{cc5f8d24983e42cdf3b2240ef0139120}
+      \strng{fullhash}{cc5f8d24983e42cdf3b2240ef0139120}
+      \strng{fullhashraw}{cc5f8d24983e42cdf3b2240ef0139120}
+      \strng{bibnamehash}{cc5f8d24983e42cdf3b2240ef0139120}
+      \strng{authorbibnamehash}{cc5f8d24983e42cdf3b2240ef0139120}
+      \strng{authornamehash}{cc5f8d24983e42cdf3b2240ef0139120}
+      \strng{authorfullhash}{cc5f8d24983e42cdf3b2240ef0139120}
+      \strng{authorfullhashraw}{cc5f8d24983e42cdf3b2240ef0139120}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Changes in climate and traditional land use have contributed to a loss and fragmentation of suitable habitats for many alpine plant species. Despite the importance of these changes, our knowledge of the consequences for gene flow and genetic diversity is still poor, especially in rare taxa and at fine spatial scales. Here, we investigated the genetic diversity in a rare alpine plant on a small and highly structured mountain in the Swiss Alps. Using microsatellite markers and Bayesian cluster analyses, we investigated genetic diversity within and among 24 populations of Campanula thyrsoides L. We also tested whether landscape structure has affected genetic structure by correlating genetic diversity with landscape and population features, which were assessed in a four-year monitoring period. The recorded genetic diversity (He~=~0.714) and genetic differentiation (\$\$G\textasciicircum\{\textbackslash prime\}\_\{\textbackslash rm ST\} \$\$~=~0.32) at distances of 1–10~km were remarkably high. Clustering analyses revealed a split of populations into two genetically different spatial groups, but between-population genetic distances were neither correlated to geographic distance, elevation nor slope. The high differentiation and genetic bottlenecks may indicate strong founder effects, although the number of alleles was not decreased in bottlenecked populations. We conclude that stochastic colonisation by seeds is most important for shaping the genetic structure of C.thyrsoides on this small mountain. The high genetic diversity even in small populations may indicate that occasional gene flow is strong enough to overcome negative effects of bottlenecks. Nevertheless, further fragmentation and isolation of habitats may threaten this rare plant in the future.}
+      \field{day}{1}
+      \field{issn}{1664-221X}
+      \field{journaltitle}{Alpine Botany}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{1}
+      \field{shortjournal}{Alp Botany}
+      \field{title}{High Genetic Differentiation in Populations of the Rare Alpine Plant Species {{Campanulathyrsoides}} on a Small Mountain}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{122}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{23\bibrangedash 34}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/s00035-012-0103-2
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\FAJUJC7V\Frei et al. - 2012 - High genetic differentiation in populations of the rare alpine plant species Campanulathyrsoides on.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/s00035-012-0103-2
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/s00035-012-0103-2
+      \endverb
+      \keyw{Campanula thyrsoides,European Alps,Genetic bottlenecks,Isolation by distance,Landscape genetics,Microsatellite markers}
+    \endentry
+    \entry{kussSpatialGeneticStructure2011}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=0fc3b3ea791e6e320ad372f2871cc83f}{%
+           family={Kuss},
+           familyi={K\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod}}}%
+        {{hash=860220ad9a47f2a5bee1cca89d6a8e50}{%
+           family={Armbruster},
+           familyi={A\bibinitperiod},
+           given={G.\bibnamedelimi F.\bibnamedelimi J.},
+           giveni={G\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=5cabec6214f938cf75d089ef7f2255ac}{%
+           family={Ægisdóttir},
+           familyi={Æ\bibinitperiod},
+           given={H.\bibnamedelimi H.},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=76be75f2bcb7232d0827557fd4f50b92}{%
+           family={Scheepens},
+           familyi={S\bibinitperiod},
+           given={J.\bibnamedelimi F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=b0dd8120bf786ec202e1e1a32ee200f2}{%
+           family={Stöcklin},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{b449f276f1adb9cd6277fe7704107783}
+      \strng{fullhash}{b449f276f1adb9cd6277fe7704107783}
+      \strng{fullhashraw}{b449f276f1adb9cd6277fe7704107783}
+      \strng{bibnamehash}{b449f276f1adb9cd6277fe7704107783}
+      \strng{authorbibnamehash}{b449f276f1adb9cd6277fe7704107783}
+      \strng{authornamehash}{b449f276f1adb9cd6277fe7704107783}
+      \strng{authorfullhash}{b449f276f1adb9cd6277fe7704107783}
+      \strng{authorfullhashraw}{b449f276f1adb9cd6277fe7704107783}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Quaternary climate change had profound impacts on the geographical distribution and genetic structure of plant species which is hypothesized to have triggered allopatric speciation due to spatial isolation. However, evidence is scarce despite recent advances that indicate glacial history and substrate requirements as main drivers of spatial genetic structures. Here we built upon these studies to test the role of glaciations on the morphological and ecological differentiation within the calcicolous Campanula thyrsoides across its European Alpine distribution range. We collected samples from 51 populations (1173 plants), used five microsatellite markers, estimated diversity (Na, HE) and differentiation (Dest, GST\_est, FST) and applied Bayesian clustering analysis and tessellation methods. We found support for four genetically distinct groups of populations, arranged from West to East: (i) France and Western Switzerland, (ii) Central and most of Eastern Switzerland, (iii) parts of Eastern Switzerland and Central Austria, and (iv) Southeastern Austria, Slovenia and Northeastern Italy. Among-subspecies variance was 8.4\% and each subspecies was highly differentiated (C.*thyrsoides: Dest=0.47; C.*carniolica: Dest=0.58). Geographic structuring of within-population diversity was not related to refugia outside of previously-glaciated terrain but to subspecies: the more thermophilic C.*carniolica showed significantly lower levels of within-population diversity and higher numbers of private alleles. The location of the genetic break lines between these four groups of populations corresponds to well-known biogeographic barriers. However, the phylogeographic pattern has elements formerly found in both calcicolous and silicicolous species and thus questions the generality of substrate-related patterns. Within C.*thyrsoides, population admixture upon secondary contact may have led to high genetic diversity across the distribution range. Given the geographic and genetic differences of the subspecies we conclude that differentiation between C.*thyrsoides and C.*carniolica represents a case of glaciation-driven allopatric subspeciation reinforced by missing secondary contact due to incomplete post-glacial recolonization of potential habitats.}
+      \field{day}{20}
+      \field{issn}{1433-8319}
+      \field{journaltitle}{Perspectives in Plant Ecology, Evolution and Systematics}
+      \field{month}{5}
+      \field{number}{2}
+      \field{shortjournal}{Perspectives in Plant Ecology, Evolution and Systematics}
+      \field{shorttitle}{Spatial Genetic Structure of {{{\mkbibemph{Campanula}}}}{\mkbibemph{ Thyrsoides}} across the {{European Alps}}}
+      \field{title}{Spatial Genetic Structure of {{{\mkbibemph{Campanula}}}}{\mkbibemph{ Thyrsoides}} across the {{European Alps}}: {{Indications}} for Glaciation-Driven Allopatric Subspeciation}
+      \field{urlday}{10}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{volume}{13}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{101\bibrangedash 110}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.ppees.2011.02.003
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\42AU9Z6F\\Kuss et al. - 2011 - Spatial genetic structure of Campanula thyrsoides across the European Alps Indications for g.pdf;C\:\\Users\\flavi\\Zotero\\storage\\VU3Z27ED\\S1433831911000126.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1433831911000126
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1433831911000126
+      \endverb
+      \keyw{Bayesian clustering,Genetic break lines,Genetic diversity,Microsatellites,Tessellation}
+    \endentry
+    \entry{coyneSpeciation2004}{book}{}{}
+      \name{author}{4}{}{%
+        {{hash=55028c33f27d165165b53506903ba8dc}{%
+           family={Coyne},
+           familyi={C\bibinitperiod},
+           given={Jerry\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2802a3580c104293101d08ea0149c5a2}{%
+           family={Orr},
+           familyi={O\bibinitperiod},
+           given={H.\bibnamedelimi Allen},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=55028c33f27d165165b53506903ba8dc}{%
+           family={Coyne},
+           familyi={C\bibinitperiod},
+           given={Jerry\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=2802a3580c104293101d08ea0149c5a2}{%
+           family={Orr},
+           familyi={O\bibinitperiod},
+           given={H.\bibnamedelimi Allen},
+           giveni={H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Oxford, New York}%
+      }
+      \list{publisher}{1}{%
+        {Oxford University Press}%
+      }
+      \strng{namehash}{4d7fbcd5fbe5774e947ce2d08c1c9bc9}
+      \strng{fullhash}{4d7fbcd5fbe5774e947ce2d08c1c9bc9}
+      \strng{fullhashraw}{4d7fbcd5fbe5774e947ce2d08c1c9bc9}
+      \strng{bibnamehash}{4d7fbcd5fbe5774e947ce2d08c1c9bc9}
+      \strng{authorbibnamehash}{4d7fbcd5fbe5774e947ce2d08c1c9bc9}
+      \strng{authornamehash}{4d7fbcd5fbe5774e947ce2d08c1c9bc9}
+      \strng{authorfullhash}{4d7fbcd5fbe5774e947ce2d08c1c9bc9}
+      \strng{authorfullhashraw}{4d7fbcd5fbe5774e947ce2d08c1c9bc9}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Published by Sinauer Associates, an imprint of Oxford University Press. Over the last two decades, the study of speciation has expanded from a modest backwater of evolutionary biology into a large and vigorous discipline. Thus, the literature on speciation, as well as the number of researchers and students working in this area, has grown explosively. Despite these developments, there has been no book-length treatment of speciation in many years. As a result, both the seasoned scholar and the newcomer to evolutionary biology had no ready guide to the recent literature on speciation—a body of work that is enormous, scattered, and increasingly technical. Although several excellent symposium volumes have recently appeared, these collections do not provide a unified, critical, and up-to-date overview of the field. Speciation is designed to fill this gap. Aimed at professional biologists, graduate students, and advanced undergraduates, Speciation covers both plants and animals (the first book on this subject to do so), and deals with all relevant areas of research, including biogeography, field work, systematics, theory, and genetic and molecular studies. It gives special emphasis to topics that are either controversial or the subject of active research, including sympatric speciation, reinforcement, the role of hybridization in speciation, the search for genes causing reproductive isolation, and mounting evidence for the role of natural and sexual selection in the origin of species. The authors do not hesitate to take stands on these and other controversial issues. This critical and scholarly book will be invaluable to researchers in evolutionary biology and is also ideal for a graduate-level course on speciation. , Published by Sinauer Associates, an imprint of Oxford University Press. Over the last two decades, the study of speciation has expanded from a modest backwater of evolutionary biology into a large and vigorous discipline. Thus, the literature on speciation, as well as the number of researchers and students working in this area, has grown explosively. Despite these developments, there has been no book-length treatment of speciation in many years. As a result, both the seasoned scholar and the newcomer to evolutionary biology had no ready guide to the recent literature on speciation—a body of work that is enormous, scattered, and increasingly technical. Although several excellent symposium volumes have recently appeared, these collections do not provide a unified, critical, and up-to-date overview of the field. Speciation is designed to fill this gap. Aimed at professional biologists, graduate students, and advanced undergraduates, Speciation covers both plants and animals (the first book on this subject to do so), and deals with all relevant areas of research, including biogeography, field work, systematics, theory, and genetic and molecular studies. It gives special emphasis to topics that are either controversial or the subject of active research, including sympatric speciation, reinforcement, the role of hybridization in speciation, the search for genes causing reproductive isolation, and mounting evidence for the role of natural and sexual selection in the origin of species. The authors do not hesitate to take stands on these and other controversial issues. This critical and scholarly book will be invaluable to researchers in evolutionary biology and is also ideal for a graduate-level course on speciation.}
+      \field{day}{1}
+      \field{isbn}{978-0-87893-089-0}
+      \field{month}{5}
+      \field{pagetotal}{545}
+      \field{title}{Speciation}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\XCA3SJIF\speciation-9780878930890.html
+      \endverb
+    \endentry
+    \entry{zonneveldDNAWeightsNucleus2019}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=a011b22c284ce80b7a2c911126b9b744}{%
+           family={Zonneveld},
+           familyi={Z\bibinitperiod},
+           given={Ben\bibnamedelima J.M.},
+           giveni={B\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a011b22c284ce80b7a2c911126b9b744}
+      \strng{fullhash}{a011b22c284ce80b7a2c911126b9b744}
+      \strng{fullhashraw}{a011b22c284ce80b7a2c911126b9b744}
+      \strng{bibnamehash}{a011b22c284ce80b7a2c911126b9b744}
+      \strng{authorbibnamehash}{a011b22c284ce80b7a2c911126b9b744}
+      \strng{authornamehash}{a011b22c284ce80b7a2c911126b9b744}
+      \strng{authorfullhash}{a011b22c284ce80b7a2c911126b9b744}
+      \strng{authorfullhashraw}{a011b22c284ce80b7a2c911126b9b744}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{22}
+      \field{journaltitle}{Forum Geobotanicum}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{24--79}
+      \field{title}{The {{DNA}} Weights per Nucleus (Genome Size) of More than 2350 Species of the {{Flora}} of {{The Netherlands}}, of Which 1370 Are New to Science, Including the Pattern of Their {{DNA}} Peaks}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{8}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.3264/FG.2019.1022
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\5LCWIYH2\Zonneveld - 2019 - The DNA weights per nucleus (genome size) of more than 2350 species of the Flora of The Netherlands,.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.3264/FG.2019.1022
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.3264/FG.2019.1022
+      \endverb
+    \endentry
+    \entry{dolezelLetterEditor2003}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=c589f87c6d05f1a5df9932a4896d5be0}{%
+           family={Doležel},
+           familyi={D\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=76f1cbde0425f57c1ddc2a824eb85d05}{%
+           family={Bartoš},
+           familyi={B\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+        {{hash=7d05176c552c9593d79cb9fc86c9429b}{%
+           family={Voglmayr},
+           familyi={V\bibinitperiod},
+           given={H.},
+           giveni={H\bibinitperiod}}}%
+        {{hash=edeeefea1ef2bb5ca12181de4afc5fc0}{%
+           family={Greilhuber},
+           familyi={G\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{bee7d0fa5a3fe4872597e6808e8429e2}
+      \strng{fullhash}{bee7d0fa5a3fe4872597e6808e8429e2}
+      \strng{fullhashraw}{bee7d0fa5a3fe4872597e6808e8429e2}
+      \strng{bibnamehash}{bee7d0fa5a3fe4872597e6808e8429e2}
+      \strng{authorbibnamehash}{bee7d0fa5a3fe4872597e6808e8429e2}
+      \strng{authornamehash}{bee7d0fa5a3fe4872597e6808e8429e2}
+      \strng{authorfullhash}{bee7d0fa5a3fe4872597e6808e8429e2}
+      \strng{authorfullhashraw}{bee7d0fa5a3fe4872597e6808e8429e2}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1552-4930}
+      \field{journaltitle}{Cytometry Part A}
+      \field{langid}{english}
+      \field{number}{2}
+      \field{title}{Letter to the Editor}
+      \field{urlday}{27}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{51A}
+      \field{year}{2003}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{127\bibrangedash 128}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1002/cyto.a.10013
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\93FIXVPE\\Doležel et al. - 2003 - Letter to the editor.pdf;C\:\\Users\\flavi\\Zotero\\storage\\9QXJ5GFX\\cyto.a.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/cyto.a.10013
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1002/cyto.a.10013
+      \endverb
+    \endentry
+    \entry{ewingBaseCallingAutomatedSequencer1998}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=519221c6fe2d361867d7d7d92a19b3ea}{%
+           family={Ewing},
+           familyi={E\bibinitperiod},
+           given={Brent},
+           giveni={B\bibinitperiod}}}%
+        {{hash=33cf0360a64b0f88950b07beb38f7026}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={Phil},
+           giveni={P\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cold Spring Harbor Lab}%
+      }
+      \strng{namehash}{19ead8db12b36682e78e466dacb6bf9d}
+      \strng{fullhash}{19ead8db12b36682e78e466dacb6bf9d}
+      \strng{fullhashraw}{19ead8db12b36682e78e466dacb6bf9d}
+      \strng{bibnamehash}{19ead8db12b36682e78e466dacb6bf9d}
+      \strng{authorbibnamehash}{19ead8db12b36682e78e466dacb6bf9d}
+      \strng{authornamehash}{19ead8db12b36682e78e466dacb6bf9d}
+      \strng{authorfullhash}{19ead8db12b36682e78e466dacb6bf9d}
+      \strng{authorfullhashraw}{19ead8db12b36682e78e466dacb6bf9d}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Elimination of the data processing bottleneck in high-throughput sequencing will require both improved accuracy of data processing software and reliable measures of that accuracy. We have developed and implemented in our base-calling program phred the ability to estimate a probability of error for each base-call, as a function of certain parameters computed from the trace data. These error probabilities are shown here to be valid (correspond to actual error rates) and to have high power to discriminate correct base-calls from incorrect ones, for read data collected under several different chemistries and electrophoretic conditions. They play a critical role in our assembly program phrap and our finishing programconsed.}
+      \field{day}{3}
+      \field{eprinttype}{pubmed}
+      \field{issn}{1088-9051, 1549-5469}
+      \field{journaltitle}{Genome Research}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{3}
+      \field{shortjournal}{Genome Res.}
+      \field{title}{Base-{{Calling}} of {{Automated Sequencer Traces Using Phred}}. {{II}}. {{Error Probabilities}}}
+      \field{urlday}{4}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{8}
+      \field{year}{1998}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{186\bibrangedash 194}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1101/gr.8.3.186
+      \endverb
+      \verb{eprint}
+      \verb 9521922
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\KJDMHJPH\Ewing e Green - 1998 - Base-Calling of Automated Sequencer Traces Using Phred. II. Error Probabilities.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://genome.cshlp.org/content/8/3/186
+      \endverb
+      \verb{url}
+      \verb http://genome.cshlp.org/content/8/3/186
+      \endverb
+    \endentry
+    \entry{oraweAccountingUncertaintyDNA2015}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=3004c915816e18737ba512e56090d07e}{%
+           family={O’Rawe},
+           familyi={O\bibinitperiod},
+           given={Jason\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=6ceb625d7853d563342273f3091a5e33}{%
+           family={Ferson},
+           familyi={F\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ed905672efd5516eab01f2ba8a4b6a0b}{%
+           family={Lyon},
+           familyi={L\bibinitperiod},
+           given={Gholson\bibnamedelima J.},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \strng{namehash}{016c2c938d34512234c621b5d32b22dd}
+      \strng{fullhash}{016c2c938d34512234c621b5d32b22dd}
+      \strng{fullhashraw}{016c2c938d34512234c621b5d32b22dd}
+      \strng{bibnamehash}{016c2c938d34512234c621b5d32b22dd}
+      \strng{authorbibnamehash}{016c2c938d34512234c621b5d32b22dd}
+      \strng{authornamehash}{016c2c938d34512234c621b5d32b22dd}
+      \strng{authorfullhash}{016c2c938d34512234c621b5d32b22dd}
+      \strng{authorfullhashraw}{016c2c938d34512234c621b5d32b22dd}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{01689525}
+      \field{journaltitle}{Trends in Genetics}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shortjournal}{Trends in Genetics}
+      \field{title}{Accounting for Uncertainty in {{DNA}} Sequencing Data}
+      \field{urlday}{4}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{31}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{61\bibrangedash 66}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.tig.2014.12.002
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\ZNKSVFTK\O’Rawe et al. - 2015 - Accounting for uncertainty in DNA sequencing data.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0168952514002091
+      \endverb
+      \verb{url}
+      \verb https://linkinghub.elsevier.com/retrieve/pii/S0168952514002091
+      \endverb
+    \endentry
+    \entry{catchenStacksBuildingGenotyping2011}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=66140d0fb962077d6fadcd43716c3f34}{%
+           family={Catchen},
+           familyi={C\bibinitperiod},
+           given={Julian\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=d71b396bca7ee9574b38a5958790c75b}{%
+           family={Amores},
+           familyi={A\bibinitperiod},
+           given={Angel},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e3cf406b8daf93975a19fdf360811f42}{%
+           family={Hohenlohe},
+           familyi={H\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=b36dbe8ad2c01b06db5d940d0ae5ceae}{%
+           family={Cresko},
+           familyi={C\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=f17027ebb3f81b5ee3729bd5da6b8f38}{%
+           family={Postlethwait},
+           familyi={P\bibinitperiod},
+           given={John\bibnamedelima H},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{6b436b7175f60116144650917528603d}
+      \strng{fullhash}{6b436b7175f60116144650917528603d}
+      \strng{fullhashraw}{6b436b7175f60116144650917528603d}
+      \strng{bibnamehash}{6b436b7175f60116144650917528603d}
+      \strng{authorbibnamehash}{6b436b7175f60116144650917528603d}
+      \strng{authornamehash}{6b436b7175f60116144650917528603d}
+      \strng{authorfullhash}{6b436b7175f60116144650917528603d}
+      \strng{authorfullhashraw}{6b436b7175f60116144650917528603d}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Advances in sequencing technology provide special opportunities for genotyping individuals with speed and thrift, but the lack of software to automate the calling of tens of thousands of genotypes over hundreds of individuals has hindered progress. Stacks is a software system that uses short-read sequence data to identify and genotype loci in a set of individuals either de novo or by comparison to a reference genome. From reduced representation Illumina sequence data, such as RAD-tags, Stacks can recover thousands of single nucleotide polymorphism (SNP) markers useful for the genetic analysis of crosses or populations. Stacks can generate markers for ultra-dense genetic linkage maps, facilitate the examination of population phylogeography, and help in reference genome assembly. We report here the algorithms implemented in Stacks and demonstrate their efficacy by constructing loci from simulated RAD-tags taken from the stickleback reference genome and by recapitulating and improving a genetic map of the zebrafish, Danio rerio.}
+      \field{day}{1}
+      \field{issn}{2160-1836}
+      \field{journaltitle}{G3 Genes|Genomes|Genetics}
+      \field{month}{8}
+      \field{number}{3}
+      \field{shortjournal}{G3 Genes|Genomes|Genetics}
+      \field{shorttitle}{Stacks}
+      \field{title}{Stacks: {{Building}} and {{Genotyping Loci De Novo From Short-Read Sequences}}}
+      \field{urlday}{5}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{1}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{171\bibrangedash 182}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1534/g3.111.000240
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\I9YXQTXI\\Catchen et al. - 2011 - Stacks Building and Genotyping Loci De Novo From Short-Read Sequences.pdf;C\:\\Users\\flavi\\Zotero\\storage\\4QARL4XQ\\g3.111.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1534/g3.111.000240
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1534/g3.111.000240
+      \endverb
+    \endentry
+    \entry{parisLostParameterSpace2017}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=7e57eab071cefc403a0c68a71d2ccf42}{%
+           family={Paris},
+           familyi={P\bibinitperiod},
+           given={Josephine\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=cc885a13ceef0c55683a1da354fce23a}{%
+           family={Stevens},
+           familyi={S\bibinitperiod},
+           given={Jamie\bibnamedelima R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=66140d0fb962077d6fadcd43716c3f34}{%
+           family={Catchen},
+           familyi={C\bibinitperiod},
+           given={Julian\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{58573c95f4fcf271c7356de24b5ad7c8}
+      \strng{fullhash}{58573c95f4fcf271c7356de24b5ad7c8}
+      \strng{fullhashraw}{58573c95f4fcf271c7356de24b5ad7c8}
+      \strng{bibnamehash}{58573c95f4fcf271c7356de24b5ad7c8}
+      \strng{authorbibnamehash}{58573c95f4fcf271c7356de24b5ad7c8}
+      \strng{authornamehash}{58573c95f4fcf271c7356de24b5ad7c8}
+      \strng{authorfullhash}{58573c95f4fcf271c7356de24b5ad7c8}
+      \strng{authorfullhashraw}{58573c95f4fcf271c7356de24b5ad7c8}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Restriction site-Associated DNA sequencing (RAD-seq) has become a widely adopted method for genotyping populations of model and non-model organisms. Generating a reliable set of loci for downstream analysis requires appropriate use of bioinformatics software, such as the program stacks. Using three empirical RAD-seq datasets, we demonstrate a method for optimising a de novo assembly of loci using stacks. By iterating values of the program's main parameters and plotting resultant core metrics for visualisation, researchers can gain a much better understanding of their dataset and select an optimal set of parameters; we present the 80\% rule as a generally effective method to select the core parameters for stacks. Visualisation of the metrics plotted for the three RAD-seq datasets shows that they differ in the optimal parameters that should be used to maximise the amount of available biological information. We also demonstrate that building loci de novo and then integrating alignment positions is more effective than aligning raw reads directly to a reference genome. Our methods will help the community in honing the analytical skills necessary to accurately assemble a RAD-seq dataset.}
+      \field{issn}{2041-210X}
+      \field{journaltitle}{Methods in Ecology and Evolution}
+      \field{langid}{english}
+      \field{number}{10}
+      \field{shorttitle}{Lost in Parameter Space}
+      \field{title}{Lost in Parameter Space: A Road Map for Stacks}
+      \field{urlday}{5}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{8}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1360\bibrangedash 1373}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1111/2041-210X.12775
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\EVIJ49GA\\Paris et al. - 2017 - Lost in parameter space a road map for stacks.pdf;C\:\\Users\\flavi\\Zotero\\storage\\25W36FEJ\\2041-210X.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.12775
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/2041-210X.12775
+      \endverb
+      \keyw{alignment,de novo assembly,parameter optimisation,population genetics,RAD-seq,stacks}
+    \endentry
+    \entry{visscherLimitsIndividualIdentification2009}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d5ce32204ec6f41d2698be960fbf332a}{%
+           family={Visscher},
+           familyi={V\bibinitperiod},
+           given={Peter\bibnamedelima M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=3c7d8fa96ecc42be051f077455d1e127}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={William\bibnamedelima G.},
+           giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{8dcc2cace6276026394c765cde3c249b}
+      \strng{fullhash}{8dcc2cace6276026394c765cde3c249b}
+      \strng{fullhashraw}{8dcc2cace6276026394c765cde3c249b}
+      \strng{bibnamehash}{8dcc2cace6276026394c765cde3c249b}
+      \strng{authorbibnamehash}{8dcc2cace6276026394c765cde3c249b}
+      \strng{authornamehash}{8dcc2cace6276026394c765cde3c249b}
+      \strng{authorfullhash}{8dcc2cace6276026394c765cde3c249b}
+      \strng{authorfullhashraw}{8dcc2cace6276026394c765cde3c249b}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{It was shown recently using experimental data that it is possible under certain conditions to determine whether a person with known genotypes at a number of markers was part of a sample from which only allele frequencies are known. Using population genetic and statistical theory, we show that the power of such identification is, approximately, proportional to the number of independent SNPs divided by the size of the sample from which the allele frequencies are available. We quantify the limits of identification and propose likelihood and regression analysis methods for the analysis of data. We show that these methods have similar statistical properties and have more desirable properties, in terms of type-I error rate and statistical power, than test statistics suggested in the literature.}
+      \field{day}{2}
+      \field{issn}{1553-7404}
+      \field{journaltitle}{PLOS Genetics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{PLOS Genetics}
+      \field{shorttitle}{The {{Limits}} of {{Individual Identification}} from {{Sample Allele Frequencies}}}
+      \field{title}{The {{Limits}} of {{Individual Identification}} from {{Sample Allele Frequencies}}: {{Theory}} and {{Statistical Analysis}}}
+      \field{urlday}{6}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{5}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{e1000628}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1371/journal.pgen.1000628
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\NTZ82WP9\Visscher e Hill - 2009 - The Limits of Individual Identification from Sample Allele Frequencies Theory and Statistical Analy.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000628
+      \endverb
+      \verb{url}
+      \verb https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1000628
+      \endverb
+      \keyw{Forensics,Genetic loci,Genome-wide association studies,Linear regression analysis,Probability distribution,Single nucleotide polymorphisms,Test statistics,Variant genotypes}
+    \endentry
+    \entry{semagnPrinciplesRequirementsProspects}{article}{}{}
+      \name{author}{3}{}{%
+        {{hash=c0ef6a9c5cfee2c263047375af6c39f7}{%
+           family={Semagn},
+           familyi={S\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod}}}%
+        {{hash=afb09158455af36b4239ac7f1912532e}{%
+           family={Bjørnstad},
+           familyi={B\bibinitperiod},
+           given={Å},
+           giveni={Å\bibinitperiod}}}%
+        {{hash=bb3bf1114962128f7decb4b13f9c8049}{%
+           family={Ndjiondjop},
+           familyi={N\bibinitperiod},
+           given={M\bibnamedelima N},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{045e90ec963c6490309d99baaa105aed}
+      \strng{fullhash}{045e90ec963c6490309d99baaa105aed}
+      \strng{fullhashraw}{045e90ec963c6490309d99baaa105aed}
+      \strng{bibnamehash}{045e90ec963c6490309d99baaa105aed}
+      \strng{authorbibnamehash}{045e90ec963c6490309d99baaa105aed}
+      \strng{authornamehash}{045e90ec963c6490309d99baaa105aed}
+      \strng{authorfullhash}{045e90ec963c6490309d99baaa105aed}
+      \strng{authorfullhashraw}{045e90ec963c6490309d99baaa105aed}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Genetic mapping (also known as linkage mapping or meiotic mapping) refers to the determination of the relative position and distances between markers along chromosomes. Genetic map distances between two markers are defined as the mean number of recombination events, involving a given chromatid, in that region per meiosis. Genetic map construction requires that the researcher develop appropriate mapping population, decide the sample size and type of molecular marker(s) for genotyping, genotype the mapping population with sufficient number of markers, and perform linkage analyses using statistical programs. The construction of detailed genetic maps with high levels of genome coverage is a first step for localizing genes or quantitative trait loci (QTL) that are associated with economically important traits, marker assisted selection, comparative mapping between different species, a framework for anchoring physical maps, and the basis for map-based cloning of genes. Highly reproducible, high throughput, codominant, and transferable molecular markers, especially developed from expressed regions, are sought to increase the utility of genetic maps. This article reviews the principles, requirements, and future prospects of genetic mapping in plants.}
+      \field{langid}{english}
+      \field{title}{Principles, Requirements and Prospects of Genetic Mapping in Plants}
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\BUY4P2YY\Semagn et al. - Principles, requirements and prospects of genetic mapping in plants.pdf
+      \endverb
+    \endentry
+    \entry{huehnRandomVariabilityMap2010}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=f39c97559b3a18e36b15b78e2d0280d7}{%
+           family={Huehn},
+           familyi={H\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{f39c97559b3a18e36b15b78e2d0280d7}
+      \strng{fullhash}{f39c97559b3a18e36b15b78e2d0280d7}
+      \strng{fullhashraw}{f39c97559b3a18e36b15b78e2d0280d7}
+      \strng{bibnamehash}{f39c97559b3a18e36b15b78e2d0280d7}
+      \strng{authorbibnamehash}{f39c97559b3a18e36b15b78e2d0280d7}
+      \strng{authornamehash}{f39c97559b3a18e36b15b78e2d0280d7}
+      \strng{authorfullhash}{f39c97559b3a18e36b15b78e2d0280d7}
+      \strng{authorfullhashraw}{f39c97559b3a18e36b15b78e2d0280d7}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The majority of published genetic maps are based on Kosambi distances or on Haldane distances. For a comparison of both map distance measures, their random variability is of particular interest. For the statistic ‘variance’, this paper presents a relationship between Kosambi distances and Haldane distances. The results suggest that Kosambi distances exhibit a smaller random variability. The theoretical results are applied to an experimental data set for molecular AFLP markers linked to the bolting gene of sugar beet (Beta vulgaris L.).}
+      \field{day}{1}
+      \field{issn}{2190-3883}
+      \field{journaltitle}{Journal of Applied Genetics}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{1}
+      \field{shortjournal}{J Appl Genet}
+      \field{title}{Random Variability of Map Distances Based on {{Kosambi}}’s and {{Haldane}}’s Mapping Functions}
+      \field{urlday}{6}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{51}
+      \field{year}{2010}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{27\bibrangedash 31}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1007/BF03195707
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\KJF63YUA\Huehn - 2010 - Random variability of map distances based on Kosambi’s and Haldane’s mapping functions.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1007/BF03195707
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1007/BF03195707
+      \endverb
+      \keyw{AFLP markers,Beta vulgaris,bolting gene,Brain Mapping,Genetic mapping,genetic maps,Genetic Markers,Genetic Variation,Haldane distance,Kosambi distance,Quantitative trait,Structural Variation}
+    \endentry
+    \entry{kanakaConceptsMeasuresDiversity2023}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=3764c69845d2bc62f58cd15ce320f938}{%
+           family={Kanaka},
+           familyi={K\bibinitperiod},
+           given={K.\bibnamedelimi K.},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=403f202e556437970fdb76778feae2dd}{%
+           family={Sukhija},
+           familyi={S\bibinitperiod},
+           given={Nidhi},
+           giveni={N\bibinitperiod}}}%
+        {{hash=e547d64ebb384bf8e65dbbe285483384}{%
+           family={Goli},
+           familyi={G\bibinitperiod},
+           given={Rangasai\bibnamedelima Chandra},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=c68fe5c0ac09a6f264369ffed7772e70}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Sanjeev},
+           giveni={S\bibinitperiod}}}%
+        {{hash=6d7748028d2585a79d14fee91ed223e1}{%
+           family={Ganguly},
+           familyi={G\bibinitperiod},
+           given={Indrajit},
+           giveni={I\bibinitperiod}}}%
+        {{hash=f7a29c63ff9e63a343d2c90944775a01}{%
+           family={Dixit},
+           familyi={D\bibinitperiod},
+           given={S.\bibnamedelimi P.},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=65eeb544be95abc19c6a1ab62821bc95}{%
+           family={Dash},
+           familyi={D\bibinitperiod},
+           given={Aishwarya},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2debe55322d925bc9da20e247b4e0a7d}{%
+           family={Malik},
+           familyi={M\bibinitperiod},
+           given={Anoop\bibnamedelima Anand},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{6ebcdf205c17bc26b1fe1b4e4a6aa02a}
+      \strng{fullhash}{6247ad626550115b58269e0fb9451a06}
+      \strng{fullhashraw}{6247ad626550115b58269e0fb9451a06}
+      \strng{bibnamehash}{6ebcdf205c17bc26b1fe1b4e4a6aa02a}
+      \strng{authorbibnamehash}{6ebcdf205c17bc26b1fe1b4e4a6aa02a}
+      \strng{authornamehash}{6ebcdf205c17bc26b1fe1b4e4a6aa02a}
+      \strng{authorfullhash}{6247ad626550115b58269e0fb9451a06}
+      \strng{authorfullhashraw}{6247ad626550115b58269e0fb9451a06}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Diversity serves as the foundation for breeding and evolution. In the science of genomics, the investigation of genetic variation has long been a prominent subject. Researchers now have access to previously unheard volumes of data, thanks to the development of new genomic technologies which allow them to thoroughly examine the complexity of genetic variation. As a result, new definitions and measurements of diversity have been created, taking into consideration things like how genetic variation is distributed throughout populations, the impact of natural selection, and the connection between genetic and phenotypic diversity. One crucial idea is "genetic ancestry" which describes the percentage of a person's genetic composition that may be linked to particular ancestral populations. Heterozygosity, which measures the degree of genetic variation within a population, is another crucial indicator of diversity. Recent developments in genomics have resulted in the creation of new tools and methodologies for examining the complexity of genetic variation in addition to these conventional diversity measurements. Generally, the area of diversity research is rapidly changing in the genomics age, with new theories and measures being created on a regular basis. The origins and effects of genetic variation are expected to continue to be revealed as our knowledge of genetic diversity deepens, with substantial ramifications for human health, evolutionary biology, and a variety of other domains.}
+      \field{day}{1}
+      \field{issn}{2214-6628}
+      \field{journaltitle}{Current Plant Biology}
+      \field{month}{1}
+      \field{shortjournal}{Current Plant Biology}
+      \field{title}{On the Concepts and Measures of Diversity in the Genomics Era}
+      \field{urlday}{7}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{33}
+      \field{year}{2023}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{100278}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.cpb.2023.100278
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\GU7G7FF2\\Kanaka et al. - 2023 - On the concepts and measures of diversity in the genomics era.pdf;C\:\\Users\\flavi\\Zotero\\storage\\J7DMYZI7\\S2214662823000075.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S2214662823000075
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S2214662823000075
+      \endverb
+      \keyw{Abiotic stress,Breeding,Classical genetics,Diversity,Genotyping,Haplotype,Linkage disequilibrium,Phylogeny}
+    \endentry
+    \entry{wrightGeneticalStructurePopulations1949}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=f23690c7a566b5607094b5dc80dd3d22}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={Sewall},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{f23690c7a566b5607094b5dc80dd3d22}
+      \strng{fullhash}{f23690c7a566b5607094b5dc80dd3d22}
+      \strng{fullhashraw}{f23690c7a566b5607094b5dc80dd3d22}
+      \strng{bibnamehash}{f23690c7a566b5607094b5dc80dd3d22}
+      \strng{authorbibnamehash}{f23690c7a566b5607094b5dc80dd3d22}
+      \strng{authornamehash}{f23690c7a566b5607094b5dc80dd3d22}
+      \strng{authorfullhash}{f23690c7a566b5607094b5dc80dd3d22}
+      \strng{authorfullhashraw}{f23690c7a566b5607094b5dc80dd3d22}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The articles published by the Annals of Eugenics (1925–1954) have been made available online as an historical archive intended for scholarly use. The work of eugenicists was often pervaded by prejudice against racial, ethnic and disabled groups. The online publication of this material for scholarly research purposes is not an endorsement of those views nor a promotion of eugenics in any way.}
+      \field{issn}{2050-1439}
+      \field{journaltitle}{Annals of Eugenics}
+      \field{langid}{english}
+      \field{number}{1}
+      \field{title}{The {{Genetical Structure}} of {{Populations}}}
+      \field{urlday}{7}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{15}
+      \field{year}{1949}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{323\bibrangedash 354}
+      \range{pages}{32}
+      \verb{doi}
+      \verb 10.1111/j.1469-1809.1949.tb02451.x
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\WCZDLILY\\Wright - 1949 - The Genetical Structure of Populations.pdf;C\:\\Users\\flavi\\Zotero\\storage\\UIJ5K5UL\\j.1469-1809.1949.tb02451.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1949.tb02451.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1469-1809.1949.tb02451.x
+      \endverb
+    \endentry
+    \entry{b.s.weirEstimatingFStatisticsAnalysis1984}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=8094d7143d7547ad9c34a178b442d4aa}{%
+           family={{B. S. Weir}},
+           familyi={B\bibinitperiod}}}%
+        {{hash=57557eb44449290c35bfc48b8d2581de}{%
+           family={{C. Clark Cockerham}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{001fee1a51d4f01300bf7b1b9807f383}
+      \strng{fullhash}{001fee1a51d4f01300bf7b1b9807f383}
+      \strng{fullhashraw}{001fee1a51d4f01300bf7b1b9807f383}
+      \strng{bibnamehash}{001fee1a51d4f01300bf7b1b9807f383}
+      \strng{authorbibnamehash}{001fee1a51d4f01300bf7b1b9807f383}
+      \strng{authornamehash}{001fee1a51d4f01300bf7b1b9807f383}
+      \strng{authorfullhash}{001fee1a51d4f01300bf7b1b9807f383}
+      \strng{authorfullhashraw}{001fee1a51d4f01300bf7b1b9807f383}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{PDF | Formulae are given for estimators for the parameters F, θ, f (FIT, FST, FIS) of population structure. As with all such estimators, ratios are used... | Find, read and cite all the research you need on ResearchGate}
+      \field{journaltitle}{Evolution}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{6}
+      \field{shorttitle}{Estimating {{F-Statistics}} for the {{Analysis}} of {{Population Structure}}.}
+      \field{title}{Estimating {{F-Statistics}} for the {{Analysis}} of {{Population Structure}}.}
+      \field{urlday}{7}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{38}
+      \field{year}{1984}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1358\bibrangedash 1370}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.2307/2408641
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\B8XACBJ7\2025 - (PDF) Weir BS, Cockerham CC.. Estimating F-Statistics for the Analysis of Population-Structure. Evol.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/publication/200102299_Weir_BS_Cockerham_CC_Estimating_F-Statistics_for_the_Analysis_of_Population-Structure_Evolution_38_1358-1370
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/publication/200102299_Weir_BS_Cockerham_CC_Estimating_F-Statistics_for_the_Analysis_of_Population-Structure_Evolution_38_1358-1370
+      \endverb
+    \endentry
+    \entry{weirEstimatingFStatistics2002}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=ed12ea911d789e89689e16fbc9c41960}{%
+           family={Weir},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi S.},
+           giveni={B\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=69c2f8d7d9457e23cf87cb81fab60f19}{%
+           family={Hill},
+           familyi={H\bibinitperiod},
+           given={W.\bibnamedelimi G.},
+           giveni={W\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{8b719643e71eba41daf7a0d5da3720a5}
+      \strng{fullhash}{8b719643e71eba41daf7a0d5da3720a5}
+      \strng{fullhashraw}{8b719643e71eba41daf7a0d5da3720a5}
+      \strng{bibnamehash}{8b719643e71eba41daf7a0d5da3720a5}
+      \strng{authorbibnamehash}{8b719643e71eba41daf7a0d5da3720a5}
+      \strng{authornamehash}{8b719643e71eba41daf7a0d5da3720a5}
+      \strng{authorfullhash}{8b719643e71eba41daf7a0d5da3720a5}
+      \strng{authorfullhashraw}{8b719643e71eba41daf7a0d5da3720a5}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{▪ Abstract\enspace{} A moment estimator of θ, the coancestry coefficient for alleles within a population, was described by Weir \& Cockerham in 1984 ( 100 ) and is still widely cited. The estimate is used by population geneticists to characterize population structure, by ecologists to estimate migration rates, by animal breeders to describe genetic variation, and by forensic scientists to quantify the strength of matching DNA profiles. This review extends the work of Weir \& Cockerham by allowing different levels of coancestry for different populations, and by allowing non-zero coancestries between pairs of populations. All estimates are relative to the average value of θ between pairs of populations. Moment estimates for within- and between-population θ values are likely to have large sampling variances, although these may be reduced by combining information over loci. Variances also decrease with the numbers of alleles at a locus, and with the numbers of populations sampled. This review also extends the work of Weir \& Cockerham by employing maximum likelihood methods under the assumption that allele frequencies follow the normal distribution over populations. For the case of equal θ values within populations and zero θ values between populations, the maximum likelihood estimate is the same as that given by Robertson \& Hill in 1984 ( 70 ). The review concludes by relating functions of θ values to times of population divergence under a pure drift model.}
+      \field{issn}{0066-4197, 1545-2948}
+      \field{journaltitle}{Annual Review of Genetics}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shortjournal}{Annu. Rev. Genet.}
+      \field{title}{Estimating {{F-Statistics}}}
+      \field{urlday}{8}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{36}
+      \field{year}{2002}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{721\bibrangedash 750}
+      \range{pages}{30}
+      \verb{doi}
+      \verb 10.1146/annurev.genet.36.050802.093940
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\KV8AZVX3\Weir e Hill - 2002 - Estimating F-Statistics.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev.genet.36.050802.093940
+      \endverb
+      \verb{url}
+      \verb https://www.annualreviews.org/doi/10.1146/annurev.genet.36.050802.093940
+      \endverb
+    \endentry
+    \entry{bhatiaEstimatingInterpretingFST2013}{article}{}{}
+      \name{author}{4}{}{%
+        {{hash=5e2dc6fe2b0a84ae88d47a4b70a24e1c}{%
+           family={Bhatia},
+           familyi={B\bibinitperiod},
+           given={Gaurav},
+           giveni={G\bibinitperiod}}}%
+        {{hash=88c3ebd7390fa0517feb43783fbc46b2}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=42444e8073f744a3db61a499f44443f9}{%
+           family={Sankararaman},
+           familyi={S\bibinitperiod},
+           given={Sriram},
+           giveni={S\bibinitperiod}}}%
+        {{hash=d7232180657bcd5abc91fabf86e4984f}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={Alkes\bibnamedelima L.},
+           giveni={A\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{82848513d311d15ccf80ad162976a79d}
+      \strng{fullhash}{82848513d311d15ccf80ad162976a79d}
+      \strng{fullhashraw}{82848513d311d15ccf80ad162976a79d}
+      \strng{bibnamehash}{82848513d311d15ccf80ad162976a79d}
+      \strng{authorbibnamehash}{82848513d311d15ccf80ad162976a79d}
+      \strng{authornamehash}{82848513d311d15ccf80ad162976a79d}
+      \strng{authorfullhash}{82848513d311d15ccf80ad162976a79d}
+      \strng{authorfullhashraw}{82848513d311d15ccf80ad162976a79d}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In a pair of seminal papers, Sewall Wright and Gustave Malécot introduced F ST as a measure of structure in natural populations. In the decades that followed, a number of papers provided differing definitions, estimation methods, and interpretations beyond Wright's. While this diversity in methods has enabled many studies in genetics, it has also introduced confusion regarding how to estimate F ST from available data. Considering this confusion, wide variation in published estimates of F ST for pairs of HapMap populations is a cause for concern. These estimates changed—in some cases more than twofold—when comparing estimates from genotyping arrays to those from sequence data. Indeed, changes in F ST from sequencing data might be expected due to population genetic factors affecting rare variants. While rare variants do influence the result, we show that this is largely through differences in estimation methods. Correcting for this yields estimates of F ST that are much more concordant between sequence and genotype data. These differences relate to three specific issues: (1) estimating F ST for a single SNP, (2) combining estimates of F ST across multiple SNPs, and (3) selecting the set of SNPs used in the computation. Changes in each of these aspects of estimation may result in F ST estimates that are highly divergent from one another. Here, we clarify these issues and propose solutions.}
+      \field{issn}{1088-9051}
+      \field{journaltitle}{Genome Research}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{number}{9}
+      \field{shortjournal}{Genome Res.}
+      \field{shorttitle}{Estimating and Interpreting {{{\mkbibemph{F}}}}{{{\textsubscript{ST}}}}}
+      \field{title}{Estimating and Interpreting {{{\mkbibemph{F}}}}{{{\textsubscript{ST}}}} : {{The}} Impact of Rare Variants}
+      \field{urlday}{7}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{23}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1514\bibrangedash 1521}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1101/gr.154831.113
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\SL6PVYKI\Bhatia et al. - 2013 - Estimating and interpreting FST The impact of rare variants.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://genome.cshlp.org/lookup/doi/10.1101/gr.154831.113
+      \endverb
+      \verb{url}
+      \verb http://genome.cshlp.org/lookup/doi/10.1101/gr.154831.113
+      \endverb
+    \endentry
+    \entry{loaizaReviewGeneticDiversity2012}{article}{}{}
+      \name{author}{6}{}{%
+        {{hash=d674d43d1ab51cd13d3400b2b8185a9b}{%
+           family={Loaiza},
+           familyi={L\bibinitperiod},
+           given={J.\bibnamedelimi R.},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=c8015d5a293527ac7ea9056291bd5520}{%
+           family={Bermingham},
+           familyi={B\bibinitperiod},
+           given={E.},
+           giveni={E\bibinitperiod}}}%
+        {{hash=55163d8234b964dbcff275838242b0d0}{%
+           family={Sanjur},
+           familyi={S\bibinitperiod},
+           given={O.\bibnamedelimi I.},
+           giveni={O\bibinitperiod\bibinitdelim I\bibinitperiod}}}%
+        {{hash=cc529a019fa44b8dbefa5347222aba57}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={M.\bibnamedelimi E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=51ac19f50a8b9bbb8c931efddb572142}{%
+           family={Bickersmith},
+           familyi={B\bibinitperiod},
+           given={S.\bibnamedelimi A.},
+           giveni={S\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=1c2400fb4c12251aef352d52ec978c0b}{%
+           family={Conn},
+           familyi={C\bibinitperiod},
+           given={J.\bibnamedelimi E.},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \strng{namehash}{44f0d0c541936cc00461f059a449ce35}
+      \strng{fullhash}{28e167b5f470da9fd05b2e373013c559}
+      \strng{fullhashraw}{28e167b5f470da9fd05b2e373013c559}
+      \strng{bibnamehash}{44f0d0c541936cc00461f059a449ce35}
+      \strng{authorbibnamehash}{44f0d0c541936cc00461f059a449ce35}
+      \strng{authornamehash}{44f0d0c541936cc00461f059a449ce35}
+      \strng{authorfullhash}{28e167b5f470da9fd05b2e373013c559}
+      \strng{authorfullhashraw}{28e167b5f470da9fd05b2e373013c559}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We review previous studies on the genetic diversity of malaria vectors to highlight the major trends in population structure and demographic history. In doing so, we outline key information about molecular markers, sampling strategies and approaches to investigate the causes of genetic structure in Anopheles mosquitoes. Restricted gene flow due to isolation by distance and physical barriers to dispersal may explain the spatial pattern of current genetic diversity in some Anopheles species. Nonetheless, there is noteworthy disagreement among studies, perhaps due to variation in sampling methodologies, choice of molecular markers, and/or analytical approaches. More refined genealogical methods of population analysis allowing for the inclusion of the temporal component of genetic diversity facilitated the evaluation of the contribution of historical demographic processes to genetic structure. A common pattern of past unstable demography (i.e., historical fluctuation in the effective population size) by several Anopheles species, regardless of methodology (DNA markers), mosquito ecology (anthropophilic vs zoophilic), vector status (primary vs secondary) and geographical distribution, suggests that Pleistocene environmental changes were major drivers of divergence at population and species levels worldwide.}
+      \field{day}{1}
+      \field{issn}{1567-1348}
+      \field{journaltitle}{Infection, Genetics and Evolution}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shortjournal}{Infection, Genetics and Evolution}
+      \field{shorttitle}{Review of Genetic Diversity in Malaria Vectors ({{Culicidae}}}
+      \field{title}{Review of Genetic Diversity in Malaria Vectors ({{Culicidae}}: {{Anophelinae}})}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{12}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1016/j.meegid.2011.08.004
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\7HQYA35N\\Loaiza et al. - 2012 - Review of genetic diversity in malaria vectors (Culicidae Anophelinae).pdf;C\:\\Users\\flavi\\Zotero\\storage\\SSUVIQI4\\S1567134811002838.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/S1567134811002838
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/S1567134811002838
+      \endverb
+      \keyw{Demographic expansion,Gene flow,Genetic diversity,Isolation by distance,Pleistocene environmental changes}
+    \endentry
+    \entry{mantelDetectionDiseaseClustering1967}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=7f9cc6904e6e5862b920df6e9ebc01b2}{%
+           family={Mantel},
+           familyi={M\bibinitperiod},
+           given={Nathan},
+           giveni={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f9cc6904e6e5862b920df6e9ebc01b2}
+      \strng{fullhash}{7f9cc6904e6e5862b920df6e9ebc01b2}
+      \strng{fullhashraw}{7f9cc6904e6e5862b920df6e9ebc01b2}
+      \strng{bibnamehash}{7f9cc6904e6e5862b920df6e9ebc01b2}
+      \strng{authorbibnamehash}{7f9cc6904e6e5862b920df6e9ebc01b2}
+      \strng{authornamehash}{7f9cc6904e6e5862b920df6e9ebc01b2}
+      \strng{authorfullhash}{7f9cc6904e6e5862b920df6e9ebc01b2}
+      \strng{authorfullhashraw}{7f9cc6904e6e5862b920df6e9ebc01b2}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The problem of identifying subtle time-space clustering of disease, as may be occurring in leukemia, is described and reviewed. Published approaches, generally associated with studies of leukemia, not dependent on knowledge of the underlying population for their validity, are directed towards identifying clustering by establishing a relationship between the temporal and the spatial separations for the n(n - 1)/2 possible pairs which can be formed from the n observed cases of disease. Here it is proposed that statistical power can be improved by applying a reciprocal transform to these separations. While a permutational approach can give valid probability levels for any observed association, for reasons of practicability, it is suggested that the observed association be tested relative to its permutational variance. Formulas and computational procedures for doing so are given.While the distance measures between points represent symmetric relationships subject to mathematical and geometric regularities, the variance formula developed is appropriate for arbitrary relationships. Simplified procedures are given for the case of symmetric and skew-symmetric relationships. The general procedure is indicated as being potentially useful in other situations as, for example, the study of interpersonal relationships. Viewing the procedure as a regression approach, the possibility for extending it to nonlinear and multivariate situations is suggested.Other aspects of the problem and of the procedure developed are discussed.Similarly, pure temporal clustering can be identified by a study of incidence rates in periods of widespread epidemics. In point of fact, many epidemics of communicable diseases are somewhat local in nature and so these do actually constitute temporal-spatial clusters. For leukemia and similar diseases in which cases seem to arise substantially at random rather than as clear-cut epidemics, it is necessary to devise sensitive and efficient procedures for detecting any nonrandom component of disease occurrence.Various ingenious procedures which statisticians have developed for the detection of disease clustering are reviewed here. These procedures can be generalized so as to increase their statistical validity and efficiency. The technic to be given below for imparting statistical validity to the procedures already in vogue can be viewed as a generalized form of regression with possible useful application to problems arising in quite different contexts.}
+      \field{day}{1}
+      \field{issn}{0008-5472}
+      \field{issue}{2\_Part\_1}
+      \field{journaltitle}{Cancer Research}
+      \field{month}{2}
+      \field{shortjournal}{Cancer Res}
+      \field{title}{The {{Detection}} of {{Disease Clustering}} and a {{Generalized Regression Approach}}}
+      \field{volume}{27}
+      \field{year}{1967}
+      \field{dateera}{ce}
+      \field{pages}{209\bibrangedash 220}
+      \range{pages}{12}
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\Y246DZ4S\\Mantel - 1967 - The Detection of Disease Clustering and a Generalized Regression Approach.pdf;C\:\\Users\\flavi\\Zotero\\storage\\YRR2WLV5\\The-Detection-of-Disease-Clustering-and-a.html
+      \endverb
+    \endentry
+    \entry{diniz-filhoMantelTestPopulation2013}{article}{}{}
+      \name{author}{8}{}{%
+        {{hash=3a4603f639dc09d52e76caae72dcc04c}{%
+           family={Diniz-Filho},
+           familyi={D\bibinithyphendelim F\bibinitperiod},
+           given={José\bibnamedelimb Alexandre\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=8bac0df8f51cf780cd8a2b9fa53385c4}{%
+           family={Soares},
+           familyi={S\bibinitperiod},
+           given={Thannya\bibnamedelima N.},
+           giveni={T\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=f3fada23ec020ec2e1b783900afbab7e}{%
+           family={Lima},
+           familyi={L\bibinitperiod},
+           given={Jacqueline\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=de770ccee09685323d35135eddaec7a0}{%
+           family={Dobrovolski},
+           familyi={D\bibinitperiod},
+           given={Ricardo},
+           giveni={R\bibinitperiod}}}%
+        {{hash=0c3e3a6d3de98b1e78071aaf93902f11}{%
+           family={Landeiro},
+           familyi={L\bibinitperiod},
+           given={Victor\bibnamedelima Lemes},
+           giveni={V\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=04fed0da77a4d869173aa7e544bd9275}{%
+           family={Telles},
+           familyi={T\bibinitperiod},
+           given={Mariana\bibnamedelimb Pires\bibnamedelimb De\bibnamedelima Campos},
+           giveni={M\bibinitperiod\bibinitdelim P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=b41ce30b4bdf71744430d9b2b17104cc}{%
+           family={Rangel},
+           familyi={R\bibinitperiod},
+           given={Thiago\bibnamedelima F.},
+           giveni={T\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=d90dd46b42a790958d175c16148cea7d}{%
+           family={Bini},
+           familyi={B\bibinitperiod},
+           given={Luis\bibnamedelima Mauricio},
+           giveni={L\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8511ec10d1d36253e844e337a89260a9}
+      \strng{fullhash}{479844db3799c74906b4d88148fd01da}
+      \strng{fullhashraw}{479844db3799c74906b4d88148fd01da}
+      \strng{bibnamehash}{8511ec10d1d36253e844e337a89260a9}
+      \strng{authorbibnamehash}{8511ec10d1d36253e844e337a89260a9}
+      \strng{authornamehash}{8511ec10d1d36253e844e337a89260a9}
+      \strng{authorfullhash}{479844db3799c74906b4d88148fd01da}
+      \strng{authorfullhashraw}{479844db3799c74906b4d88148fd01da}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The comparison of genetic divergence or genetic distances, estimated by pairwise FST and related statistics, with geographical distances by Mantel test is one of the most popular approaches to evaluate spatial processes driving population structure. There have been, however, recent criticisms and discussions on the statistical performance of the Mantel test. Simultaneously, alternative frameworks for data analyses are being proposed. Here, we review the Mantel test and its variations, including Mantel correlograms and partial correlations and regressions. For illustrative purposes, we studied spatial genetic divergence among 25 populations of Dipteryxalata(“Baru”), a tree species endemic to the Cerrado, the Brazilian savannas, based on 8 microsatellite loci. We also applied alternative methods to analyze spatial patterns in this dataset, especially a multivariate generalization of Spatial Eigenfunction Analysis based on redundancy analysis. The different approaches resulted in similar estimates of the magnitude of spatial structure in the genetic data. Furthermore, the results were expected based on previous knowledge of the ecological and evolutionary processes underlying genetic variation in this species. Our review shows that a careful application and interpretation of Mantel tests, especially Mantel correlograms, can overcome some potential statistical problems and provide a simple and useful tool for multivariate analysis of spatial patterns of genetic divergence.}
+      \field{issn}{1415-4757}
+      \field{journaltitle}{Genetics and Molecular Biology}
+      \field{langid}{english}
+      \field{number}{4}
+      \field{shortjournal}{Genet. Mol. Biol.}
+      \field{title}{Mantel Test in Population Genetics}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{36}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{475\bibrangedash 485}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1590/S1415-47572013000400002
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\M47PX62W\Diniz-Filho et al. - 2013 - Mantel test in population genetics.pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1415-47572013000400002&lng=en&tlng=en
+      \endverb
+      \verb{url}
+      \verb http://www.scielo.br/scielo.php?script=sci_arttext&pid=S1415-47572013000400002&lng=en&tlng=en
+      \endverb
+    \endentry
+    \entry{el-hashashComparisonPearsonSpearman2022}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=019e0f87a2fc650deadfcf5754b1afa5}{%
+           family={El-Hashash},
+           familyi={E\bibinithyphendelim H\bibinitperiod},
+           given={Essam\bibnamedelima F.},
+           giveni={E\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=79d2abacf5d6a20610db37050635f93b}{%
+           family={Shiekh},
+           familyi={S\bibinitperiod},
+           given={Raga\bibnamedelimb Hassan\bibnamedelima Ali},
+           giveni={R\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{361d7135df50e9b88f9dc0a715d5b534}
+      \strng{fullhash}{361d7135df50e9b88f9dc0a715d5b534}
+      \strng{fullhashraw}{361d7135df50e9b88f9dc0a715d5b534}
+      \strng{bibnamehash}{361d7135df50e9b88f9dc0a715d5b534}
+      \strng{authorbibnamehash}{361d7135df50e9b88f9dc0a715d5b534}
+      \strng{authornamehash}{361d7135df50e9b88f9dc0a715d5b534}
+      \strng{authorfullhash}{361d7135df50e9b88f9dc0a715d5b534}
+      \strng{authorfullhashraw}{361d7135df50e9b88f9dc0a715d5b534}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{18}
+      \field{issn}{2582-0230}
+      \field{journaltitle}{Asian Journal of Probability and Statistics}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{title}{A {{Comparison}} of the {{Pearson}}, {{Spearman Rank}} and {{Kendall Tau Correlation Coefficients Using Quantitative Variables}}}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{36\bibrangedash 48}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.9734/ajpas/2022/v20i3425
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\7PS2GDUF\El-Hashash e Shiekh - 2022 - A Comparison of the Pearson, Spearman Rank and Kendall Tau Correlation Coefficients Using Quantitati.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://journalajpas.com/index.php/AJPAS/article/view/425
+      \endverb
+      \verb{url}
+      \verb https://journalajpas.com/index.php/AJPAS/article/view/425
+      \endverb
+      \keyw{Correlation,Kendall’s Tau,PCA,pearson,RMSE,Spearman's Rank}
+    \endentry
+    \entry{kamvarPopprGeneticAnalysis2013}{dataset}{}{}
+      \name{author}{4}{}{%
+        {{hash=f25f28c418fcbdbf3b453a71f5025b93}{%
+           family={Kamvar},
+           familyi={K\bibinitperiod},
+           given={Zhian\bibnamedelima N.},
+           giveni={Z\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+        {{hash=df1540e486ef8d9e95c79408eac9e3ad}{%
+           family={Tabima},
+           familyi={T\bibinitperiod},
+           given={Javier\bibnamedelima F.},
+           giveni={J\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=66f4035ceccab9d5c297b3bedfee7dfe}{%
+           family={Brooks},
+           familyi={B\bibinitperiod},
+           given={Jonah\bibnamedelima C.},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=4135e572446bde160be50fd0e5f7296a}{%
+           family={Folarin},
+           familyi={F\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Comprehensive R Archive Network}%
+      }
+      \strng{namehash}{f8671ab70df0dc32913381f6629a85ee}
+      \strng{fullhash}{f8671ab70df0dc32913381f6629a85ee}
+      \strng{fullhashraw}{f8671ab70df0dc32913381f6629a85ee}
+      \strng{bibnamehash}{f8671ab70df0dc32913381f6629a85ee}
+      \strng{authorbibnamehash}{f8671ab70df0dc32913381f6629a85ee}
+      \strng{authornamehash}{f8671ab70df0dc32913381f6629a85ee}
+      \strng{authorfullhash}{f8671ab70df0dc32913381f6629a85ee}
+      \strng{authorfullhashraw}{f8671ab70df0dc32913381f6629a85ee}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Population genetic analyses for hierarchical analysis of partially clonal populations built upon the architecture of the 'adegenet' package. Originally described in Kamvar, Tabima, and Grünwald (2014) {$<$}doi:10.7717/peerj.281{$>$} with version 2.0 described in Kamvar, Brooks, and Grünwald (2015) {$<$}doi:10.3389/fgene.2015.00208{$>$}.}
+      \field{day}{26}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shorttitle}{Poppr}
+      \field{title}{Poppr: {{Genetic Analysis}} of {{Populations}} with {{Mixed Reproduction}}}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{2.9.7}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.32614/CRAN.package.poppr
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\XB5EU8HP\Kamvar et al. - 2013 - poppr Genetic Analysis of Populations with Mixed Reproduction.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=poppr
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=poppr
+      \endverb
+    \endentry
+    \entry{ojhaChapter5Computational2022a}{incollection}{}{}
+      \name{author}{3}{}{%
+        {{hash=687e9502a47c94fff66c689c16e6e913}{%
+           family={Ojha},
+           familyi={O\bibinitperiod},
+           given={Krishna\bibnamedelima Kumar},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=64abc85231efb98804eac273c0f433d1}{%
+           family={Mishra},
+           familyi={M\bibinitperiod},
+           given={Swapnil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=cc046f58226759a3764579b2b9dec2b7}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Vijay\bibnamedelima Kumar},
+           giveni={V\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=5d506a9fefa48c1804adb944d7f47d24}{%
+           family={Singh},
+           familyi={S\bibinitperiod},
+           given={Dev\bibnamedelima Bukhsh},
+           giveni={D\bibinitperiod\bibinitdelim B\bibinitperiod}}}%
+        {{hash=7aed1614a426ad6edf1bc1e310b6e4e4}{%
+           family={Pathak},
+           familyi={P\bibinitperiod},
+           given={Rajesh\bibnamedelima Kumar},
+           giveni={R\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Academic Press}%
+      }
+      \strng{namehash}{3e4547eb8e625f530062785e27da4f2d}
+      \strng{fullhash}{3e4547eb8e625f530062785e27da4f2d}
+      \strng{fullhashraw}{3e4547eb8e625f530062785e27da4f2d}
+      \strng{bibnamehash}{3e4547eb8e625f530062785e27da4f2d}
+      \strng{authorbibnamehash}{3e4547eb8e625f530062785e27da4f2d}
+      \strng{authornamehash}{3e4547eb8e625f530062785e27da4f2d}
+      \strng{authorfullhash}{3e4547eb8e625f530062785e27da4f2d}
+      \strng{authorfullhashraw}{3e4547eb8e625f530062785e27da4f2d}
+      \strng{editorbibnamehash}{e419bacb260eb6a74f40a0d1755ceea5}
+      \strng{editornamehash}{e419bacb260eb6a74f40a0d1755ceea5}
+      \strng{editorfullhash}{e419bacb260eb6a74f40a0d1755ceea5}
+      \strng{editorfullhashraw}{e419bacb260eb6a74f40a0d1755ceea5}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Molecular phylogenetics is very old and it predates by the origin of several molecular biology technologies, such as sequencing of DNA and protein sequences. Initially, the objective of phylogeny was to classify organisms according to their similarities and differences. The difficulty in obtaining large mathematical datasets when morphological characters are used was one of the main driving forces behind the gradual shift toward molecular data. Nucleic acids (DNA and RNA) and proteins are information molecules that can be compared using computer programs and estimate the evolutionary relationships based on the degree of homology between the sequences. Our objective is to describe common terminology used in molecular phylogenetics and to compare character-based, distance-based, and Bayesian inference methods. We will also explain how one can assess the level of confidence of a phylogenetic tree, using bootstrapping and jackknifing. Lastly, we also analyze various tools available for inferring evolutionary relationships among organisms.}
+      \field{booktitle}{Bioinformatics}
+      \field{day}{1}
+      \field{isbn}{978-0-323-89775-4}
+      \field{month}{1}
+      \field{shorttitle}{Chapter 5 - {{Computational}} Molecular Phylogeny}
+      \field{title}{Chapter 5 - {{Computational}} Molecular Phylogeny: Concepts and Applications}
+      \field{urlday}{13}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{67\bibrangedash 89}
+      \range{pages}{23}
+      \verb{doi}
+      \verb 10.1016/B978-0-323-89775-4.00025-0
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\X8MSRF2Z\B9780323897754000250.html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780323897754000250
+      \endverb
+      \verb{url}
+      \verb https://www.sciencedirect.com/science/article/pii/B9780323897754000250
+      \endverb
+      \keyw{Bayesian phylogeny,clade,Evolution,homology,maximum likelihood,multiple sequence alignment,phylogenetic tree,shared derived characters,ultrametric}
+    \endentry
+    \entry{zouCommonMethodsPhylogenetic2024}{article}{}{}
+      \name{author}{7}{}{%
+        {{hash=720d1940da2bb5a6e0f7195859517918}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Yue},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d795a1bfe15c3573bda31f8798b4d26a}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Zixuan},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=62babdab3c26874c9ef36ad7a16c52b0}{%
+           family={Zeng},
+           familyi={Z\bibinitperiod},
+           given={Yujie},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=7af595b709b5931628bf850ea25ca449}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Hanyue},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c2d9ad4cf4673273f2bc223e41ad0ccc}{%
+           family={Hao},
+           familyi={H\bibinitperiod},
+           given={Youjin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=c2a7ced72472992536b07322cfad02a1}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Sheng},
+           giveni={S\bibinitperiod}}}%
+        {{hash=a9c8728e355996d027a7e56b60820a18}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Bo},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd03c8c9a9619e928cc66eb269df811f}
+      \strng{fullhash}{d9c1988d9855f6f260073090428eb02d}
+      \strng{fullhashraw}{d9c1988d9855f6f260073090428eb02d}
+      \strng{bibnamehash}{dd03c8c9a9619e928cc66eb269df811f}
+      \strng{authorbibnamehash}{dd03c8c9a9619e928cc66eb269df811f}
+      \strng{authornamehash}{dd03c8c9a9619e928cc66eb269df811f}
+      \strng{authorfullhash}{d9c1988d9855f6f260073090428eb02d}
+      \strng{authorfullhashraw}{d9c1988d9855f6f260073090428eb02d}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A phylogenetic tree can reflect the evolutionary relationships between species or gene families, and they play a critical role in modern biological research. In this review, we summarize common methods for constructing phylogenetic trees, including distance methods, maximum parsimony, maximum likelihood, Bayesian inference, and tree-integration methods (supermatrix and supertree). Here we discuss the advantages, shortcomings, and applications of each method and offer relevant codes to construct phylogenetic trees from molecular data using packages and algorithms in R. This review aims to provide comprehensive guidance and reference for researchers seeking to construct phylogenetic trees while also promoting further development and innovation in this field. By offering a clear and concise overview of the different methods available, we hope to enable researchers to select the most appropriate approach for their specific research questions and datasets.}
+      \field{day}{11}
+      \field{eprinttype}{pubmed}
+      \field{issn}{2306-5354}
+      \field{journaltitle}{Bioengineering}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shortjournal}{Bioengineering (Basel)}
+      \field{title}{Common {{Methods}} for {{Phylogenetic Tree Construction}} and {{Their Implementation}} in {{R}}}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{11}
+      \field{year}{2024}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{480}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/bioengineering11050480
+      \endverb
+      \verb{eprint}
+      \verb 38790347
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\R8B8VCPW\Zou et al. - 2024 - Common Methods for Phylogenetic Tree Construction and Their Implementation in R.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11117635/
+      \endverb
+      \verb{url}
+      \verb https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11117635/
+      \endverb
+    \endentry
+    \entry{kalyaanamoorthyModelFinderFastModel2017}{article}{}{}
+      \name{author}{5}{}{%
+        {{hash=272ab0983912427445ebe8a9fd17fb04}{%
+           family={Kalyaanamoorthy},
+           familyi={K\bibinitperiod},
+           given={Subha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3331b2b694c3c86ff90fcece74fcfa30}{%
+           family={Minh},
+           familyi={M\bibinitperiod},
+           given={Bui\bibnamedelima Quang},
+           giveni={B\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+        {{hash=d83f794dda9a0765b44cfc6884a57183}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelimb K.\bibnamedelimi F.},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{useprefix=true,hash=c6699d807ad08a2adbc48e32deccc5de}{%
+           family={Haeseler},
+           familyi={H\bibinitperiod},
+           given={Arndt},
+           giveni={A\bibinitperiod},
+           prefix={von},
+           prefixi={v\bibinitperiod}}}%
+        {{hash=a9d0165df2c181bd4298178f65269a78}{%
+           family={Jermiin},
+           familyi={J\bibinitperiod},
+           given={Lars\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nature Publishing Group}%
+      }
+      \strng{namehash}{f32283932aadc555caa135a6a788e7a5}
+      \strng{fullhash}{f32283932aadc555caa135a6a788e7a5}
+      \strng{fullhashraw}{f32283932aadc555caa135a6a788e7a5}
+      \strng{bibnamehash}{f32283932aadc555caa135a6a788e7a5}
+      \strng{authorbibnamehash}{f32283932aadc555caa135a6a788e7a5}
+      \strng{authornamehash}{f32283932aadc555caa135a6a788e7a5}
+      \strng{authorfullhash}{f32283932aadc555caa135a6a788e7a5}
+      \strng{authorfullhashraw}{f32283932aadc555caa135a6a788e7a5}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{ModelFinder is a fast model-selection method that greatly improves the accuracy of phylogenetic estimates.}
+      \field{issn}{1548-7105}
+      \field{journaltitle}{Nature Methods}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{6}
+      \field{shortjournal}{Nat Methods}
+      \field{shorttitle}{{{ModelFinder}}}
+      \field{title}{{{ModelFinder}}: Fast Model Selection for Accurate Phylogenetic Estimates}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{14}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{587\bibrangedash 589}
+      \range{pages}{3}
+      \verb{doi}
+      \verb 10.1038/nmeth.4285
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\ZCMWUUZI\Kalyaanamoorthy et al. - 2017 - ModelFinder fast model selection for accurate phylogenetic estimates.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://www.nature.com/articles/nmeth.4285
+      \endverb
+      \verb{url}
+      \verb https://www.nature.com/articles/nmeth.4285
+      \endverb
+      \keyw{Computational biology and bioinformatics,Evolution,Phylogeny}
+    \endentry
+    \entry{lewisLikelihoodApproachEstimating2001}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=0bd99132ecdf85d7b34bd413c7504f93}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Paul\bibnamedelima O.},
+           giveni={P\bibinitperiod\bibinitdelim O\bibinitperiod}}}%
+      }
+      \strng{namehash}{0bd99132ecdf85d7b34bd413c7504f93}
+      \strng{fullhash}{0bd99132ecdf85d7b34bd413c7504f93}
+      \strng{fullhashraw}{0bd99132ecdf85d7b34bd413c7504f93}
+      \strng{bibnamehash}{0bd99132ecdf85d7b34bd413c7504f93}
+      \strng{authorbibnamehash}{0bd99132ecdf85d7b34bd413c7504f93}
+      \strng{authornamehash}{0bd99132ecdf85d7b34bd413c7504f93}
+      \strng{authorfullhash}{0bd99132ecdf85d7b34bd413c7504f93}
+      \strng{authorfullhashraw}{0bd99132ecdf85d7b34bd413c7504f93}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Evolutionary biologists have adopted simple likelihood models for purposes of estimating ancestral states and evaluating character independence on specified phylogenies; however, for purposes of estimating phylogenies by using discrete morphological data, maximum parsimony remains the only option. This paper explores the possibility of using standard, well-behaved Markov models for estimating morphological phylogenies (including branch lengths) under the likelihood criterion. An important modification of standard Markov models involves making the likelihood conditional on characters being variable, because constant characters are absent in morphological data sets. Without this modification, branch lengths are often overestimated, resulting in potentially serious biases in tree topology selection. Several new avenues of research are opened by an explicitly model-based approach to phylogenetic analysis of discrete morphological data, including combined-data likelihood analyses (morphology + sequence data), likelihood ratio tests, and Bayesian analyses.}
+      \field{day}{1}
+      \field{issn}{1063-5157}
+      \field{journaltitle}{Systematic Biology}
+      \field{month}{11}
+      \field{number}{6}
+      \field{shortjournal}{Syst Biol}
+      \field{title}{A {{Likelihood Approach}} to {{Estimating Phylogeny}} from {{Discrete Morphological Character Data}}}
+      \field{urlday}{22}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{volume}{50}
+      \field{year}{2001}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{913\bibrangedash 925}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1080/106351501753462876
+      \endverb
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\RPM8CFSW\106351501753462876.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1080/106351501753462876
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1080/106351501753462876
+      \endverb
+    \endentry
+    \entry{wongIQTREE3Phylogenomic2025}{article}{}{}
+      \name{author}{13}{}{%
+        {{hash=d83f794dda9a0765b44cfc6884a57183}{%
+           family={Wong},
+           familyi={W\bibinitperiod},
+           given={Thomas\bibnamedelimb K.\bibnamedelimi F.},
+           giveni={T\bibinitperiod\bibinitdelim K\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+        {{hash=879509cf9f50b59f8df3236beb6fc32f}{%
+           family={Ly-Trong},
+           familyi={L\bibinithyphendelim T\bibinitperiod},
+           given={Nhan},
+           giveni={N\bibinitperiod}}}%
+        {{hash=c6cdc4078ff8425d8c4016c6dcd7e300}{%
+           family={Ren},
+           familyi={R\bibinitperiod},
+           given={Huaiyan},
+           giveni={H\bibinitperiod}}}%
+        {{hash=e8f758ecd18cddb85d5f0adcca206e2d}{%
+           family={Baños},
+           familyi={B\bibinitperiod},
+           given={Hector},
+           giveni={H\bibinitperiod}}}%
+        {{hash=c858ef0656126748806a1d1715727974}{%
+           family={Roger},
+           familyi={R\bibinitperiod},
+           given={Andrew\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=7b8213448d0803752de8c9e42880e0a8}{%
+           family={Susko},
+           familyi={S\bibinitperiod},
+           given={Edward},
+           giveni={E\bibinitperiod}}}%
+        {{hash=2249f9860893b374cae753f94d0a62ca}{%
+           family={Bielow},
+           familyi={B\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=349e1a8b42cd6f8dadb8816b7a10d0aa}{%
+           family={Maio},
+           familyi={M\bibinitperiod},
+           given={Nicola\bibnamedelima De},
+           giveni={N\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+        {{hash=238c2d79de8e559d41a7475ac41eea27}{%
+           family={Goldman},
+           familyi={G\bibinitperiod},
+           given={Nick},
+           giveni={N\bibinitperiod}}}%
+        {{hash=4027003c3188ac13af638b52507d20d5}{%
+           family={Hahn},
+           familyi={H\bibinitperiod},
+           given={Matthew\bibnamedelima W.},
+           giveni={M\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+        {{hash=25e7f589e7fdb559ec97d02f5ca610de}{%
+           family={Huttley},
+           familyi={H\bibinitperiod},
+           given={Gavin},
+           giveni={G\bibinitperiod}}}%
+        {{hash=60eb8ca962e5f9223309aad64f858a90}{%
+           family={Lanfear},
+           familyi={L\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=3331b2b694c3c86ff90fcece74fcfa30}{%
+           family={Minh},
+           familyi={M\bibinitperiod},
+           given={Bui\bibnamedelima Quang},
+           giveni={B\bibinitperiod\bibinitdelim Q\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {EcoEvoRxiv}%
+      }
+      \strng{namehash}{43f0480b4bbce18fc95c0f722c9dcbae}
+      \strng{fullhash}{6c24f4b41c96aed42c7d0e15c3fd9f29}
+      \strng{fullhashraw}{6c24f4b41c96aed42c7d0e15c3fd9f29}
+      \strng{bibnamehash}{43f0480b4bbce18fc95c0f722c9dcbae}
+      \strng{authorbibnamehash}{43f0480b4bbce18fc95c0f722c9dcbae}
+      \strng{authornamehash}{43f0480b4bbce18fc95c0f722c9dcbae}
+      \strng{authorfullhash}{6c24f4b41c96aed42c7d0e15c3fd9f29}
+      \strng{authorfullhashraw}{6c24f4b41c96aed42c7d0e15c3fd9f29}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{IQ-TREE (http://www.iqtree.org) is a widely used open-source software tool for efficiently inferring phylogenetic trees under maximum likelihood. Here, we present IQ-TREE version 3, the third major release of the software. IQ-TREE 3 significantly extends version 2 with new features, including mixture models as an alternative to partitioned models, gene and site concordance factors to quantify discordance between genomic regions, and a fully-featured sequence simulator. The IQ-TREE 3 source code is available at https://github.com/iqtree/iqtree3.}
+      \field{day}{7}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{shorttitle}{{{IQ-TREE}} 3}
+      \field{title}{{{IQ-TREE}} 3: {{Phylogenomic Inference Software}} Using {{Complex Evolutionary Models}}}
+      \field{urlday}{11}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{year}{2025}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb C:\Users\flavi\Zotero\storage\7KXCUNMP\Wong et al. - 2025 - IQ-TREE 3 Phylogenomic Inference Software using Complex Evolutionary Models.pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://ecoevorxiv.org/repository/view/8916/
+      \endverb
+      \verb{url}
+      \verb https://ecoevorxiv.org/repository/view/8916/
+      \endverb
+    \endentry
+    \entry{vilanovaSILEXFastInexpensive2020}{article}{}{}
+      \name{author}{11}{}{%
+        {{hash=7202a170eb8e91a69a14512e211c9567}{%
+           family={Vilanova},
+           familyi={V\bibinitperiod},
+           given={Santiago},
+           giveni={S\bibinitperiod}}}%
+        {{hash=616de3263b076cfa5c29bf8927a1b333}{%
+           family={Alonso},
+           familyi={A\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=1860a3309c18d8f7ff8e304a3640ac78}{%
+           family={Gramazio},
+           familyi={G\bibinitperiod},
+           given={Pietro},
+           giveni={P\bibinitperiod}}}%
+        {{hash=de1f72b9c7932849e0e6dc9a0c2fc9b5}{%
+           family={Plazas},
+           familyi={P\bibinitperiod},
+           given={Mariola},
+           giveni={M\bibinitperiod}}}%
+        {{hash=2d0be7f452c107ecd8428cfb936e911b}{%
+           family={García-Fortea},
+           familyi={G\bibinithyphendelim F\bibinitperiod},
+           given={Edgar},
+           giveni={E\bibinitperiod}}}%
+        {{hash=305dc18fea0a375d42c52cddc7ed8240}{%
+           family={Ferrante},
+           familyi={F\bibinitperiod},
+           given={Paola},
+           giveni={P\bibinitperiod}}}%
+        {{hash=aa2fe9bffee00493b0e8365415173832}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Maximilian},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5d651e3e5643b513dc7b6430fbbe0974}{%
+           family={Díez},
+           familyi={D\bibinitperiod},
+           given={María\bibnamedelima José},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=14033543bc008eb0952a89210bd67295}{%
+           family={Usadel},
+           familyi={U\bibinitperiod},
+           given={Björn},
+           giveni={B\bibinitperiod}}}%
+        {{hash=0d5f7d16dfc473005f3ffe87b4f6147c}{%
+           family={Giuliano},
+           familyi={G\bibinitperiod},
+           given={Giovanni},
+           giveni={G\bibinitperiod}}}%
+        {{hash=c8eb4a5c0fb86fa7564b80819a44cc18}{%
+           family={Prohens},
+           familyi={P\bibinitperiod},
+           given={Jaime},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{a4ed79228e18e6496821959bed15597e}
+      \strng{fullhash}{94b542f7455ca7da7f1a2f4dbb83e3b7}
+      \strng{fullhashraw}{94b542f7455ca7da7f1a2f4dbb83e3b7}
+      \strng{bibnamehash}{a4ed79228e18e6496821959bed15597e}
+      \strng{authorbibnamehash}{a4ed79228e18e6496821959bed15597e}
+      \strng{authornamehash}{a4ed79228e18e6496821959bed15597e}
+      \strng{authorfullhash}{94b542f7455ca7da7f1a2f4dbb83e3b7}
+      \strng{authorfullhashraw}{94b542f7455ca7da7f1a2f4dbb83e3b7}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The use of sequencing and genotyping platforms has undergone dramatic improvements, enabling the generation of a wealth of genomic information. Despite this progress, the availability of high-quality genomic DNA (gDNA) in sufficient concentrations is often a main limitation, especially for third-generation sequencing platforms. A variety of DNA extraction methods and commercial kits are available. However, many of these are costly and frequently give either low yield or low-quality DNA, inappropriate for next generation sequencing (NGS) platforms. Here, we describe a fast and inexpensive DNA extraction method (SILEX) applicable to a wide range of plant species and tissues.}
+      \field{day}{10}
+      \field{issn}{1746-4811}
+      \field{journaltitle}{Plant Methods}
+      \field{month}{8}
+      \field{number}{1}
+      \field{shortjournal}{Plant Methods}
+      \field{shorttitle}{{{SILEX}}}
+      \field{title}{{{SILEX}}: A Fast and Inexpensive High-Quality {{DNA}} Extraction Method Suitable for Multiple Sequencing Platforms and Recalcitrant Plant Species}
+      \field{urlday}{11}
+      \field{urlmonth}{3}
+      \field{urlyear}{2025}
+      \field{volume}{16}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{110}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s13007-020-00652-y
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\LGLS784L\\Vilanova et al. - 2020 - SILEX a fast and inexpensive high-quality DNA extraction method suitable for multiple sequencing pl.pdf;C\:\\Users\\flavi\\Zotero\\storage\\6GKNXWUR\\s13007-020-00652-y.html
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1186/s13007-020-00652-y
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1186/s13007-020-00652-y
+      \endverb
+      \keyw{Contaminant-free DNA,CTAB protocol,DNA extraction,High-molecular-weight DNA,High-throughput genotyping,Nanopore,Next-generation sequencing,Recalcitrant species,Silica matrix,SPET}
+    \endentry
+    \entry{nomenclaturecommitteeoftheinternationalunionofbiochemistrync-iubUnitsEnzymeActivity1979}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=2c608d6494f4267f17803641704960c9}{%
+           family={{Nomenclature Committee of the International Union of Biochemistry (NC-IUB)}},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{2c608d6494f4267f17803641704960c9}
+      \strng{fullhash}{2c608d6494f4267f17803641704960c9}
+      \strng{fullhashraw}{2c608d6494f4267f17803641704960c9}
+      \strng{bibnamehash}{2c608d6494f4267f17803641704960c9}
+      \strng{authorbibnamehash}{2c608d6494f4267f17803641704960c9}
+      \strng{authornamehash}{2c608d6494f4267f17803641704960c9}
+      \strng{authorfullhash}{2c608d6494f4267f17803641704960c9}
+      \strng{authorfullhashraw}{2c608d6494f4267f17803641704960c9}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1432-1033}
+      \field{journaltitle}{European Journal of Biochemistry}
+      \field{langid}{english}
+      \field{number}{2}
+      \field{title}{Units of {{Enzyme Activity}}}
+      \field{urlday}{11}
+      \field{urlmonth}{4}
+      \field{urlyear}{2025}
+      \field{volume}{97}
+      \field{year}{1979}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{319\bibrangedash 320}
+      \range{pages}{2}
+      \verb{doi}
+      \verb 10.1111/j.1432-1033.1979.tb13116.x
+      \endverb
+      \verb{file}
+      \verb C\:\\Users\\flavi\\Zotero\\storage\\5L686BGU\\Nomenclature Committee of the International Union of Biochemistry (NC-IUB) - 1979 - Units of Enzyme Activity.pdf;C\:\\Users\\flavi\\Zotero\\storage\\RWKW9TMD\\Nomenclature Committee of the International Union of Biochemistry (NC-IUB) - 1979 - Units of Enzyme Activity.pdf;C\:\\Users\\flavi\\Zotero\\storage\\JFWBAHTG\\j.1432-1033.1979.tb13116.html
+      \endverb
+      \verb{urlraw}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1432-1033.1979.tb13116.x
+      \endverb
+      \verb{url}
+      \verb https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1432-1033.1979.tb13116.x
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
