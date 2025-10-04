@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.20)  3 SEP 2025 13:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.2.20)  4 OCT 2025 10:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -669,7 +669,11 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2024/03/21 v3.20 biblatex datamodel (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: ... file 'apa.dbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex-apa/apa.dbx
+File: apa.dbx 2023/03/20 v9.17 APA biblatex style data model
+)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count363
@@ -708,38 +712,48 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@savedshortauthor=\count396
 \c@shorteditor=\count397
 \c@savedshorteditor=\count398
-\c@labelname=\count399
-\c@savedlabelname=\count400
-\c@institution=\count401
-\c@savedinstitution=\count402
-\c@lista=\count403
-\c@savedlista=\count404
-\c@listb=\count405
-\c@savedlistb=\count406
-\c@listc=\count407
-\c@savedlistc=\count408
-\c@listd=\count409
-\c@savedlistd=\count410
-\c@liste=\count411
-\c@savedliste=\count412
-\c@listf=\count413
-\c@savedlistf=\count414
-\c@location=\count415
-\c@savedlocation=\count416
-\c@organization=\count417
-\c@savedorganization=\count418
-\c@origlocation=\count419
-\c@savedoriglocation=\count420
-\c@origpublisher=\count421
-\c@savedorigpublisher=\count422
-\c@publisher=\count423
-\c@savedpublisher=\count424
-\c@language=\count425
-\c@savedlanguage=\count426
-\c@origlanguage=\count427
-\c@savedoriglanguage=\count428
-\c@pageref=\count429
-\c@savedpageref=\count430
+\c@narrator=\count399
+\c@savednarrator=\count400
+\c@execproducer=\count401
+\c@savedexecproducer=\count402
+\c@execdirector=\count403
+\c@savedexecdirector=\count404
+\c@with=\count405
+\c@savedwith=\count406
+\c@labelname=\count407
+\c@savedlabelname=\count408
+\c@institution=\count409
+\c@savedinstitution=\count410
+\c@lista=\count411
+\c@savedlista=\count412
+\c@listb=\count413
+\c@savedlistb=\count414
+\c@listc=\count415
+\c@savedlistc=\count416
+\c@listd=\count417
+\c@savedlistd=\count418
+\c@liste=\count419
+\c@savedliste=\count420
+\c@listf=\count421
+\c@savedlistf=\count422
+\c@location=\count423
+\c@savedlocation=\count424
+\c@organization=\count425
+\c@savedorganization=\count426
+\c@origlocation=\count427
+\c@savedoriglocation=\count428
+\c@origpublisher=\count429
+\c@savedorigpublisher=\count430
+\c@publisher=\count431
+\c@savedpublisher=\count432
+\c@language=\count433
+\c@savedlanguage=\count434
+\c@origlanguage=\count435
+\c@savedoriglanguage=\count436
+\c@citation=\count437
+\c@savedcitation=\count438
+\c@pageref=\count439
+\c@savedpageref=\count440
 \shorthandwidth=\skip129
 \shortjournalwidth=\skip130
 \shortserieswidth=\skip131
@@ -765,49 +779,66 @@ Package biblatex Info: ... file 'biblatex.def' found.
 
 (c:/texlive/2024/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2024/03/21 v3.20 biblatex compatibility (PK/MW)
-\c@textcitecount=\count431
-\c@textcitetotal=\count432
-\c@textcitemaxnames=\count433
-\c@biburlbigbreakpenalty=\count434
-\c@biburlbreakpenalty=\count435
-\c@biburlnumpenalty=\count436
-\c@biburlucpenalty=\count437
-\c@biburllcpenalty=\count438
+\c@textcitecount=\count441
+\c@textcitetotal=\count442
+\c@textcitemaxnames=\count443
+\c@biburlbigbreakpenalty=\count444
+\c@biburlbreakpenalty=\count445
+\c@biburlnumpenalty=\count446
+\c@biburlucpenalty=\count447
+\c@biburllcpenalty=\count448
 \biburlbigskip=\muskip19
 \biburlnumskip=\muskip20
 \biburlucskip=\muskip21
 \biburllcskip=\muskip22
-\c@smartand=\count439
+\c@smartand=\count449
 )
-Package biblatex Info: Trying to load bibliography style 'numeric'...
-Package biblatex Info: ... file 'numeric.bbx' found.
+Package biblatex Info: Trying to load bibliography style 'apa'...
+Package biblatex Info: ... file 'apa.bbx' found.
 
-(c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
-File: numeric.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex-apa/apa.bbx
+File: apa.bbx 2023/03/20 v9.17 APA biblatex references style
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
 (c:/texlive/2024/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2024/03/21 v3.20 biblatex bibliography style (PK/MW)
-\c@bbx:relatedcount=\count440
-\c@bbx:relatedtotal=\count441
-))
-Package biblatex Info: Trying to load citation style 'numeric'...
-Package biblatex Info: ... file 'numeric.cbx' found.
+\c@bbx:relatedcount=\count450
+\c@bbx:relatedtotal=\count451
+)
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'bib' already defin
+ed, overwriting.
+Package biblatex Info: Delimiter 'nameyeardelim' in context 'biblist' already d
+efined, overwriting.
+Package biblatex Info: Delimiter 'nonameyeardelim' in context 'bib' already def
+ined, overwriting.
+Package biblatex Info: Delimiter 'nonameyeardelim' in context 'biblist' already
+ defined, overwriting.
+)
+Package biblatex Info: Trying to load citation style 'apa'...
+Package biblatex Info: ... file 'apa.cbx' found.
 
-(c:/texlive/2024/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
-File: numeric.cbx 2024/03/21 v3.20 biblatex citation style (PK/MW)
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex-apa/apa.cbx
+File: apa.cbx 2023/03/20 v9.17 APA biblatex citation style
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+Package biblatex Info: Delimiter 'andothersdelim' in context '' already defined
+, overwriting.
+Package biblatex Info: Redefining '\fullcite'.
+Package biblatex Info: Redefining '\citeauthor'.
+Package biblatex Info: Redefining '\citeyear'.
 Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcites'.
 Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\footcitetexts'.
 Package biblatex Info: Redefining '\smartcite'.
-Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Redefining '\textcite'.
 Package biblatex Info: Redefining '\textcites'.
-Package biblatex Info: Redefining '\cites'.
-Package biblatex Info: Redefining '\parencites'.
-Package biblatex Info: Redefining '\smartcites'.
 )
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
@@ -823,7 +854,7 @@ Package: expl3 2025-01-18 L3 programming layer (loader)
 
 (c:/texlive/2024/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count442
+\l__color_backend_stack_int=\count452
 \l__pdf_internal_box=\box62
 ))
 Package biblatex Info: ... and expl3
@@ -837,34 +868,67 @@ Package: xparse 2024-08-16 L3 Experimental document command parser
 )
 Package: blx-case-expl3 2024/03/21 v3.20 expl3 case changing code for biblatex
 ))
-\@quotelevel=\count443
-\@quotereset=\count444
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 1
-8.
+(c:/texlive/2024/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2024/07/06 v1.0i Color table columns (DPC)
+\everycr=\toks32
+\minrowclearance=\skip143
+\rownum=\count453
+)
+(c:/texlive/2024/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count454
+\lst@gtempboxa=\box63
+\lst@token=\toks33
+\lst@length=\count455
+\lst@currlwidth=\dimen270
+\lst@column=\count456
+\lst@pos=\count457
+\lst@lostspace=\dimen271
+\lst@width=\dimen272
+\lst@newlines=\count458
+\lst@lineno=\count459
+\lst@maxwidth=\dimen273
+
+(c:/texlive/2024/texmf-dist/tex/latex/listings/lstpatch.sty
+File: lstpatch.sty 2024/09/23 1.10c (Carsten Heinz)
+)
+(c:/texlive/2024/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
+\c@lstnumber=\count460
+\lst@skipnumbers=\count461
+\lst@framebox=\box64
+)
+(c:/texlive/2024/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2024/09/23 1.10c listings configuration
+))
+Package: listings 2024/09/23 1.10c (Carsten Heinz)
+\@quotelevel=\count462
+\@quotereset=\count463
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 2
+9.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -902,17 +966,17 @@ LaTeX Font Info:    ... okay on input line 18.
 
 (c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count445
-\scratchdimen=\dimen270
-\scratchbox=\box63
-\nofMPsegments=\count446
-\nofMParguments=\count447
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count448
-\MPscratchDim=\dimen271
-\MPnumerator=\count449
-\makeMPintoPDFobject=\count450
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count464
+\scratchdimen=\dimen274
+\scratchbox=\box65
+\nofMPsegments=\count465
+\nofMParguments=\count466
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count467
+\MPscratchDim=\dimen275
+\MPnumerator=\count468
+\makeMPintoPDFobject=\count469
+\everyMPtoPDFconversion=\toks35
 ) (c:/texlive/2024/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -922,20 +986,42 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
+Package biblatex Info: Trying to load language 'english' -> 'english-apa'...
+Package biblatex Info: ... file 'english-apa.lbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex-apa/english-apa.lbx
+File: english-apa.lbx 2023/03/20 v9.17 APA biblatex localisation
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
 (c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
 )
+Package biblatex Info: Trying to load language 'american' -> 'american-apa'...
+Package biblatex Info: ... file 'american-apa.lbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex-apa/american-apa.lbx
+File: american-apa.lbx 2023/03/20 v9.17 APA biblatex localisation
+Package biblatex Info: Trying to load language 'american'...
+Package biblatex Info: ... file 'american.lbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/american.lbx
+File: american.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
+
+(c:/texlive/2024/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+File: english.lbx 2024/03/21 v3.20 biblatex localization (PK/MW)
+))))
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
@@ -944,52 +1030,53 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'main.bbl' found.
  (./main.bbl)
-Package biblatex Info: Reference section=0 on input line 18.
-Package biblatex Info: Reference segment=0 on input line 18.
-<tesiSCIENZE_TECNOLOGIE.jpg, id=200, 398.4486pt x 156.585pt>
+Package biblatex Info: Reference section=0 on input line 29.
+Package biblatex Info: Reference segment=0 on input line 29.
+\c@lstlisting=\count470
+<tesiSCIENZE_TECNOLOGIE.jpg, id=217, 398.4486pt x 156.585pt>
 File: tesiSCIENZE_TECNOLOGIE.jpg Graphic file (type jpg)
 <use tesiSCIENZE_TECNOLOGIE.jpg>
-Package pdftex.def Info: tesiSCIENZE_TECNOLOGIE.jpg  used on input line 20.
+Package pdftex.def Info: tesiSCIENZE_TECNOLOGIE.jpg  used on input line 31.
 (pdftex.def)             Requested size: 364.19667pt x 143.12572pt.
-<Logo_Politecnico_Milano.png, id=201, 666.49pt x 489.83pt>
+<Logo_Politecnico_Milano.png, id=218, 666.49pt x 489.83pt>
 File: Logo_Politecnico_Milano.png Graphic file (type png)
 <use Logo_Politecnico_Milano.png>
-Package pdftex.def Info: Logo_Politecnico_Milano.png  used on input line 20.
+Package pdftex.def Info: Logo_Politecnico_Milano.png  used on input line 31.
 (pdftex.def)             Requested size: 159.33821pt x 117.09819pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 20--20
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
 
  []
 
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line
- 20.
+ 31.
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ztmcm on input line
- 20.
+ 31.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMS+ztmcm on input line
- 20.
+ 31.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+ztmcm on input line
- 20.
+ 31.
 
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 20.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 31.
 
 
 [1
@@ -1003,14 +1090,14 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.38 \clearpage
+l.59 \clearpage
                
-<Campanula_thyrsoides_botanic_illustration_bw.png, id=213, 844.1136pt x 1250.75
+<Campanula_thyrsoides_botanic_illustration_bw.png, id=229, 844.1136pt x 1250.75
 28pt>
 File: Campanula_thyrsoides_botanic_illustration_bw.png Graphic file (type png)
 <use Campanula_thyrsoides_botanic_illustration_bw.png>
 Package pdftex.def Info: Campanula_thyrsoides_botanic_illustration_bw.png  used
- on input line 38.
+ on input line 59.
 (pdftex.def)             Requested size: 741.46986pt x 1098.66197pt.
 
 Overfull \hbox (143.96199pt too wide) has occurred while \output is active
@@ -1022,23 +1109,25 @@ Overfull \hbox (143.96199pt too wide) has occurred while \output is active
 [1
 
 
-] (./main.toc
+]
 
-[2
+[2] (./main.toc
+
+[3
 
 
 ]
 
-[3])
+[4])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
 
 
-[4]
+[5]
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 5
-9.
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 8
+0.
 (c:/texlive/2024/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
@@ -1048,7 +1137,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.61 
+l.82 
       [1
 
 
@@ -1061,113 +1150,106 @@ l.61
 [4]
 
 [5]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 98.
+
+
+[6]
+
+[7]
+
+[8]
 Chapter 2.
-<due_specie.png, id=413, 458.31226pt x 525.162pt>
-File: due_specie.png Graphic file (type png)
-<use due_specie.png>
-Package pdftex.def Info: due_specie.png  used on input line 95.
-(pdftex.def)             Requested size: 318.66948pt x 365.16684pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-
-[6
+[9
 
 
 ]
-<cartina_finita.png, id=428, 758.835pt x 201.75375pt>
-File: cartina_finita.png Graphic file (type png)
-<use cartina_finita.png>
-Package pdftex.def Info: cartina_finita.png  used on input line 106.
-(pdftex.def)             Requested size: 455.24411pt x 121.03778pt.
+<due_specie.png, id=577, 458.31226pt x 525.162pt>
+File: due_specie.png Graphic file (type png)
+<use due_specie.png>
+Package pdftex.def Info: due_specie.png  used on input line 112.
+(pdftex.def)             Requested size: 318.66948pt x 365.16684pt.
+
+
+[10 <./due_specie.png>]
+<map_pol.png, id=589, 408.3255pt x 196.3335pt>
+File: map_pol.png Graphic file (type png)
+<use map_pol.png>
+Package pdftex.def Info: map_pol.png  used on input line 123.
+(pdftex.def)             Requested size: 455.24411pt x 218.8974pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
-[7 <./due_specie.png>]
+[11 <./map_pol.png>]
 
-[8 <./cartina_finita.png>]
-<gel.png, id=448, 858.95906pt x 346.29375pt>
+[12]
+<gel.png, id=610, 858.95906pt x 346.29375pt>
 File: gel.png Graphic file (type png)
 <use gel.png>
-Package pdftex.def Info: gel.png  used on input line 152.
+Package pdftex.def Info: gel.png  used on input line 169.
 (pdftex.def)             Requested size: 455.24411pt x 183.5348pt.
-
-
-[9 <./gel.png>]
-<ApeK1 restriction site.png, id=457, 675.27281pt x 258.21469pt>
+<ApeK1 restriction site.png, id=613, 675.27281pt x 258.21469pt>
 File: ApeK1 restriction site.png Graphic file (type png)
 <use ApeK1 restriction site.png>
-Package pdftex.def Info: ApeK1 restriction site.png  used on input line 162.
+Package pdftex.def Info: ApeK1 restriction site.png  used on input line 179.
 (pdftex.def)             Requested size: 455.24411pt x 174.0825pt.
 
 
-[10 <./ApeK1 restriction site.png>]
-<library.png, id=470, 1086.459pt x 232.4685pt>
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[13 <./gel.png>]
+
+[14 <./ApeK1 restriction site.png>]
+<library.png, id=636, 1086.459pt x 232.4685pt>
 File: library.png Graphic file (type png)
 <use library.png>
-Package pdftex.def Info: library.png  used on input line 188.
+Package pdftex.def Info: library.png  used on input line 201.
 (pdftex.def)             Requested size: 455.24411pt x 97.40907pt.
 
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+[15 <./library.png>]
+<before_vs_after_sizesel.png, id=653, 1747.12724pt x 565.51276pt>
+File: before_vs_after_sizesel.png Graphic file (type png)
+<use before_vs_after_sizesel.png>
+Package pdftex.def Info: before_vs_after_sizesel.png  used on input line 211.
+(pdftex.def)             Requested size: 468.90086pt x 151.7758pt.
 
-
-
-[11]
-<pipeline.png, id=483, 1138.2525pt x 796.47563pt>
-File: pipeline.png Graphic file (type png)
-<use pipeline.png>
-Package pdftex.def Info: pipeline.png  used on input line 203.
-(pdftex.def)             Requested size: 423.37369pt x 296.24698pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
-[12 <./library.png>]
-
-[13 <./pipeline.png>]
-
-[14]
-<denovo_pipeline.png, id=518, 659.46375pt x 500.46976pt>
-File: denovo_pipeline.png Graphic file (type png)
-<use denovo_pipeline.png>
-Package pdftex.def Info: denovo_pipeline.png  used on input line 246.
-(pdftex.def)             Requested size: 318.66948pt x 241.84169pt.
-LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <10> not available
-(Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 247.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 247.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 247.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 247.
-
-
-[15 <./denovo_pipeline.png>]
-
-[16]
-
-[17]
-Underfull \hbox (badness 7869) in paragraph at lines 315--317
-\OT1/ptm/m/n/12 After per-form-ing hy-per-pa-ram-e-ters' tun-ing on the ALP1-AL
-P11 sub-set, we used
+Overfull \hbox (13.65675pt too wide) in paragraph at lines 211--212
+ [][] 
  []
 
 
 
+[16 <./before_vs_after_sizesel.png>]
+<pipeline.png, id=662, 1105.88156pt x 660.21657pt>
+File: pipeline.png Graphic file (type png)
+<use pipeline.png>
+Package pdftex.def Info: pipeline.png  used on input line 225.
+(pdftex.def)             Requested size: 455.24411pt x 271.77853pt.
+
+
+[17 <./pipeline.png>]
+
 [18]
-<haldane_kosambi.png, id=557, 440.847pt x 298.11375pt>
-File: haldane_kosambi.png Graphic file (type png)
-<use haldane_kosambi.png>
-Package pdftex.def Info: haldane_kosambi.png  used on input line 342.
-(pdftex.def)             Requested size: 318.66948pt x 215.49237pt.
+<denovo_pipeline.png, id=694, 659.46375pt x 500.46976pt>
+File: denovo_pipeline.png Graphic file (type png)
+<use denovo_pipeline.png>
+Package pdftex.def Info: denovo_pipeline.png  used on input line 268.
+(pdftex.def)             Requested size: 318.66948pt x 241.84169pt.
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/it' in size <10> not available
+(Font)              Font shape `OT1/cmtt/m/it' tried instead on input line 269.
+
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -1176,11 +1258,12 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19]
 
-[20 <./haldane_kosambi.png>]
+[20 <./denovo_pipeline.png>]
 
 [21]
-Overfull \hbox (4.33142pt too wide) detected at line 394
-[][][]\OML/ztmcm/m/it/12 F[] \OT1/ztmcm/m/n/12 = 1 \OMS/ztmcm/m/n/12 ^^@ []
+Underfull \hbox (badness 7869) in paragraph at lines 327--329
+\OT1/ptm/m/n/12 After per-form-ing hy-per-pa-ram-e-ters' tun-ing on the ALP1-AL
+P11 sub-set, we used
  []
 
 
@@ -1188,17 +1271,18 @@ Overfull \hbox (4.33142pt too wide) detected at line 394
 [22]
 
 [23]
+<haldane_kosambi.png, id=749, 440.847pt x 298.11375pt>
+File: haldane_kosambi.png Graphic file (type png)
+<use haldane_kosambi.png>
+Package pdftex.def Info: haldane_kosambi.png  used on input line 353.
+(pdftex.def)             Requested size: 318.66948pt x 215.49237pt.
 
-[24]
 
-LaTeX Warning: Reference `zouCommonMethodsPhylogenetic2024' on page 25 undefine
-d on input line 478.
-
-
+[24 <./haldane_kosambi.png>]
 
 [25]
-Underfull \hbox (badness 2538) in paragraph at lines 488--489
-[]\OT1/ptm/m/n/12 : for this method we used soft-ware
+Overfull \hbox (4.33142pt too wide) detected at line 403
+[][][]\OML/ztmcm/m/it/12 F[] \OT1/ztmcm/m/n/12 = 1 \OMS/ztmcm/m/n/12 ^^@ []
  []
 
 
@@ -1208,131 +1292,390 @@ Underfull \hbox (badness 2538) in paragraph at lines 488--489
 [27]
 
 [28]
-Chapter 3.
 
-
-[29
-
-
-]
+[29]
 
 [30]
-Chapter 4.
 
-
-[31
-
-
-]
+[31]
 
 [32]
-Chapter 5.
 
+[33]
 
-[33
-
-
-]
-Chapter 6.
-
-
-[34
-
-
-]
+[34]
 
 [35]
+<potato.png, id=928, 825.0825pt x 355.92975pt>
+File: potato.png Graphic file (type png)
+<use potato.png>
+Package pdftex.def Info: potato.png  used on input line 548.
+(pdftex.def)             Requested size: 455.24411pt x 196.38654pt.
 
-[36]
+
+[36 <./potato.png>]
 
 [37]
 
 [38]
-Chapter 7.
 
-
-[39
-
-
-]
+[39]
 
 [40]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
 
 [41]
 
 [42]
+Chapter 3.
 
-[43]
+
+[43
+
+
+]
+<fastqmcf_fastp_comparison.png, id=1034, 1150.2975pt x 835.32076pt>
+File: fastqmcf_fastp_comparison.png Graphic file (type png)
+<use fastqmcf_fastp_comparison.png>
+Package pdftex.def Info: fastqmcf_fastp_comparison.png  used on input line 647.
+
+(pdftex.def)             Requested size: 364.19667pt x 264.46574pt.
+<Barplot_lost_reads.png, id=1040, 794.36775pt x 481.8pt>
+File: Barplot_lost_reads.png Graphic file (type png)
+<use Barplot_lost_reads.png>
+Package pdftex.def Info: Barplot_lost_reads.png  used on input line 658.
+(pdftex.def)             Requested size: 409.71692pt x 248.50838pt.
+
+
+[44 <./fastqmcf_fastp_comparison.png>]
+<denovo_map_metrics.png, id=1054, 776.9025pt x 522.15076pt>
+File: denovo_map_metrics.png Graphic file (type png)
+<use denovo_map_metrics.png>
+Package pdftex.def Info: denovo_map_metrics.png  used on input line 666.
+(pdftex.def)             Requested size: 318.66948pt x 214.1788pt.
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 2134) in paragraph at lines 910--911
-\OT1/ptm/m/n/12 The pipeline De-n-ovo[]map.pl in stacks ex-pects read files to 
-be named in a spe-cific
+
+[45 <./Barplot_lost_reads.png>]
+
+[46 <./denovo_map_metrics.png>]
+
+[47]
+<meancov_populations.png, id=1083, 703.62875pt x 327.2225pt>
+File: meancov_populations.png Graphic file (type png)
+<use meancov_populations.png>
+Package pdftex.def Info: meancov_populations.png  used on input line 728.
+(pdftex.def)             Requested size: 364.19667pt x 169.36778pt.
+
+
+[48 <./meancov_populations.png>]
+
+[49]
+<filtering_methods.png, id=1107, 1628.484pt x 1049.1195pt>
+File: filtering_methods.png Graphic file (type png)
+<use filtering_methods.png>
+Package pdftex.def Info: filtering_methods.png  used on input line 753.
+(pdftex.def)             Requested size: 409.71692pt x 263.94409pt.
+
+
+[50 <./filtering_methods.png>]
+
+[51]
+<PCA.png, id=1131, 1093.686pt x 759.43726pt>
+File: PCA.png Graphic file (type png)
+<use PCA.png>
+Package pdftex.def Info: PCA.png  used on input line 795.
+(pdftex.def)             Requested size: 455.24411pt x 316.11081pt.
+<unrooted_campanula_qual.png, id=1134, 648.7437pt x 409.0482pt>
+File: unrooted_campanula_qual.png Graphic file (type png)
+<use unrooted_campanula_qual.png>
+Package pdftex.def Info: unrooted_campanula_qual.png  used on input line 806.
+(pdftex.def)             Requested size: 386.96027pt x 243.99524pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[52 <./PCA.png>]
+<rooted_campanula_collapsed_and_not.png, id=1148, 675.7245pt x 898.0752pt>
+File: rooted_campanula_collapsed_and_not.png Graphic file (type png)
+<use rooted_campanula_collapsed_and_not.png>
+Package pdftex.def Info: rooted_campanula_collapsed_and_not.png  used on input 
+line 815.
+(pdftex.def)             Requested size: 364.19667pt x 484.03525pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[53 <./unrooted_campanula_qual.png>]
+<CV_vs_K.png, id=1156, 602.25pt x 299.519pt>
+File: CV_vs_K.png Graphic file (type png)
+<use CV_vs_K.png>
+Package pdftex.def Info: CV_vs_K.png  used on input line 831.
+(pdftex.def)             Requested size: 318.66948pt x 158.48836pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[54 <./rooted_campanula_collapsed_and_not.png>]
+<Evanno_with_vs_without_CTT.png, id=1166, 1122.594pt x 981.6675pt>
+File: Evanno_with_vs_without_CTT.png Graphic file (type png)
+<use Evanno_with_vs_without_CTT.png>
+Package pdftex.def Info: Evanno_with_vs_without_CTT.png  used on input line 840
+.
+(pdftex.def)             Requested size: 318.66948pt x 278.6697pt.
+
+
+[55 <./CV_vs_K.png> <./Evanno_with_vs_without_CTT.png>]
+<Puechmaille_with_vs_without_CTT.png, id=1182, 1232.2035pt x 849.1725pt>
+File: Puechmaille_with_vs_without_CTT.png Graphic file (type png)
+<use Puechmaille_with_vs_without_CTT.png>
+Package pdftex.def Info: Puechmaille_with_vs_without_CTT.png  used on input lin
+e 849.
+(pdftex.def)             Requested size: 455.24411pt x 313.72244pt.
+
+
+[56 <./Puechmaille_with_vs_without_CTT.png>]
+
+[57]
+<mantel_test_assumptions.png, id=1213, 863.02425pt x 649.2255pt>
+File: mantel_test_assumptions.png Graphic file (type png)
+<use mantel_test_assumptions.png>
+Package pdftex.def Info: mantel_test_assumptions.png  used on input line 907.
+(pdftex.def)             Requested size: 455.24411pt x 342.47313pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[58]
+<heatmap_fst2.png, id=1220, 1120.78725pt x 1372.52776pt>
+File: heatmap_fst2.png Graphic file (type png)
+<use heatmap_fst2.png>
+Package pdftex.def Info: heatmap_fst2.png  used on input line 921.
+(pdftex.def)             Requested size: 455.24411pt x 557.48332pt.
+
+
+[59 <./mantel_test_assumptions.png>]
+
+[60 <./heatmap_fst2.png>]
+
+[61]
+<percent_missing_potatoes.png, id=1239, 752.8125pt x 376.40625pt>
+File: percent_missing_potatoes.png Graphic file (type png)
+<use percent_missing_potatoes.png>
+Package pdftex.def Info: percent_missing_potatoes.png  used on input line 936.
+(pdftex.def)             Requested size: 364.19667pt x 182.10307pt.
+
+
+[62
+
+ <./percent_missing_potatoes.png>]
+<PCA_patate.png, id=1253, 1224.9765pt x 1156.92226pt>
+File: PCA_patate.png Graphic file (type png)
+<use PCA_patate.png>
+Package pdftex.def Info: PCA_patate.png  used on input line 945.
+(pdftex.def)             Requested size: 455.24411pt x 429.94344pt.
+
+
+[63 <./PCA_patate.png>]
+<unrooted_ML_tree_potatoes2.png, id=1264, 526.8483pt x 322.3242pt>
+File: unrooted_ML_tree_potatoes2.png Graphic file (type png)
+<use unrooted_ML_tree_potatoes2.png>
+Package pdftex.def Info: unrooted_ML_tree_potatoes2.png  used on input line 954
+.
+(pdftex.def)             Requested size: 455.24411pt x 278.51642pt.
+
+
+[64 <./unrooted_ML_tree_potatoes2.png>]
+<rooted_ML_tree_potatoes.png, id=1275, 731.73375pt x 445.06274pt>
+File: rooted_ML_tree_potatoes.png Graphic file (type png)
+<use rooted_ML_tree_potatoes.png>
+Package pdftex.def Info: rooted_ML_tree_potatoes.png  used on input line 963.
+(pdftex.def)             Requested size: 455.24411pt x 276.89359pt.
+
+
+[65 <./rooted_ML_tree_potatoes.png>]
+
+[66]
+
+[67
+
+]
+Chapter 4.
+
+
+[68
+
+
+]
+
+[69]
+
+[70]
+
+[71]
+
+[72]
+
+[73
+
+]
+
+[74]
+
+[75]
+
+[76
+
+]
+Chapter 5.
+
+
+[77
+
+
+]
+
+[78]
+
+[79]
+Chapter 6.
+
+Package biblatex Warning: No driver for 'letter'.
+(biblatex)                Using fallback driver on input line 1040.
+
+
+
+[80
+
+
+]
+Underfull \hbox (badness 1038) in paragraph at lines 1041--1041
+\OT1/ptm/m/n/12 Babra-ham Bioin-for-mat-ics. Re-trieved Septem-ber 27, 2025, fr
+om []$https : / / www .
  []
 
 
 
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 915--919
+[81]
 
+[82]
+
+[83]
+
+[84]
+
+[85]
+
+[86]
+
+[87]
+
+[88]
+
+[89]
+
+[90]
+
+[91]
+Chapter 7.
+
+
+[92
+
+
+]
+
+[93]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[94]
+
+[95]
+
+[96]
+
+[97]
+
+[98]
+
+[99]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 1450.
+
+
+
+[100]
+Underfull \hbox (badness 10000) in paragraph at lines 1489--1490
+\OT1/ptm/m/n/12 Software used (in al-pha-bet-i-cal or-der): Ad-mix-ture 1.3.0, 
+ba-mad-drg
+ []
+
+
+Underfull \hbox (badness 1960) in paragraph at lines 1489--1490
+\OT1/ptm/m/n/12 9baba65f88228e55639689a3cea38dd150e6284f, bed-tools 2.29.0, bwa
+ mem 0.7.19,
  []
 
 
 
-[45]
-
-[46]
+[101]
 Chapter 8.
 
 
-[47
+[102
 
 
-] (./main.aux)
+]
+
+[103] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 16A7965B9C09751EADA52B81EE0AA055;9005.
+(rerunfilecheck)             Checksum: E55946E2C46593C96ED3384D45FE3394;9596.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  )
 (\end occurred when \ifx on line 10 was incomplete) 
 Here is how much of TeX's memory you used:
- 22830 strings out of 473201
- 405381 string characters out of 5720299
- 1339911 words of memory out of 5000000
- 45492 multiletter control sequences out of 15000+600000
- 618647 words of font info for 147 fonts, out of 8000000 for 9000
+ 26522 strings out of 473201
+ 483269 string characters out of 5720299
+ 1912190 words of memory out of 5000000
+ 48945 multiletter control sequences out of 15000+600000
+ 620499 words of font info for 150 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,13n,93p,3757b,2021s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,14n,101p,5109b,5181s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2024/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmitt10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:
-/texlive/2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf
--dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/u
-rw/times/utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.p
-fb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/202
-4/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (53 pages, 4594991 bytes).
+0.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb><c:
+/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/
+2024/texmf-dist/fonts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fon
+ts/type1/urw/symbol/usyr.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/
+utmb8a.pfb><c:/texlive/2024/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/te
+xlive/2024/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2024/texmf-d
+ist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (110 pages, 8021556 bytes).
 PDF statistics:
- 997 PDF objects out of 1000 (max. 8388607)
- 881 compressed objects within 9 object streams
- 248 named destinations out of 1000 (max. 500000)
- 448 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1936 PDF objects out of 2073 (max. 8388607)
+ 1705 compressed objects within 18 object streams
+ 456 named destinations out of 1000 (max. 500000)
+ 575 words of extra memory for PDF output out of 10000 (max. 10000000)
 

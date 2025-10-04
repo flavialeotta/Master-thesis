@@ -16,7 +16,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>mincrossrefs</bcf:key>
-      <bcf:value>2</bcf:value>
+      <bcf:value>999</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minxrefs</bcf:key>
@@ -53,7 +53,6 @@
       <bcf:value order="2">author</bcf:value>
       <bcf:value order="3">shorteditor</bcf:value>
       <bcf:value order="4">editor</bcf:value>
-      <bcf:value order="5">translator</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labeltitle</bcf:key>
@@ -71,16 +70,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labeldateparts</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
-      <bcf:value order="1" type="field">date</bcf:value>
-      <bcf:value order="2" type="field">year</bcf:value>
+      <bcf:value order="1" type="field">pubstate</bcf:value>
+      <bcf:value order="2" type="field">date</bcf:value>
       <bcf:value order="3" type="field">eventdate</bcf:value>
-      <bcf:value order="4" type="field">origdate</bcf:value>
-      <bcf:value order="5" type="field">urldate</bcf:value>
-      <bcf:value order="6" type="string">nodate</bcf:value>
+      <bcf:value order="4" type="field">year</bcf:value>
+      <bcf:value order="5" type="string">nodate</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>julian</bcf:key>
@@ -96,19 +94,19 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>999</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minalphanames</bcf:key>
@@ -144,7 +142,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>pluralothers</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>singletitle</bcf:key>
@@ -172,7 +170,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
-      <bcf:value>none</bcf:value>
+      <bcf:value>nyt</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortsets</bcf:key>
@@ -180,15 +178,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
-      <bcf:value>false</bcf:value>
+      <bcf:value>minyear</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>false</bcf:value>
+      <bcf:value>init</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniqueprimaryauthor</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquetitle</bcf:key>
@@ -204,7 +202,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useprefix</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useafterword</bcf:key>
@@ -268,7 +266,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>usetranslator</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useshortauthor</bcf:key>
@@ -276,6 +274,22 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useshorteditor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenarrator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useexecproducer</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useexecdirector</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usewith</bcf:key>
       <bcf:value>1</bcf:value>
     </bcf:option>
   </bcf:options>
@@ -296,7 +310,6 @@
       <bcf:value order="2">author</bcf:value>
       <bcf:value order="3">shorteditor</bcf:value>
       <bcf:value order="4">editor</bcf:value>
-      <bcf:value order="5">translator</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labeltitle</bcf:key>
@@ -314,16 +327,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>labeldateparts</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="multivalued">
       <bcf:key>labeldatespec</bcf:key>
-      <bcf:value order="1" type="field">date</bcf:value>
-      <bcf:value order="2" type="field">year</bcf:value>
+      <bcf:value order="1" type="field">pubstate</bcf:value>
+      <bcf:value order="2" type="field">date</bcf:value>
       <bcf:value order="3" type="field">eventdate</bcf:value>
-      <bcf:value order="4" type="field">origdate</bcf:value>
-      <bcf:value order="5" type="field">urldate</bcf:value>
-      <bcf:value order="6" type="string">nodate</bcf:value>
+      <bcf:value order="4" type="field">year</bcf:value>
+      <bcf:value order="5" type="string">nodate</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxalphanames</bcf:key>
@@ -331,19 +343,19 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxbibnames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxcitenames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxsortnames</bcf:key>
-      <bcf:value>5</bcf:value>
+      <bcf:value>2</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>maxitems</bcf:key>
-      <bcf:value>3</bcf:value>
+      <bcf:value>999</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>minalphanames</bcf:key>
@@ -395,15 +407,15 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquelist</bcf:key>
-      <bcf:value>false</bcf:value>
+      <bcf:value>minyear</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquename</bcf:key>
-      <bcf:value>false</bcf:value>
+      <bcf:value>init</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniqueprimaryauthor</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>uniquetitle</bcf:key>
@@ -419,7 +431,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useprefix</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useafterword</bcf:key>
@@ -483,7 +495,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>usetranslator</bcf:key>
-      <bcf:value>0</bcf:value>
+      <bcf:value>1</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useshortauthor</bcf:key>
@@ -491,6 +503,474 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>useshorteditor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenarrator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useexecproducer</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useexecdirector</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usewith</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+  </bcf:options>
+  <!-- inbook -->
+  <bcf:options component="biblatex" type="inbook">
+    <bcf:option type="multivalued">
+      <bcf:key>extradatecontext</bcf:key>
+      <bcf:value order="1">labelname</bcf:value>
+      <bcf:value order="2">labeltitle</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labelalpha</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labelnamespec</bcf:key>
+      <bcf:value order="1">shortauthor</bcf:value>
+      <bcf:value order="2">author</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeltitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labeltitlespec</bcf:key>
+      <bcf:value order="1">shorttitle</bcf:value>
+      <bcf:value order="2">title</bcf:value>
+      <bcf:value order="3">maintitle</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeltitleyear</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeldateparts</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labeldatespec</bcf:key>
+      <bcf:value order="1" type="field">pubstate</bcf:value>
+      <bcf:value order="2" type="field">date</bcf:value>
+      <bcf:value order="3" type="field">eventdate</bcf:value>
+      <bcf:value order="4" type="field">year</bcf:value>
+      <bcf:value order="5" type="string">nodate</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxalphanames</bcf:key>
+      <bcf:value>3</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxbibnames</bcf:key>
+      <bcf:value>2</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxcitenames</bcf:key>
+      <bcf:value>2</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxsortnames</bcf:key>
+      <bcf:value>2</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxitems</bcf:key>
+      <bcf:value>999</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minalphanames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minbibnames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>mincitenames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minsortnames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minitems</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>nohashothers</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>noroman</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>nosortothers</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>singletitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skipbib</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skipbiblist</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skiplab</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquelist</bcf:key>
+      <bcf:value>minyear</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquename</bcf:key>
+      <bcf:value>init</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniqueprimaryauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquetitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquebaretitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquework</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useprefix</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useafterword</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useannotator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usebookauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usecommentator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditora</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditorb</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditorc</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useforeword</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useholder</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useintroduction</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenamea</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenameb</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenamec</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usetranslator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useshortauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useshorteditor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenarrator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useexecproducer</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useexecdirector</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usewith</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+  </bcf:options>
+  <!-- constitution -->
+  <bcf:options component="biblatex" type="constitution">
+    <bcf:option type="multivalued">
+      <bcf:key>extradatecontext</bcf:key>
+      <bcf:value order="1">labelname</bcf:value>
+      <bcf:value order="2">labeltitle</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labelalpha</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labelnamespec</bcf:key>
+      <bcf:value order="1">shortauthor</bcf:value>
+      <bcf:value order="2">author</bcf:value>
+      <bcf:value order="3">shorteditor</bcf:value>
+      <bcf:value order="4">editor</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeltitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labeltitlespec</bcf:key>
+      <bcf:value order="1">shorttitle</bcf:value>
+      <bcf:value order="2">title</bcf:value>
+      <bcf:value order="3">maintitle</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeltitleyear</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>labeldateparts</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="multivalued">
+      <bcf:key>labeldatespec</bcf:key>
+      <bcf:value order="1" type="field">date</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxalphanames</bcf:key>
+      <bcf:value>3</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxbibnames</bcf:key>
+      <bcf:value>2</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxcitenames</bcf:key>
+      <bcf:value>2</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxsortnames</bcf:key>
+      <bcf:value>2</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>maxitems</bcf:key>
+      <bcf:value>999</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minalphanames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minbibnames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>mincitenames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minsortnames</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>minitems</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>nohashothers</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>noroman</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>nosortothers</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>singletitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skipbib</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skipbiblist</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>skiplab</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquelist</bcf:key>
+      <bcf:value>minyear</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquename</bcf:key>
+      <bcf:value>init</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniqueprimaryauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquetitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquebaretitle</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>uniquework</bcf:key>
+      <bcf:value>0</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useprefix</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useafterword</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useannotator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usebookauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usecommentator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditora</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditorb</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useeditorc</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useforeword</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useholder</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useintroduction</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenamea</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenameb</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenamec</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usetranslator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useshortauthor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useshorteditor</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usenarrator</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useexecproducer</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>useexecdirector</bcf:key>
+      <bcf:value>1</bcf:value>
+    </bcf:option>
+    <bcf:option type="singlevalued">
+      <bcf:key>usewith</bcf:key>
       <bcf:value>1</bcf:value>
     </bcf:option>
   </bcf:options>
@@ -581,6 +1061,10 @@
     <bcf:option datatype="boolean">usetranslator</bcf:option>
     <bcf:option datatype="boolean">useshortauthor</bcf:option>
     <bcf:option datatype="boolean">useshorteditor</bcf:option>
+    <bcf:option datatype="boolean">usenarrator</bcf:option>
+    <bcf:option datatype="boolean">useexecproducer</bcf:option>
+    <bcf:option datatype="boolean">useexecdirector</bcf:option>
+    <bcf:option datatype="boolean">usewith</bcf:option>
     <bcf:option datatype="boolean">debug</bcf:option>
     <bcf:option datatype="boolean">loadfiles</bcf:option>
     <bcf:option datatype="boolean">safeinputenc</bcf:option>
@@ -642,7 +1126,9 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">apamaxprtauth</bcf:option>
+    <bcf:option datatype="boolean">annotation</bcf:option>
+    <bcf:option datatype="boolean">dashed</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
@@ -695,6 +1181,10 @@
     <bcf:option datatype="boolean">usetranslator</bcf:option>
     <bcf:option datatype="boolean">useshortauthor</bcf:option>
     <bcf:option datatype="boolean">useshorteditor</bcf:option>
+    <bcf:option datatype="boolean">usenarrator</bcf:option>
+    <bcf:option datatype="boolean">useexecproducer</bcf:option>
+    <bcf:option datatype="boolean">useexecdirector</bcf:option>
+    <bcf:option datatype="boolean">usewith</bcf:option>
     <bcf:option datatype="boolean">terseinits</bcf:option>
     <bcf:option datatype="boolean">abbreviate</bcf:option>
     <bcf:option datatype="boolean">dateabbrev</bcf:option>
@@ -724,7 +1214,7 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">subentry</bcf:option>
+    <bcf:option datatype="boolean">annotation</bcf:option>
     <bcf:option datatype="boolean">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="xml">labelalphatemplate</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
@@ -785,6 +1275,10 @@
     <bcf:option datatype="boolean" backendout="1">usetranslator</bcf:option>
     <bcf:option datatype="boolean" backendout="1">useshortauthor</bcf:option>
     <bcf:option datatype="boolean" backendout="1">useshorteditor</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">usenarrator</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useexecproducer</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">useexecdirector</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">usewith</bcf:option>
     <bcf:option datatype="boolean" backendout="1">terseinits</bcf:option>
     <bcf:option datatype="boolean" backendout="1">abbreviate</bcf:option>
     <bcf:option datatype="boolean" backendout="1">dateabbrev</bcf:option>
@@ -813,7 +1307,7 @@
     <bcf:option datatype="boolean" backendout="1">doi</bcf:option>
     <bcf:option datatype="boolean" backendout="1">eprint</bcf:option>
     <bcf:option datatype="boolean" backendout="1">related</bcf:option>
-    <bcf:option datatype="boolean" backendout="1">subentry</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">annotation</bcf:option>
     <bcf:option datatype="boolean" backendout="1">bibtexcaseprotection</bcf:option>
     <bcf:option datatype="integer" backendin="maxcitenames,maxbibnames,maxsortnames">maxnames</bcf:option>
     <bcf:option datatype="integer" backendin="mincitenames,minbibnames,minsortnames">minnames</bcf:option>
@@ -874,6 +1368,54 @@
   </bcf:datafieldset>
   <!-- SOURCEMAP -->
   <bcf:sourcemap>
+    <bcf:maps datatype="bibtex" level="style">
+      <bcf:map>
+        <bcf:map_step map_type_source="reference" map_type_target="book"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_type_source="inreference" map_type_target="inbook"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_type_source="collection" map_type_target="book"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_type_source="incollection" map_type_target="inbook"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_type_source="hardware" map_type_target="software"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_field_source="groupauthor" map_field_target="author"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:per_type>proceedings</bcf:per_type>
+        <bcf:map_step map_field_source="booktitle" map_field_target="title"/>
+        <bcf:map_step map_type_source="proceedings" map_type_target="book"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:per_type>inproceedings</bcf:per_type>
+        <bcf:map_step map_notfield="editor" map_final="1"/>
+        <bcf:map_step map_notfield="crossref" map_final="1"/>
+        <bcf:map_step map_field_source="booktitle" map_field_target="journaltitle"/>
+        <bcf:map_step map_type_source="inproceedings" map_type_target="article"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_type_source="inproceedings" map_type_target="inbook"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_field_source="year" map_final="1"/>
+        <bcf:map_step map_field_set="pubstate" map_null="1"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_field_source="date" map_final="1"/>
+        <bcf:map_step map_field_set="pubstate" map_null="1"/>
+      </bcf:map>
+      <bcf:map>
+        <bcf:map_step map_field_source="author" map_match="([^{}]+)" map_final="1"/>
+        <bcf:map_step map_field_source="publisher" map_match="$1" map_final="1"/>
+        <bcf:map_step map_field_set="publisher" map_null="1"/>
+      </bcf:map>
+    </bcf:maps>
     <bcf:maps datatype="bibtex" level="driver">
       <bcf:map>
         <bcf:map_step map_field_set="day" map_null="1"/>
@@ -1057,11 +1599,17 @@
       <bcf:field source="sortkey" skip="true"/>
     </bcf:inherit>
   </bcf:inheritance>
+  <!-- NOSORT -->
+  <bcf:nosorts>
+    <bcf:nosort field="setnames" value="\p{General_Category=Punctuation}"/>
+    <bcf:nosort field="settitles" value="\A(?:The|An|A)\s+"/>
+  </bcf:nosorts>
   <!-- UNIQUENAME TEMPLATES -->
   <bcf:uniquenametemplate name="global">
     <bcf:namepart order="1" use="1" base="1">prefix</bcf:namepart>
     <bcf:namepart order="2" base="1">family</bcf:namepart>
     <bcf:namepart order="3">given</bcf:namepart>
+    <bcf:namepart order="4">suffix</bcf:namepart>
   </bcf:uniquenametemplate>
   <!-- NAME HASH TEMPLATES -->
   <bcf:namehashtemplate name="global">
@@ -1086,7 +1634,25 @@
       <bcf:part type="namepart" order="1" use="0">prefix</bcf:part>
     </bcf:keypart>
   </bcf:sortingnamekeytemplate>
+  <bcf:sortingnamekeytemplate name="apasortcite" visibility="cite">
+    <bcf:keypart order="1">
+      <bcf:part type="namepart" order="1" use="1">prefix</bcf:part>
+      <bcf:part type="namepart" order="2">family</bcf:part>
+    </bcf:keypart>
+    <bcf:keypart order="2">
+      <bcf:part type="namepart" order="1">given</bcf:part>
+    </bcf:keypart>
+    <bcf:keypart order="3">
+      <bcf:part type="namepart" order="1">suffix</bcf:part>
+    </bcf:keypart>
+    <bcf:keypart order="4">
+      <bcf:part type="namepart" order="1" use="0">prefix</bcf:part>
+    </bcf:keypart>
+  </bcf:sortingnamekeytemplate>
   <bcf:presort>mm</bcf:presort>
+  <bcf:sortexclusion type="inbook">
+    <bcf:exclusion>editor</bcf:exclusion>
+  </bcf:sortexclusion>
   <!-- DATA MODEL -->
   <bcf:datamodel>
     <bcf:constants>
@@ -1147,6 +1713,11 @@
       <bcf:entrytype>unpublished</bcf:entrytype>
       <bcf:entrytype>video</bcf:entrytype>
       <bcf:entrytype skip_output="true">xdata</bcf:entrytype>
+      <bcf:entrytype>presentation</bcf:entrytype>
+      <bcf:entrytype>constitution</bcf:entrytype>
+      <bcf:entrytype>legmaterial</bcf:entrytype>
+      <bcf:entrytype>legadminmaterial</bcf:entrytype>
+      <bcf:entrytype>nameonly</bcf:entrytype>
     </bcf:entrytypes>
     <bcf:fields>
       <bcf:field fieldtype="field" datatype="integer">sortyear</bcf:field>
@@ -1351,6 +1922,16 @@
       <bcf:field fieldtype="field" format="xsv" datatype="option" skip_output="true">relatedoptions</bcf:field>
       <bcf:field fieldtype="field" datatype="range">pages</bcf:field>
       <bcf:field fieldtype="field" datatype="code">execute</bcf:field>
+      <bcf:field fieldtype="list" datatype="name">narrator</bcf:field>
+      <bcf:field fieldtype="list" datatype="name">execproducer</bcf:field>
+      <bcf:field fieldtype="list" datatype="name">execdirector</bcf:field>
+      <bcf:field fieldtype="list" datatype="name">with</bcf:field>
+      <bcf:field fieldtype="list" datatype="literal">citation</bcf:field>
+      <bcf:field fieldtype="field" datatype="literal">source</bcf:field>
+      <bcf:field fieldtype="field" datatype="literal">article</bcf:field>
+      <bcf:field fieldtype="field" datatype="literal">section</bcf:field>
+      <bcf:field fieldtype="field" datatype="literal">amendment</bcf:field>
+      <bcf:field fieldtype="field" datatype="literal">appentry</bcf:field>
     </bcf:fields>
     <bcf:entryfields>
       <bcf:field>abstract</bcf:field>
@@ -2114,6 +2695,113 @@
       <bcf:field>type</bcf:field>
       <bcf:field>venue</bcf:field>
     </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:field>with</bcf:field>
+      <bcf:field>narrator</bcf:field>
+      <bcf:field>execproducer</bcf:field>
+      <bcf:field>execdirector</bcf:field>
+    </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:entrytype>jurisdiction</bcf:entrytype>
+      <bcf:field>organization citation</bcf:field>
+    </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:entrytype>legmaterial</bcf:entrytype>
+      <bcf:field>source</bcf:field>
+    </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:entrytype>legadminmaterial</bcf:entrytype>
+      <bcf:field>citation</bcf:field>
+      <bcf:field>source</bcf:field>
+    </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:entrytype>constitution</bcf:entrytype>
+      <bcf:field>article</bcf:field>
+      <bcf:field>section</bcf:field>
+      <bcf:field>amendment</bcf:field>
+    </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:entrytype>software</bcf:entrytype>
+      <bcf:field>appentry</bcf:field>
+    </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:entrytype>report</bcf:entrytype>
+      <bcf:field>addendum</bcf:field>
+      <bcf:field>author</bcf:field>
+      <bcf:field>authortype</bcf:field>
+      <bcf:field>chapter</bcf:field>
+      <bcf:field>doi</bcf:field>
+      <bcf:field>eprint</bcf:field>
+      <bcf:field>eprintclass</bcf:field>
+      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>institution</bcf:field>
+      <bcf:field>isrn</bcf:field>
+      <bcf:field>language</bcf:field>
+      <bcf:field>location</bcf:field>
+      <bcf:field>note</bcf:field>
+      <bcf:field>number</bcf:field>
+      <bcf:field>pages</bcf:field>
+      <bcf:field>pagetotal</bcf:field>
+      <bcf:field>pubstate</bcf:field>
+      <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
+      <bcf:field>titleaddon</bcf:field>
+      <bcf:field>type</bcf:field>
+      <bcf:field>version</bcf:field>
+    </bcf:entryfields>
+    <bcf:entryfields>
+      <bcf:entrytype>presentation</bcf:entrytype>
+      <bcf:field>addendum</bcf:field>
+      <bcf:field>author</bcf:field>
+      <bcf:field>booksubtitle</bcf:field>
+      <bcf:field>booktitle</bcf:field>
+      <bcf:field>booktitleaddon</bcf:field>
+      <bcf:field>chapter</bcf:field>
+      <bcf:field>doi</bcf:field>
+      <bcf:field>editor</bcf:field>
+      <bcf:field>editortype</bcf:field>
+      <bcf:field>eprint</bcf:field>
+      <bcf:field>eprintclass</bcf:field>
+      <bcf:field>eprinttype</bcf:field>
+      <bcf:field>eventday</bcf:field>
+      <bcf:field>eventendday</bcf:field>
+      <bcf:field>eventendhour</bcf:field>
+      <bcf:field>eventendminute</bcf:field>
+      <bcf:field>eventendmonth</bcf:field>
+      <bcf:field>eventendseason</bcf:field>
+      <bcf:field>eventendsecond</bcf:field>
+      <bcf:field>eventendtimezone</bcf:field>
+      <bcf:field>eventendyear</bcf:field>
+      <bcf:field>eventhour</bcf:field>
+      <bcf:field>eventminute</bcf:field>
+      <bcf:field>eventmonth</bcf:field>
+      <bcf:field>eventseason</bcf:field>
+      <bcf:field>eventsecond</bcf:field>
+      <bcf:field>eventtimezone</bcf:field>
+      <bcf:field>eventyear</bcf:field>
+      <bcf:field>eventtitle</bcf:field>
+      <bcf:field>eventtitleaddon</bcf:field>
+      <bcf:field>isbn</bcf:field>
+      <bcf:field>language</bcf:field>
+      <bcf:field>location</bcf:field>
+      <bcf:field>mainsubtitle</bcf:field>
+      <bcf:field>maintitle</bcf:field>
+      <bcf:field>maintitleaddon</bcf:field>
+      <bcf:field>note</bcf:field>
+      <bcf:field>number</bcf:field>
+      <bcf:field>organization</bcf:field>
+      <bcf:field>pages</bcf:field>
+      <bcf:field>part</bcf:field>
+      <bcf:field>publisher</bcf:field>
+      <bcf:field>pubstate</bcf:field>
+      <bcf:field>series</bcf:field>
+      <bcf:field>subtitle</bcf:field>
+      <bcf:field>title</bcf:field>
+      <bcf:field>titleaddon</bcf:field>
+      <bcf:field>venue</bcf:field>
+      <bcf:field>volume</bcf:field>
+      <bcf:field>volumes</bcf:field>
+    </bcf:entryfields>
     <bcf:multiscriptfields>
       <bcf:field>abstract</bcf:field>
       <bcf:field>addendum</bcf:field>
@@ -2365,111 +3053,412 @@
         <bcf:field>gender</bcf:field>
       </bcf:constraint>
     </bcf:constraints>
+    <bcf:constraints>
+      <bcf:entrytype>book</bcf:entrytype>
+      <bcf:entrytype>inbook</bcf:entrytype>
+      <bcf:entrytype>article</bcf:entrytype>
+      <bcf:entrytype>report</bcf:entrytype>
+      <bcf:constraint type="mandatory">
+        <bcf:field>author</bcf:field>
+        <bcf:field>title</bcf:field>
+      </bcf:constraint>
+    </bcf:constraints>
   </bcf:datamodel>
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
-    <bcf:datasource type="file" datatype="bibtex" glob="false">Tesi.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex" glob="false">Tesi2.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">vijayanGermplasmConservationMulberry2011</bcf:citekey>
-    <bcf:citekey order="2" intorder="1">penceDefiningExceptionalSpecies2022</bcf:citekey>
-    <bcf:citekey order="3" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
-    <bcf:citekey order="4" intorder="1">vijayanGermplasmConservationMulberry2011</bcf:citekey>
-    <bcf:citekey order="5" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
-    <bcf:citekey order="6" intorder="1">hobanOptimalSamplingSeeds2014</bcf:citekey>
-    <bcf:citekey order="7" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
-    <bcf:citekey order="8" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
-    <bcf:citekey order="9" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
-    <bcf:citekey order="10" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="11" intorder="1">fabiocontiAnnotatedChecklistItalian2005</bcf:citekey>
-    <bcf:citekey order="12" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
-    <bcf:citekey order="13" intorder="1">grazianorossiListaRossaFlora2020</bcf:citekey>
-    <bcf:citekey order="14" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
-    <bcf:citekey order="15" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
-    <bcf:citekey order="16" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
-    <bcf:citekey order="17" intorder="1">andrewsHarnessingPowerRADseq2016</bcf:citekey>
-    <bcf:citekey order="18" intorder="1">andrewsHarnessingPowerRADseq2016</bcf:citekey>
-    <bcf:citekey order="19" intorder="1">andrewsHarnessingPowerRADseq2016</bcf:citekey>
-    <bcf:citekey order="20" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
-    <bcf:citekey order="21" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="22" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
-    <bcf:citekey order="23" intorder="1">freiHighGeneticDifferentiation2012</bcf:citekey>
-    <bcf:citekey order="24" intorder="1">kussSpatialGeneticStructure2011</bcf:citekey>
-    <bcf:citekey order="25" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="26" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="27" intorder="1">kussSpatialGeneticStructure2011</bcf:citekey>
-    <bcf:citekey order="28" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="29" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="30" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="31" intorder="1">coyneSpeciation2004</bcf:citekey>
-    <bcf:citekey order="32" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
-    <bcf:citekey order="33" intorder="1">freiHighGeneticDifferentiation2012</bcf:citekey>
-    <bcf:citekey order="34" intorder="1">kussSpatialGeneticStructure2011</bcf:citekey>
-    <bcf:citekey order="35" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="36" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
-    <bcf:citekey order="37" intorder="1">zonneveldDNAWeightsNucleus2019</bcf:citekey>
-    <bcf:citekey order="38" intorder="1">dolezelLetterEditor2003</bcf:citekey>
-    <bcf:citekey order="39" intorder="1">ewingBaseCallingAutomatedSequencer1998</bcf:citekey>
-    <bcf:citekey order="40" intorder="1">oraweAccountingUncertaintyDNA2015</bcf:citekey>
-    <bcf:citekey order="41" intorder="1">catchenStacksBuildingGenotyping2011</bcf:citekey>
-    <bcf:citekey order="42" intorder="1">catchenStacksBuildingGenotyping2011</bcf:citekey>
-    <bcf:citekey order="43" intorder="1">catchenStacksBuildingGenotyping2011</bcf:citekey>
-    <bcf:citekey order="44" intorder="1">parisLostParameterSpace2017</bcf:citekey>
-    <bcf:citekey order="45" intorder="1">visscherLimitsIndividualIdentification2009</bcf:citekey>
-    <bcf:citekey order="46" intorder="1">semagnPrinciplesRequirementsProspects</bcf:citekey>
-    <bcf:citekey order="47" intorder="1">huehnRandomVariabilityMap2010</bcf:citekey>
-    <bcf:citekey order="48" intorder="1">semagnPrinciplesRequirementsProspects</bcf:citekey>
-    <bcf:citekey order="49" intorder="1">huehnRandomVariabilityMap2010</bcf:citekey>
-    <bcf:citekey order="50" intorder="1">semagnPrinciplesRequirementsProspects</bcf:citekey>
-    <bcf:citekey order="51" intorder="1">huehnRandomVariabilityMap2010</bcf:citekey>
-    <bcf:citekey order="52" intorder="1">semagnPrinciplesRequirementsProspects</bcf:citekey>
-    <bcf:citekey order="53" intorder="1">kanakaConceptsMeasuresDiversity2023</bcf:citekey>
-    <bcf:citekey order="54" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
-    <bcf:citekey order="55" intorder="1">wrightGeneticalStructurePopulations1949</bcf:citekey>
-    <bcf:citekey order="56" intorder="1">b.s.weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
-    <bcf:citekey order="57" intorder="1">b.s.weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
-    <bcf:citekey order="58" intorder="1">b.s.weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
-    <bcf:citekey order="59" intorder="1">wrightGeneticalStructurePopulations1949</bcf:citekey>
-    <bcf:citekey order="60" intorder="1">weirEstimatingFStatistics2002</bcf:citekey>
-    <bcf:citekey order="61" intorder="1">b.s.weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
-    <bcf:citekey order="62" intorder="1">bhatiaEstimatingInterpretingFST2013</bcf:citekey>
-    <bcf:citekey order="63" intorder="1">weirEstimatingFStatistics2002</bcf:citekey>
-    <bcf:citekey order="64" intorder="1">bhatiaEstimatingInterpretingFST2013</bcf:citekey>
-    <bcf:citekey order="65" intorder="1">bhatiaEstimatingInterpretingFST2013</bcf:citekey>
-    <bcf:citekey order="66" intorder="1">loaizaReviewGeneticDiversity2012</bcf:citekey>
-    <bcf:citekey order="67" intorder="1">mantelDetectionDiseaseClustering1967</bcf:citekey>
-    <bcf:citekey order="68" intorder="1">mantelDetectionDiseaseClustering1967</bcf:citekey>
-    <bcf:citekey order="69" intorder="1">diniz-filhoMantelTestPopulation2013</bcf:citekey>
-    <bcf:citekey order="70" intorder="1">diniz-filhoMantelTestPopulation2013</bcf:citekey>
-    <bcf:citekey order="71" intorder="1">el-hashashComparisonPearsonSpearman2022</bcf:citekey>
-    <bcf:citekey order="72" intorder="1">kamvarPopprGeneticAnalysis2013</bcf:citekey>
-    <bcf:citekey order="73" intorder="1">ojhaChapter5Computational2022a</bcf:citekey>
-    <bcf:citekey order="74" intorder="1">zouCommonMethodsPhylogenetic2024</bcf:citekey>
-    <bcf:citekey order="75" intorder="1">kalyaanamoorthyModelFinderFastModel2017</bcf:citekey>
-    <bcf:citekey order="76" intorder="1">kalyaanamoorthyModelFinderFastModel2017</bcf:citekey>
-    <bcf:citekey order="77" intorder="1">lewisLikelihoodApproachEstimating2001</bcf:citekey>
-    <bcf:citekey order="78" intorder="1">wongIQTREE3Phylogenomic2025</bcf:citekey>
-    <bcf:citekey order="79" intorder="1">ojhaChapter5Computational2022a</bcf:citekey>
-    <bcf:citekey order="80" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
-    <bcf:citekey order="81" intorder="1">vilanovaSILEXFastInexpensive2020</bcf:citekey>
-    <bcf:citekey order="82" intorder="1">vilanovaSILEXFastInexpensive2020</bcf:citekey>
-    <bcf:citekey order="83" intorder="1">nomenclaturecommitteeoftheinternationalunionofbiochemistrync-iubUnitsEnzymeActivity1979</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">penceDefiningExceptionalSpecies2022</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">aguilarGeneticConsequencesHabitat2008</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">aguilarGeneticConsequencesHabitat2008</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="12" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="13" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="14" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="15" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
+    <bcf:citekey order="16" intorder="1">vijayanGermplasmConservationMulberry2011</bcf:citekey>
+    <bcf:citekey order="17" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
+    <bcf:citekey order="18" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="19" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="20" intorder="1">penceDefiningExceptionalSpecies2022</bcf:citekey>
+    <bcf:citekey order="21" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="22" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="23" intorder="1">penceDefiningExceptionalSpecies2022</bcf:citekey>
+    <bcf:citekey order="24" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="25" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="26" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
+    <bcf:citekey order="27" intorder="1">penceDefiningExceptionalSpecies2022</bcf:citekey>
+    <bcf:citekey order="28" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="29" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
+    <bcf:citekey order="30" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="31" intorder="1">vijayanGermplasmConservationMulberry2011</bcf:citekey>
+    <bcf:citekey order="32" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
+    <bcf:citekey order="33" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="34" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
+    <bcf:citekey order="35" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
+    <bcf:citekey order="36" intorder="1">hobanOptimalSamplingSeeds2014</bcf:citekey>
+    <bcf:citekey order="37" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="38" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
+    <bcf:citekey order="39" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
+    <bcf:citekey order="40" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="41" intorder="1">reddyReviewPotatoSolanum2018</bcf:citekey>
+    <bcf:citekey order="42" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="43" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="44" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="45" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="46" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="47" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="48" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="49" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="50" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="51" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
+    <bcf:citekey order="52" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="53" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="54" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="55" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="56" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="57" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="58" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="59" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="60" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="61" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="62" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="63" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
+    <bcf:citekey order="64" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="65" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="66" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="67" intorder="1">mandolinoMOLECULARFINGERPRINTINGTRADITIONAL2015</bcf:citekey>
+    <bcf:citekey order="68" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="69" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="70" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="71" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="72" intorder="1">sonahImprovedGenotypingSequencing2013</bcf:citekey>
+    <bcf:citekey order="73" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="74" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="75" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="76" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="77" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="78" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="79" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="80" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="81" intorder="1">andrewsHarnessingPowerRADseq2016</bcf:citekey>
+    <bcf:citekey order="82" intorder="1">andrewsHarnessingPowerRADseq2016</bcf:citekey>
+    <bcf:citekey order="83" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="84" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="85" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="86" intorder="1">islamGeneticDiversityPopulation2021</bcf:citekey>
+    <bcf:citekey order="87" intorder="1">martinaConservationValorizationItalian2025</bcf:citekey>
+    <bcf:citekey order="88" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="89" intorder="1">sonahImprovedGenotypingSequencing2013</bcf:citekey>
+    <bcf:citekey order="90" intorder="1">martinaConservationValorizationItalian2025</bcf:citekey>
+    <bcf:citekey order="91" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="92" intorder="1">islamGeneticDiversityPopulation2021</bcf:citekey>
+    <bcf:citekey order="93" intorder="1">heGenotypingbysequencingGBSUltimate2014</bcf:citekey>
+    <bcf:citekey order="94" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="95" intorder="1">sonahImprovedGenotypingSequencing2013</bcf:citekey>
+    <bcf:citekey order="96" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="97" intorder="1">andrewsHarnessingPowerRADseq2016</bcf:citekey>
+    <bcf:citekey order="98" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="99" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="100" intorder="1">fabiocontiAnnotatedChecklistItalian2005</bcf:citekey>
+    <bcf:citekey order="101" intorder="1">kussBiologicalFloraCentral2007</bcf:citekey>
+    <bcf:citekey order="102" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="103" intorder="1">grazianorossiListaRossaFlora2020</bcf:citekey>
+    <bcf:citekey order="104" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="105" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="106" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="107" intorder="1">martinaConservationValorizationItalian2025</bcf:citekey>
+    <bcf:citekey order="108" intorder="1">parriExploringHeatStress2025</bcf:citekey>
+    <bcf:citekey order="109" intorder="1">parriExploringHeatStress2025</bcf:citekey>
+    <bcf:citekey order="110" intorder="1">veginiPatateTradizionaliLocali2022</bcf:citekey>
+    <bcf:citekey order="111" intorder="1">reddyReviewPotatoSolanum2018</bcf:citekey>
+    <bcf:citekey order="112" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="113" intorder="1">veginiPatateTradizionaliLocali2022</bcf:citekey>
+    <bcf:citekey order="114" intorder="1">ballarottiSolanumTuberosumNel2025</bcf:citekey>
+    <bcf:citekey order="115" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="116" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="117" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="118" intorder="1">freiHighGeneticDifferentiation2012</bcf:citekey>
+    <bcf:citekey order="119" intorder="1">aegisdottirNoInbreedingDepression2007</bcf:citekey>
+    <bcf:citekey order="120" intorder="1">kussSpatialGeneticStructure2011</bcf:citekey>
+    <bcf:citekey order="121" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="122" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="123" intorder="1">kussSpatialGeneticStructure2011</bcf:citekey>
+    <bcf:citekey order="124" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="125" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="126" intorder="1">coyneSpeciation2004</bcf:citekey>
+    <bcf:citekey order="127" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="128" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="129" intorder="1">freiHighGeneticDifferentiation2012</bcf:citekey>
+    <bcf:citekey order="130" intorder="1">aegisdottirNoInbreedingDepression2007</bcf:citekey>
+    <bcf:citekey order="131" intorder="1">kussSpatialGeneticStructure2011</bcf:citekey>
+    <bcf:citekey order="132" intorder="1">grazianorossiListaRossaFlora2020</bcf:citekey>
+    <bcf:citekey order="133" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="134" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="135" intorder="1">zonneveldDNAWeightsNucleus2019</bcf:citekey>
+    <bcf:citekey order="136" intorder="1">fainelliTaxonomyPlantNursery2025</bcf:citekey>
+    <bcf:citekey order="137" intorder="1">dolezelLetterEditor2003</bcf:citekey>
+    <bcf:citekey order="138" intorder="1">sonahImprovedGenotypingSequencing2013</bcf:citekey>
+    <bcf:citekey order="139" intorder="1">kussBiologicalFloraCentral2007</bcf:citekey>
+    <bcf:citekey order="140" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="141" intorder="1">sonahImprovedGenotypingSequencing2013</bcf:citekey>
+    <bcf:citekey order="142" intorder="1">catchenStacksBuildingGenotyping2011</bcf:citekey>
+    <bcf:citekey order="143" intorder="1">ewingBaseCallingAutomatedSequencer1998</bcf:citekey>
+    <bcf:citekey order="144" intorder="1">oraweAccountingUncertaintyDNA2015</bcf:citekey>
+    <bcf:citekey order="145" intorder="1">aronestyEautils2011</bcf:citekey>
+    <bcf:citekey order="146" intorder="1">chenFastpUltrafastAllinone2018</bcf:citekey>
+    <bcf:citekey order="147" intorder="1">catchenStacksBuildingGenotyping2011</bcf:citekey>
+    <bcf:citekey order="148" intorder="1">catchenStacksBuildingGenotyping2011</bcf:citekey>
+    <bcf:citekey order="149" intorder="1">catchenStacksBuildingGenotyping2011</bcf:citekey>
+    <bcf:citekey order="150" intorder="1">parisLostParameterSpace2017</bcf:citekey>
+    <bcf:citekey order="151" intorder="1">kroeseWhyMonteCarlo2014</bcf:citekey>
+    <bcf:citekey order="152" intorder="1">gloverTabuSearchPart1989</bcf:citekey>
+    <bcf:citekey order="153" intorder="1">danecekVariantCallFormat2011</bcf:citekey>
+    <bcf:citekey order="154" intorder="1">visscherLimitsIndividualIdentification2009</bcf:citekey>
+    <bcf:citekey order="155" intorder="1">semagnPrinciplesRequirementsProspects</bcf:citekey>
+    <bcf:citekey order="156" intorder="1">huehnRandomVariabilityMap2010</bcf:citekey>
+    <bcf:citekey order="157" intorder="1">semagnPrinciplesRequirementsProspects</bcf:citekey>
+    <bcf:citekey order="158" intorder="1">huehnRandomVariabilityMap2010</bcf:citekey>
+    <bcf:citekey order="159" intorder="1">semagnPrinciplesRequirementsProspects</bcf:citekey>
+    <bcf:citekey order="160" intorder="1">huehnRandomVariabilityMap2010</bcf:citekey>
+    <bcf:citekey order="161" intorder="1">semagnPrinciplesRequirementsProspects</bcf:citekey>
+    <bcf:citekey order="162" intorder="1">kanakaConceptsMeasuresDiversity2023</bcf:citekey>
+    <bcf:citekey order="163" intorder="1">whitlockConsequencesInsituStrategies2016</bcf:citekey>
+    <bcf:citekey order="164" intorder="1">wrightGeneticalStructurePopulations1949</bcf:citekey>
+    <bcf:citekey order="165" intorder="1">weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
+    <bcf:citekey order="166" intorder="1">weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
+    <bcf:citekey order="167" intorder="1">weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
+    <bcf:citekey order="168" intorder="1">wrightGeneticalStructurePopulations1949</bcf:citekey>
+    <bcf:citekey order="169" intorder="1">weirEstimatingFStatistics2002</bcf:citekey>
+    <bcf:citekey order="170" intorder="1">weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
+    <bcf:citekey order="171" intorder="1">bhatiaEstimatingInterpretingFST2013</bcf:citekey>
+    <bcf:citekey order="172" intorder="1">weirEstimatingFStatistics2002</bcf:citekey>
+    <bcf:citekey order="173" intorder="1">bhatiaEstimatingInterpretingFST2013</bcf:citekey>
+    <bcf:citekey order="174" intorder="1">bhatiaEstimatingInterpretingFST2013</bcf:citekey>
+    <bcf:citekey order="175" intorder="1">bradburdBEDASSLEQuantifiesEffects2024</bcf:citekey>
+    <bcf:citekey order="176" intorder="1">goudetHierfstatEstimationTests2024</bcf:citekey>
+    <bcf:citekey order="177" intorder="1">pembletonStAMPPPackageCalculation2013</bcf:citekey>
+    <bcf:citekey order="178" intorder="1">loaizaReviewGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="179" intorder="1">mantelDetectionDiseaseClustering1967</bcf:citekey>
+    <bcf:citekey order="180" intorder="1">mantelDetectionDiseaseClustering1967</bcf:citekey>
+    <bcf:citekey order="181" intorder="1">diniz-filhoMantelTestPopulation2013</bcf:citekey>
+    <bcf:citekey order="182" intorder="1">oksanenVeganPackageCommunity2025</bcf:citekey>
+    <bcf:citekey order="183" intorder="1">diniz-filhoMantelTestPopulation2013</bcf:citekey>
+    <bcf:citekey order="184" intorder="1">el-hashashComparisonPearsonSpearman2022</bcf:citekey>
+    <bcf:citekey order="185" intorder="1">zouCommonMethodsPhylogenetic2024</bcf:citekey>
+    <bcf:citekey order="186" intorder="1">kamvarPopprGeneticAnalysis2013</bcf:citekey>
+    <bcf:citekey order="187" intorder="1">ojhaChapter5Computational2022a</bcf:citekey>
+    <bcf:citekey order="188" intorder="1">zouCommonMethodsPhylogenetic2024</bcf:citekey>
+    <bcf:citekey order="189" intorder="1">minhIQTREE2New2020</bcf:citekey>
+    <bcf:citekey order="190" intorder="1">ortizVcf2phylipV20Convert2019</bcf:citekey>
+    <bcf:citekey order="191" intorder="1">kalyaanamoorthyModelFinderFastModel2017</bcf:citekey>
+    <bcf:citekey order="192" intorder="1">kalyaanamoorthyModelFinderFastModel2017</bcf:citekey>
+    <bcf:citekey order="193" intorder="1">lewisLikelihoodApproachEstimating2001</bcf:citekey>
+    <bcf:citekey order="194" intorder="1">wongIQTREE3Phylogenomic2025</bcf:citekey>
+    <bcf:citekey order="195" intorder="1">minhUltrafastApproximationPhylogenetic2013</bcf:citekey>
+    <bcf:citekey order="196" intorder="1">hoangUFBoot2ImprovingUltrafast2018</bcf:citekey>
+    <bcf:citekey order="197" intorder="1">ojhaChapter5Computational2022a</bcf:citekey>
+    <bcf:citekey order="198" intorder="1">alexanderFastModelbasedEstimation2009</bcf:citekey>
+    <bcf:citekey order="199" intorder="1">falushInferencePopulationStructure2003</bcf:citekey>
+    <bcf:citekey order="200" intorder="1">alexanderAdmixture13Software2020</bcf:citekey>
+    <bcf:citekey order="201" intorder="1">pritchardDocumentationStructureSoftware2010</bcf:citekey>
+    <bcf:citekey order="202" intorder="1">pritchardDocumentationStructureSoftware2010</bcf:citekey>
+    <bcf:citekey order="203" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="204" intorder="1">alexanderFastModelbasedEstimation2009</bcf:citekey>
+    <bcf:citekey order="205" intorder="1">alexanderAdmixture13Software2020</bcf:citekey>
+    <bcf:citekey order="206" intorder="1">stiftStructureMoreRobust2019</bcf:citekey>
+    <bcf:citekey order="207" intorder="1">evannoDetectingNumberClusters2005</bcf:citekey>
+    <bcf:citekey order="208" intorder="1">puechmailleProgramStructureDoes2016</bcf:citekey>
+    <bcf:citekey order="209" intorder="1">puechmailleProgramStructureDoes2016</bcf:citekey>
+    <bcf:citekey order="210" intorder="1">puechmailleProgramStructureDoes2016</bcf:citekey>
+    <bcf:citekey order="211" intorder="1">wangStudyCultivationSeedlings2022</bcf:citekey>
+    <bcf:citekey order="212" intorder="1">xuGenomeSequenceAnalysis2011</bcf:citekey>
+    <bcf:citekey order="213" intorder="1">reddyReviewPotatoSolanum2018</bcf:citekey>
+    <bcf:citekey order="214" intorder="1">ackermanAbioticPollenPollination2000</bcf:citekey>
+    <bcf:citekey order="215" intorder="1">kuiSolanumTuberosumPotato2022</bcf:citekey>
+    <bcf:citekey order="216" intorder="1">dejongImpactPotatoSociety2016</bcf:citekey>
+    <bcf:citekey order="217" intorder="1">wangStudyCultivationSeedlings2022</bcf:citekey>
+    <bcf:citekey order="218" intorder="1">reddyReviewPotatoSolanum2018</bcf:citekey>
+    <bcf:citekey order="219" intorder="1">wangStudyCultivationSeedlings2022</bcf:citekey>
+    <bcf:citekey order="220" intorder="1">reddyReviewPotatoSolanum2018</bcf:citekey>
+    <bcf:citekey order="221" intorder="1">masclefAtlasPlantesFrance1891</bcf:citekey>
+    <bcf:citekey order="222" intorder="1">xuGenomeSequenceAnalysis2011</bcf:citekey>
+    <bcf:citekey order="223" intorder="1">masclefAtlasPlantesFrance1891</bcf:citekey>
+    <bcf:citekey order="224" intorder="1">xuGenomeSequenceAnalysis2011</bcf:citekey>
+    <bcf:citekey order="225" intorder="1">xuGenomeSequenceAnalysis2011</bcf:citekey>
+    <bcf:citekey order="226" intorder="1">sunChromosomescaleHaplotyperesolvedGenome2022</bcf:citekey>
+    <bcf:citekey order="227" intorder="1">kuiSolanumTuberosumPotato2022</bcf:citekey>
+    <bcf:citekey order="228" intorder="1">reddyReviewPotatoSolanum2018</bcf:citekey>
+    <bcf:citekey order="229" intorder="1">wangStudyCultivationSeedlings2022</bcf:citekey>
+    <bcf:citekey order="230" intorder="1">wangStudyCultivationSeedlings2022</bcf:citekey>
+    <bcf:citekey order="231" intorder="1">sunChromosomescaleHaplotyperesolvedGenome2022</bcf:citekey>
+    <bcf:citekey order="232" intorder="1">sunChromosomescaleHaplotyperesolvedGenome2022</bcf:citekey>
+    <bcf:citekey order="233" intorder="1">wangStudyCultivationSeedlings2022</bcf:citekey>
+    <bcf:citekey order="234" intorder="1">huamanReclassificationLandracePopulations2002</bcf:citekey>
+    <bcf:citekey order="235" intorder="1">turlandInternationalCodeNomenclature2018</bcf:citekey>
+    <bcf:citekey order="236" intorder="1">xuGenomeSequenceAnalysis2011</bcf:citekey>
+    <bcf:citekey order="237" intorder="1">wangStudyCultivationSeedlings2022</bcf:citekey>
+    <bcf:citekey order="238" intorder="1">huamanReclassificationLandracePopulations2002</bcf:citekey>
+    <bcf:citekey order="239" intorder="1">huamanReclassificationLandracePopulations2002</bcf:citekey>
+    <bcf:citekey order="240" intorder="1">spoonerSystematicsDiversityGenetics2014</bcf:citekey>
+    <bcf:citekey order="241" intorder="1">huamanReclassificationLandracePopulations2002</bcf:citekey>
+    <bcf:citekey order="242" intorder="1">dejongImpactPotatoSociety2016</bcf:citekey>
+    <bcf:citekey order="243" intorder="1">ballarottiSolanumTuberosumNel2025</bcf:citekey>
+    <bcf:citekey order="244" intorder="1">xuGenomeSequenceAnalysis2011</bcf:citekey>
+    <bcf:citekey order="245" intorder="1">xuGenomeSequenceAnalysis2011</bcf:citekey>
+    <bcf:citekey order="246" intorder="1">liAligningSequenceReads2013</bcf:citekey>
+    <bcf:citekey order="247" intorder="1">danecekTwelveYearsSAMtools2021</bcf:citekey>
+    <bcf:citekey order="248" intorder="1">garrisonEkgBamaddrg2025</bcf:citekey>
+    <bcf:citekey order="249" intorder="1">garrisonEkgBamaddrg2025</bcf:citekey>
+    <bcf:citekey order="250" intorder="1">bombarelyGenoToolBoxBoxGenomics2020</bcf:citekey>
+    <bcf:citekey order="251" intorder="1">garrisonHaplotypebasedVariantDetection2012</bcf:citekey>
+    <bcf:citekey order="252" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="253" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="254" intorder="1">elshireRobustSimpleGenotypingbySequencing2011</bcf:citekey>
+    <bcf:citekey order="255" intorder="1">andrewsFastQCQualityControl2010</bcf:citekey>
+    <bcf:citekey order="256" intorder="1">ewelsMultiQCSummarizeAnalysis2016</bcf:citekey>
+    <bcf:citekey order="257" intorder="1">andrewsFastQCQualityControl2010</bcf:citekey>
+    <bcf:citekey order="258" intorder="1">ewelsMultiQCSummarizeAnalysis2016</bcf:citekey>
+    <bcf:citekey order="259" intorder="1">pearmanCommonlyUsedHardy2022</bcf:citekey>
+    <bcf:citekey order="260" intorder="1">letunicInteractiveTreeLife2024</bcf:citekey>
+    <bcf:citekey order="261" intorder="1">letunicInteractiveTreeLife2024</bcf:citekey>
+    <bcf:citekey order="262" intorder="1">puechmailleProgramStructureDoes2016</bcf:citekey>
+    <bcf:citekey order="263" intorder="1">liStructureSelectorWebbasedSoftware2018</bcf:citekey>
+    <bcf:citekey order="264" intorder="1">kopelmanClumpakProgramIdentifying2015</bcf:citekey>
+    <bcf:citekey order="265" intorder="1">liStructureSelectorWebbasedSoftware2018</bcf:citekey>
+    <bcf:citekey order="266" intorder="1">kopelmanClumpakProgramIdentifying2015</bcf:citekey>
+    <bcf:citekey order="267" intorder="1">puechmailleProgramStructureDoes2016</bcf:citekey>
+    <bcf:citekey order="268" intorder="1">weirEstimatingFStatisticsAnalysis1984</bcf:citekey>
+    <bcf:citekey order="269" intorder="1">weirEstimatingFStatistics2002</bcf:citekey>
+    <bcf:citekey order="270" intorder="1">sonahImprovedGenotypingSequencing2013</bcf:citekey>
+    <bcf:citekey order="271" intorder="1">sonahImprovedGenotypingSequencing2013</bcf:citekey>
+    <bcf:citekey order="272" intorder="1">kirschDefiningPlantEcological2022</bcf:citekey>
+    <bcf:citekey order="273" intorder="1">kirschDefiningPlantEcological2022</bcf:citekey>
+    <bcf:citekey order="274" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="275" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="276" intorder="1">kussBiologicalFloraCentral2007</bcf:citekey>
+    <bcf:citekey order="277" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="278" intorder="1">hughesStrongGeneticStructuring1999</bcf:citekey>
+    <bcf:citekey order="279" intorder="1">bucklerPlantMolecularDiversity2002</bcf:citekey>
+    <bcf:citekey order="280" intorder="1">hughesStrongGeneticStructuring1999</bcf:citekey>
+    <bcf:citekey order="281" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="282" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="283" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="284" intorder="1">aguilarGeneticConsequencesHabitat2008</bcf:citekey>
+    <bcf:citekey order="285" intorder="1">aegisdottirNoInbreedingDepression2007</bcf:citekey>
+    <bcf:citekey order="286" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="287" intorder="1">aegisdottirNoInbreedingDepression2007</bcf:citekey>
+    <bcf:citekey order="288" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="289" intorder="1">aguilarGeneticConsequencesHabitat2008</bcf:citekey>
+    <bcf:citekey order="290" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="291" intorder="1">volisQuasiSituBridge2010</bcf:citekey>
+    <bcf:citekey order="292" intorder="1">fabiocontiAnnotatedChecklistItalian2005</bcf:citekey>
+    <bcf:citekey order="293" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="294" intorder="1">vorkaufFloweringPhenologyAlpine2021</bcf:citekey>
+    <bcf:citekey order="295" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="296" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="297" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="298" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="299" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="300" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="301" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="302" intorder="1">hughesStrongGeneticStructuring1999</bcf:citekey>
+    <bcf:citekey order="303" intorder="1">kussSpatialGeneticStructure2011</bcf:citekey>
+    <bcf:citekey order="304" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="305" intorder="1">kussSpatialGeneticStructure2011</bcf:citekey>
+    <bcf:citekey order="306" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="307" intorder="1">hughesStrongGeneticStructuring1999</bcf:citekey>
+    <bcf:citekey order="308" intorder="1">machida-hiranoDiversityPotatoGenetic2015</bcf:citekey>
+    <bcf:citekey order="309" intorder="1">huamanReclassificationLandracePopulations2002</bcf:citekey>
+    <bcf:citekey order="310" intorder="1">huamanReclassificationLandracePopulations2002</bcf:citekey>
+    <bcf:citekey order="311" intorder="1">giupponiMorphometricPhytochemicalCharacterization2020</bcf:citekey>
+    <bcf:citekey order="312" intorder="1">martinaConservationValorizationItalian2025</bcf:citekey>
+    <bcf:citekey order="313" intorder="1">martinaConservationValorizationItalian2025</bcf:citekey>
+    <bcf:citekey order="314" intorder="1">martinaConservationValorizationItalian2025</bcf:citekey>
+    <bcf:citekey order="315" intorder="1">mandolinoMOLECULARFINGERPRINTINGTRADITIONAL2015</bcf:citekey>
+    <bcf:citekey order="316" intorder="1">martinaConservationValorizationItalian2025</bcf:citekey>
+    <bcf:citekey order="317" intorder="1">giupponiMorphometricPhytochemicalCharacterization2020</bcf:citekey>
+    <bcf:citekey order="318" intorder="1">rossiVarietaAgronomicheLombarde2019</bcf:citekey>
+    <bcf:citekey order="319" intorder="1">rossiVarietaAgronomicheLombarde2019</bcf:citekey>
+    <bcf:citekey order="320" intorder="1">rossiVarietaAgronomicheLombarde2019</bcf:citekey>
+    <bcf:citekey order="321" intorder="1">veginiPatateTradizionaliLocali2022</bcf:citekey>
+    <bcf:citekey order="322" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="323" intorder="1">rossiVarietaAgronomicheLombarde2019</bcf:citekey>
+    <bcf:citekey order="324" intorder="1">rossiVarietaAgronomicheLombarde2019</bcf:citekey>
+    <bcf:citekey order="325" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="326" intorder="1">aegisdottirIsolatedPopulationsRare2009</bcf:citekey>
+    <bcf:citekey order="327" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="328" intorder="1">scheepensDifferentiationMorphologyFlowering2011</bcf:citekey>
+    <bcf:citekey order="329" intorder="1">habelBurdenGeneticDiversity2012</bcf:citekey>
+    <bcf:citekey order="330" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="331" intorder="1">freiHighGeneticDifferentiation2012</bcf:citekey>
+    <bcf:citekey order="332" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="333" intorder="1">iucn/sscGuidelinesUseEx2014</bcf:citekey>
+    <bcf:citekey order="334" intorder="1">suppleConservationBiodiversityGenomics2018</bcf:citekey>
+    <bcf:citekey order="335" intorder="1">yinPlantConservationAge2024</bcf:citekey>
+    <bcf:citekey order="336" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="337" intorder="1">veginiPatateTradizionaliLocali2022</bcf:citekey>
+    <bcf:citekey order="338" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="339" intorder="1">salgotraGeneticDiversityConservation2023</bcf:citekey>
+    <bcf:citekey order="340" intorder="1">veginiPatateTradizionaliLocali2022</bcf:citekey>
+    <bcf:citekey order="341" intorder="1">ammassariNotificationRegardingContribution2013</bcf:citekey>
+    <bcf:citekey order="342" intorder="1">vilanovaSILEXFastInexpensive2020</bcf:citekey>
+    <bcf:citekey order="343" intorder="1">vilanovaSILEXFastInexpensive2020</bcf:citekey>
+    <bcf:citekey order="344" intorder="1">nomenclaturecommitteeoftheinternationalunionofbiochemistrync-iubUnitsEnzymeActivity1979</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="none">
+  <bcf:sortingtemplate name="nyt">
     <bcf:sort order="1">
-      <bcf:sortitem order="1">citeorder</bcf:sortitem>
+      <bcf:sortitem order="1">presort</bcf:sortitem>
     </bcf:sort>
-    <bcf:sort order="2">
-      <bcf:sortitem order="1">intciteorder</bcf:sortitem>
+    <bcf:sort order="2" final="1">
+      <bcf:sortitem order="1">sortkey</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="3">
+      <bcf:sortitem order="1">sortname</bcf:sortitem>
+      <bcf:sortitem order="2">author</bcf:sortitem>
+      <bcf:sortitem order="3">editor</bcf:sortitem>
+      <bcf:sortitem order="4">translator</bcf:sortitem>
+      <bcf:sortitem order="5">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="6">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="4">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sorttitle</bcf:sortitem>
+      <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="6">
+      <bcf:sortitem order="1">volume</bcf:sortitem>
+      <bcf:sortitem literal="1" order="2">0</bcf:sortitem>
     </bcf:sort>
   </bcf:sortingtemplate>
   <!-- DATALISTS -->
   <bcf:datalist section="0"
-                name="none/global//global/global/global"
+                name="nyt/apasortcite//global/global/global"
                 type="entry"
-                sortingtemplatename="none"
+                sortingtemplatename="nyt"
+                sortingnamekeytemplatename="apasortcite"
+                labelprefix=""
+                uniquenametemplatename="global"
+                labelalphanametemplatename="global"
+                namehashtemplatename="global">
+  </bcf:datalist>
+  <bcf:datalist section="0"
+                name="nyt/global//global/global/global"
+                type="entry"
+                sortingtemplatename="nyt"
                 sortingnamekeytemplatename="global"
                 labelprefix=""
                 uniquenametemplatename="global"
